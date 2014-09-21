@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NewConference.master.cs" Inherits="SocioBuilderSite.MasterPages.NewConference" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Qiyas</title>
+    <!--[if lte IE 6]>
+		<script type="text/javascript">
+			var IE6UPDATE_OPTIONS = {
+			icons_path: "/_Scripts/Front/ie6update/images/"
+		}
+		</script>
+        
+		<script type="text/javascript" src="/_Scripts/Front/ie6update/ie6update.js"></script>
+	<![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="MainForm" runat="server">
+    <div class="wrapper">
+	<div class="header">
+		<div class="logo"><a href="#"><img src="/Conference/images/logo.jpg" width="191" height="140" alt="Qiyas" /></a></div>
+		<div class="social-top">
+			<a href="#"><img src="/Conference/images/fb.jpg" width="20" height="19" alt="fb" /></a>
+			<a href="#"><img src="/Conference/images/tw.jpg" width="20" height="19" alt="tw" /></a>
+			<a href="#"><img src="/Conference/images/yt.jpg" width="20" height="19" alt="youtube" /></a>
+		</div>
+		<div class="top-nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="arrow"><a href="#">Speakers</a>
+					<ul>
+						<li><a href="#">Test-01</a></li>
+						<li><a href="#">Test-02</a></li>
+						<li><a href="#">test-03</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Abstracls</a></li>
+				<li><a href="#">Program</a></li>
+				<li class="fix"><a href="#">Contacts</a></li>																
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--- / header --->
+	<div class="banner">
+		<ul id="slider1">
+			<li><img src="/Conference/images/banner-1.jpg" width="993" height="196" alt="banner" /></li>
+			<li><img src="/Conference/images/banner.jpg" width="993" height="196" alt="banner" /></li>
+			<li><img src="/Conference/images/banner-1.jpg" width="993" height="196" alt="banner" /></li>
+			<li><img src="/Conference/images/banner.jpg" width="993" height="196" alt="banner" /></li>									
+		</ul>
+	</div>
+	<!-- / banner -->
+	<div class="main-body">
+		<div class="sidebar">
+			<h1>Time &amp; Date</h1>
+			<div class="date-block">
+				<h2>2 - 4 <span> Dec 2012</span></h2>
+				<p>Acceptance Crlteria in High Education</p>
+			</div>
+			<h1>Organization</h1>
+			<div class="side-bar-thumb">
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" />
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" />
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" class="noright" />
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" />
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" />
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" class="noright"/>
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" />
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" />																					
+				<img src="/Conference/images/thumb.jpg" width="82" height="87" alt="1" class="noright"/>																									
+			</div>
+		</div>
+		<!-- / Side Bar -->
+		<div class="content">
+			<h1>Page Title</h1>
+			<div class="content-all">
+				<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- / Content -->		
+		<div class="clear"></div>
+	</div>
+	<!-- / Main Body -->	
+</div>
+<div class="footer">
+	<div class="wrapper">
+		<p>جميع الحقوق محفوظة المركز الوطني للقياس والتقويم - 1433هـ</p>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li class="fix"><a href="#">Contacts</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>
+<script type="text/javascript" src="/_Scripts/Front/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/_Scripts/Front/captify.tiny.js"></script>
+<script type="text/javascript" src="/_Scripts/Front/jcarousellite_1.0.1.pack.js"></script>
+<script type="text/javascript" src="/_Scripts/Front/jquery.bxSlider.min.js"></script>
+<script type="text/javascript" src="/_Scripts/Front/jquery.droppy.js"></script>
+<script type="text/javascript" src="/_Scripts/Front/script.js"></script>
+
+    <div>
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ConferenceMaster.master.cs" Inherits="SocioBuilderSite.MasterPages.ConferenceMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+        <!--[if lte IE 6]>        
+    <script type="text/javascript" src="Scripts/IE8.js"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="bg-top">
+        <div id="bg-down">
+            <!--Body-->
+    <div id="cont-all">
+        <div id="slidetop"><h5 runat="server" id="ConferenceDateLabel"></h5></div>
+        <br class="clear" />
+        <div id="banner"><img runat="server" id="ConferenceMainLogoImage" src="" width="760" height="76" alt="Conference Logo" /></div>
+        <div class="clear"></div>
+        <!--Content-->
+        	<div id="mainbody">
+            <div id="mainbodydown">
+      			<div id="mainbody-left">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </div>
+                <div id="mainbody-right">
+                <h1>AIC<strong>SSN</strong>2010</h1>
+                <div id="slide-right">
+                <br /><br />
+                <h2>Sponsores</h2>
+                <br />
+                	<div class="ads">&nbsp;</div>
+	<div class="ads1">
+                    <a href="#"><img src="images/pic-01.jpg" alt="pic1" width="191" height="115" class="imgcls1" /></a>
+                    <a href="#"><img src="images/pic-02.jpg" alt="pic1" width="191" height="115" class="imgcls1" /></a>
+                    <a href="#"><img src="images/pic-03.jpg" alt="pic1" width="191" height="116" class="imgcls1" /></a>
+                    <a href="#"><img src="images/pic-04.jpg" alt="pic1" width="191" height="115" class="imgcls1" /></a>
+                    <a href="#"><img src="images/pic-05.jpg" alt="pic1" width="191" height="114" class="imgcls1" /></a>
+                    <a href="#"><img src="images/pic-06.jpg" alt="pic1" width="191" height="116" class="imgcls1" /></a>
+                    </div>
+                 <div class="ads2">&nbsp;</div>
+                           <br />
+                 <h2>Organizers</h2>
+                 <br />
+                     	<div class="ads">&nbsp;</div>
+	<div class="ads1">
+              <h3>الجمعية السعودية لأمراض
+وزراعة الكلى</h3>
+                        </div>
+                 <div class="ads2">&nbsp;</div>
+               
+                           	<div class="ads">&nbsp;</div>
+	<div class="ads1">
+              <h3>جمعية الأمير فهد بن سلمان
+ لرعاية مرضى الفشل الكلوي</h3>
+                     </div>
+                 <div class="ads2">&nbsp;</div>  
+                </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            </div>
+        
+        <!--End-Content-->
+        <!--Footer-->
+        <div id="footer">
+            <ul> 
+            	<li><a href="#">Home</a></li>
+            	<li><a href="#">Speakers</a></li>
+            	<li><a href="#">Submitting Abstracts</a></li>
+            	<li><a href="#">Conference Schedule </a></li>
+            	<li><a href="#">Registration</a></li>
+            	<li><a href="#">Submissions</a></li>
+            	<li><a href="#">Contact Us</a></li>
+            	<li><a href="#">Maps</a></li>
+
+            	<li><a href="#">Hotels Information</a></li>
+            	<li class="fix"><a href="#">Local Information</a></li>
+            </ul>
+        </div>
+        <!--End-Footer-->
+    </div>
+    <!--End-Body-->
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    </form>
+</body>
+</html>

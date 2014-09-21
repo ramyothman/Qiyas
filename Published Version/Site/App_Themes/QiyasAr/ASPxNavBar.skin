@@ -1,0 +1,7 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v11.1, Version=11.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxnb" Namespace="DevExpress.Web.ASPxNavBar" Assembly="DevExpress.Web.v11.1, Version=11.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<dxnb:ASPxNavBar runat="server" CssPostfix="DXConnect" CssFilePath="~/App_Themes/Qiyas/DevExpress.css" RightToLeft="True" 
+    SpriteCssFilePath="{0}/sprite.css">
+    <LoadingPanelStyle ImageSpacing="5" />
+	<LoadingPanelImage Url="Web/Loading.gif" />
+</dxnb:ASPxNavBar>

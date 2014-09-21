@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConferenceTheme" xml:space="preserve">
+    <value>QiyasAr</value>
+  </data>
+  <data name="ContactInfo_Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="ContactInfo_City" xml:space="preserve">
+    <value>المدينة</value>
+  </data>
+  <data name="ContactInfo_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="ContactInfo_ConfirmPasswordError" xml:space="preserve">
+    <value>كلمة المرور و التأكيد يجب أن يتساويا</value>
+  </data>
+  <data name="ContactInfo_Country" xml:space="preserve">
+    <value>الدولة</value>
+  </data>
+  <data name="ContactInfo_DateofBirth" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="ContactInfo_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="ContactInfo_EnterConfirmPassword" xml:space="preserve">
+    <value>أكد كلمة المرور</value>
+  </data>
+  <data name="ContactInfo_EnterEmail" xml:space="preserve">
+    <value>أدخل البريد الإلكتروني</value>
+  </data>
+  <data name="ContactInfo_EnterFirstName" xml:space="preserve">
+    <value>أدخل الإسم الأول</value>
+  </data>
+  <data name="ContactInfo_EnterLastName" xml:space="preserve">
+    <value>أدخل اسم العائلة</value>
+  </data>
+  <data name="ContactInfo_EnterPassword" xml:space="preserve">
+    <value>أدخل كلمة المرور</value>
+  </data>
+  <data name="ContactInfo_EnterTitle" xml:space="preserve">
+    <value>أدخل اللقب</value>
+  </data>
+  <data name="ContactInfo_ErrorMessage" xml:space="preserve">
+    <value>خطأ فى حفظ البيانات</value>
+  </data>
+  <data name="ContactInfo_FaxNumber" xml:space="preserve">
+    <value>الفاكس</value>
+  </data>
+  <data name="ContactInfo_FaxNumberCode" xml:space="preserve">
+    <value>الكود</value>
+  </data>
+  <data name="ContactInfo_FirstName" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="ContactInfo_Gender" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="ContactInfo_LastName" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="ContactInfo_MiddleName" xml:space="preserve">
+    <value>اسم الأب</value>
+  </data>
+  <data name="ContactInfo_MobileNumber" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+  <data name="ContactInfo_MobileNumberCode" xml:space="preserve">
+    <value>الكود</value>
+  </data>
+  <data name="ContactInfo_Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="ContactInfo_PasswordError" xml:space="preserve">
+    <value>كلمة المرور يجب أن تكون أكبر أو تساوي  6 حروف</value>
+  </data>
+  <data name="ContactInfo_PhoneNumber" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="Contactinfo_PhoneNumberCode" xml:space="preserve">
+    <value>الكود</value>
+  </data>
+  <data name="ContactInfo_POBox" xml:space="preserve">
+    <value>صندوق بريد</value>
+  </data>
+  <data name="ContactInfo_ProfileImage" xml:space="preserve">
+    <value>الصورة</value>
+  </data>
+  <data name="ContactInfo_ProfileSavedSuccessfully" xml:space="preserve">
+    <value>لقد تم حفظ بياناتك بنجاح</value>
+  </data>
+  <data name="ContactInfo_ProfileUpdatedSuccessfully" xml:space="preserve">
+    <value>تم حفظ البيانات بنجاح</value>
+  </data>
+  <data name="ContactInfo_Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="ContactInfo_Title" xml:space="preserve">
+    <value>اللقب</value>
+  </data>
+  <data name="ContactInfo_ZipCode" xml:space="preserve">
+    <value>الرمز البريدي</value>
+  </data>
+  <data name="FooterMenu" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="HomePage_FirstImage" xml:space="preserve">
+    <value>/Conference/images/banner-01-ar.jpg</value>
+  </data>
+  <data name="HomePage_LanguageLink" xml:space="preserve">
+    <value>~/Conference/Default.aspx?culture=en</value>
+  </data>
+  <data name="HomePage_LanguageText" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="HomePage_SecondImage" xml:space="preserve">
+    <value>/Conference/images/banner-02-ar.jpg</value>
+  </data>
+  <data name="LoginFront_ChangePassword" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="LoginFront_LoginButton" xml:space="preserve">
+    <value>دخول</value>
+  </data>
+  <data name="LoginFront_LoginEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="LoginFront_LoginForgotPassword" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
+  </data>
+  <data name="LoginFront_LoginH1" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="LoginFront_LoginPassword" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="LoginFront_LoginProfile" xml:space="preserve">
+    <value>تعديل الحساب</value>
+  </data>
+  <data name="LoginFront_LoginSignup" xml:space="preserve">
+    <value>الإشتراك للحصول على حساب جديد</value>
+  </data>
+  <data name="LoginFront_Logout" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="OrganizerSectionHeader" xml:space="preserve">
+    <value>المنظم</value>
+  </data>
+  <data name="SchedulerSectionHeader" xml:space="preserve">
+    <value>البرنامج</value>
+  </data>
+  <data name="SiteMenu" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SpeakersSectionHeader" xml:space="preserve">
+    <value>المتحدثون</value>
+  </data>
+  <data name="SponsorsSectionHeader" xml:space="preserve">
+    <value>الرعاة</value>
+  </data>
+  <data name="TimeandDate" xml:space="preserve">
+    <value>تاريخ المؤتمر</value>
+  </data>
+  <data name="TopMenu" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ContactInfo_EnterMobileNumber" xml:space="preserve">
+    <value>أدخل الجوال</value>
+  </data>
+  <data name="ContactInfo_EnterPhone" xml:space="preserve">
+    <value>أدخل رقم الهاتف</value>
+  </data>
+  <data name="RegisterPage_Signup" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="RequestLogin_Content" xml:space="preserve">
+    <value>إذا أردت التسجيل أو إضافة ملخص لبحثك فى &lt;strong&gt;المؤتمر &lt;/strong&gt;, يجب &lt;strong&gt;الدخول على الموقع &lt;/strong&gt;.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;باستخدام بريدك الإلكتروني و كلمة السر من خلال الخانات المخصصة لذلك على يمين الشاشة.&lt;br /&gt;فى حالة عدم تذكرك كلمة المرور يمكنك استرجاعها عن طريق الضغط على رابط &lt;strong&gt;&lt;a runat="server" id="A1" href="ForgetPassword.aspx"&gt;"عدم تذكر كلمة المرور"&lt;/a&gt;&lt;/strong&gt;.&lt;br /&gt;اذا كنت لا تمتلك حساب من قبل فبرجاء الضغط على رابط &lt;strong&gt;&lt;a runat="server" id="SignupFormLink" href="RegisterSignup.aspx"&gt;إنشاء حساب جديد&lt;/a&gt;&lt;/strong&gt;.</value>
+  </data>
+  <data name="RequestLogin_Title" xml:space="preserve">
+    <value>طلب دخول للموقع</value>
+  </data>
+  <data name="RegistrationForm_AcademicInformation" xml:space="preserve">
+    <value>معلومات أكاديمية</value>
+  </data>
+  <data name="RegistrationForm_AlliedHealthProfessional" xml:space="preserve">
+    <value>عنوان ورشة العمل: استخدام النظرية الحديثة في بناء وتطوير الاختبارات</value>
+  </data>
+  <data name="RegistrationForm_Bachelor" xml:space="preserve">
+    <value>بكالريوس</value>
+  </data>
+  <data name="RegistrationForm_Back" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="RegistrationForm_Degree" xml:space="preserve">
+    <value>الدرجة العلمية</value>
+  </data>
+  <data name="RegistrationForm_DegreeOther" xml:space="preserve">
+    <value>أخرى</value>
+  </data>
+  <data name="RegistrationForm_Dietitian" xml:space="preserve">
+    <value>اختصاصي تغذية</value>
+  </data>
+  <data name="RegistrationForm_HealthCareProfessional" xml:space="preserve">
+    <value>الرعاية الصحية و المهنية</value>
+  </data>
+  <data name="RegistrationForm_HospitalAddress" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="RegistrationForm_HospitalDepartment" xml:space="preserve">
+    <value>الادارة</value>
+  </data>
+  <data name="RegistrationForm_HospitalInstitude" xml:space="preserve">
+    <value>جهة العمل</value>
+  </data>
+  <data name="RegistrationForm_HospitalName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="RegistrationForm_LicenseNumber" xml:space="preserve">
+    <value>رقم الرخصة</value>
+  </data>
+  <data name="RegistrationForm_LicenseNumberDescription" xml:space="preserve">
+    <value>إذا كنت فى السعودية يرجى إدخال رقم الرخصة الخاصة بك</value>
+  </data>
+  <data name="RegistrationForm_Masters" xml:space="preserve">
+    <value>ماجستير</value>
+  </data>
+  <data name="RegistrationForm_MBBS" xml:space="preserve">
+    <value>MBBS.</value>
+  </data>
+  <data name="RegistrationForm_MedicalDoctor" xml:space="preserve">
+    <value>طبيب</value>
+  </data>
+  <data name="RegistrationForm_Member" xml:space="preserve">
+    <value>عضو</value>
+  </data>
+  <data name="RegistrationForm_Membership" xml:space="preserve">
+    <value>العضوية</value>
+  </data>
+  <data name="RegistrationForm_Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="RegistrationForm_NonMember" xml:space="preserve">
+    <value>غير عضو</value>
+  </data>
+  <data name="RegistrationForm_Nurse" xml:space="preserve">
+    <value>ممرض</value>
+  </data>
+  <data name="RegistrationForm_PhD" xml:space="preserve">
+    <value>دكتوراه</value>
+  </data>
+  <data name="RegistrationForm_Physiotherapist" xml:space="preserve">
+    <value>العلاك الطبيعي</value>
+  </data>
+  <data name="RegistrationForm_Position" xml:space="preserve">
+    <value>منصب</value>
+  </data>
+  <data name="RegistrationForm_PreConferenceWorkshop" xml:space="preserve">
+    <value>عنوان ورشة العمل :
+ إجراء دراسات المحاكاة باستخدام لغة “R” للبرمجة</value>
+  </data>
+  <data name="RegistrationForm_RegistrarInformation" xml:space="preserve">
+    <value>معلومات عن المسجل</value>
+  </data>
+  <data name="RegistrationForm_RegistrationCategory" xml:space="preserve">
+    <value>فئة التسجيل</value>
+  </data>
+  <data name="RegistrationForm_RegistrationConfirmation" xml:space="preserve">
+    <value>تأكيد التسجيل</value>
+  </data>
+  <data name="RegistrationForm_RegistrationFee" xml:space="preserve">
+    <value>معلومات التسجيل</value>
+  </data>
+  <data name="RegistrationForm_RespiratoryTherapist" xml:space="preserve">
+    <value>اختصاصي الجهاز التنفسى المعالج</value>
+  </data>
+  <data name="RegistrationForm_SelfSponsor" xml:space="preserve">
+    <value>رعاية ذاتية</value>
+  </data>
+  <data name="RegistrationForm_SponsorOther" xml:space="preserve">
+    <value>اخرى</value>
+  </data>
+  <data name="RegistrationForm_SponsorshipType" xml:space="preserve">
+    <value>نوع الرعاية</value>
+  </data>
+  <data name="RegistrationForm_Submit" xml:space="preserve">
+    <value>حفظ التسجيل</value>
+  </data>
+  <data name="RegistrationForm_Title" xml:space="preserve">
+    <value>التسجيل فى المؤتمر</value>
+  </data>
+  <data name="RegistrationForm_ConfirmMessage" xml:space="preserve">
+    <value>إضغط هنا للتأكيد على المعلومات</value>
+  </data>
+  <data name="FinishRegistration_Content" xml:space="preserve">
+    <value>شكرا لتسجيلك معنا فى المؤتمر&lt;br/&gt;
+&lt;strong style="font-size:16px;"&gt;
+طريقة السداد:&lt;/strong&gt;
+&lt;strong&gt;تحويل بنكي&lt;/strong&gt;
+&lt;p&gt;
+يتم تسديد  رسوم التسجيل لورش العمل عن طريق تحويل بنكي حسب المعلومات التالية:
+اسم المستفيد : المركز الوطني للقياس والتقويم في التعليم العالي
+
+&lt;/p&gt;
+&lt;p&gt;اسم البنك     : البنك الاهلي التجاري&lt;/p&gt;
+&lt;p&gt; رقم الحساب (الايبان): &lt;strong&gt;SA8510000025011999000106&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ملاحظة : نأمل ارسال نسخة من الحوالة البنكية عبر البريد الالكتروني (Ica@qiyas.org) او رقم الفاكس: 966490700  &lt;/p&gt;
+
+&lt;strong&gt;السداد النقدي&lt;/strong&gt;
+&lt;p&gt;يتعين على المسجل سداد المبلغ المترتب عن طريق السداد النقدي او  ببطاقة الصراف في البهو السفلي لقاعة المؤتمر.
+ملاحظة: يعتمد توفر هذه الخدمة على مدى توفر المقاعد للمسجلين قبل انعقاد الورش.
+
+&lt;/p&gt;</value>
+  </data>
+  <data name="FinishRegistration_Title" xml:space="preserve">
+    <value>إنتهاء التسجيل</value>
+  </data>
+  <data name="HomePage_Register" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="HomePage_Submit" xml:space="preserve">
+    <value>إضافة ملخص</value>
+  </data>
+  <data name="ForgetPassword_Email" xml:space="preserve">
+    <value>البريد الالكتروني</value>
+  </data>
+  <data name="ForgetPassword_EmailHelp" xml:space="preserve">
+    <value>من فضلك ادخل البريد الالكتروني الذى استخدمته فى التسجيل</value>
+  </data>
+  <data name="ForgetPassword_EmailValidation" xml:space="preserve">
+    <value>ادخل البريد الالكتروني</value>
+  </data>
+  <data name="ForgetPassword_NoticeError" xml:space="preserve">
+    <value>لم يتم التعرف على هذا البريد الالكتروني</value>
+  </data>
+  <data name="ForgetPassword_SendPassword" xml:space="preserve">
+    <value>ارسال كلمة المرور</value>
+  </data>
+  <data name="ForgetPassword_SuccessMessage" xml:space="preserve">
+    <value>تم ارسال كلمة المرور على بريد الالكتروني</value>
+  </data>
+  <data name="ForgetPassword_Title" xml:space="preserve">
+    <value>نسيان كلمة المرور</value>
+  </data>
+  <data name="ContactInfo_GenderFemale" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="ContactInfo_GenderMale" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="ContactInfo_TitleDr" xml:space="preserve">
+    <value>دكتور</value>
+  </data>
+  <data name="ContactInfo_TitleMiss" xml:space="preserve">
+    <value>أنسة</value>
+  </data>
+  <data name="ContactInfo_TitleMr" xml:space="preserve">
+    <value>أستاذ</value>
+  </data>
+  <data name="ContactInfo_TitleMrs" xml:space="preserve">
+    <value>مدام</value>
+  </data>
+  <data name="ContactInfo_TitleMs" xml:space="preserve">
+    <value>سيدة</value>
+  </data>
+  <data name="ContactInfo_TitleProf" xml:space="preserve">
+    <value>بروفيسور</value>
+  </data>
+  <data name="ProfileInformation_Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="ProfileInformation_City" xml:space="preserve">
+    <value>المدينة</value>
+  </data>
+  <data name="ProfileInformation_Country" xml:space="preserve">
+    <value>الدولة</value>
+  </data>
+  <data name="ProfileInformation_DateofBirth" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="ProfileInformation_EditProfile" xml:space="preserve">
+    <value>تعديل المعلومات</value>
+  </data>
+  <data name="ProfileInformation_FaxNumber" xml:space="preserve">
+    <value>الفاكس</value>
+  </data>
+  <data name="ProfileInformation_Gender" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="ProfileInformation_MobileNumber" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+  <data name="ProfileInformation_PhoneNumber" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="ProfileInformation_POBox" xml:space="preserve">
+    <value>صندوق البريد</value>
+  </data>
+  <data name="ProfileInformation_ZipCode" xml:space="preserve">
+    <value>الرمز الريدي</value>
+  </data>
+  <data name="SponsorControl_ImagePath" xml:space="preserve">
+    <value>~/Conference/images/c_ar.jpg</value>
+  </data>
+  <data name="MasterPage_LanguageImage" xml:space="preserve">
+    <value>~/Conference/images/en.jpg</value>
+  </data>
+  <data name="Footer_CopyRights" xml:space="preserve">
+    <value>جميع الحقوق محفوظة المركز الوطني للقياس والتقويم - 1433هـ</value>
+  </data>
+  <data name="ChangePassword_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="ChangePassword_ConfirmPasswordError" xml:space="preserve">
+    <value>أكد كلمة المرور</value>
+  </data>
+  <data name="ChangePassword_Error" xml:space="preserve">
+    <value>&lt;strong&gt;خطأ&lt;/strong&gt;&lt;br /&gt;&lt;span&gt;{0}&lt;/span&gt;</value>
+  </data>
+  <data name="ChangePassword_PageTitle" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="ChangePassword_Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="ChangePassword_PasswordError" xml:space="preserve">
+    <value>أدخل كلمة المرور</value>
+  </data>
+  <data name="ChangePassword_SaveButton" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="ChangePassword_Success" xml:space="preserve">
+    <value>&lt;strong&gt;تم بنجاح&lt;/strong&gt;&lt;br /&gt;&lt;p&gt;لقد تم تغيير كلمة المرور الخاصة بك بنجاح&lt;/p&gt;</value>
+  </data>
+  <data name="MediaReference_Date" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="MediaReference_Logo" xml:space="preserve">
+    <value>الشعار</value>
+  </data>
+  <data name="MediaReference_Reference" xml:space="preserve">
+    <value>المصدر</value>
+  </data>
+  <data name="MediaReference_Title" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="SpeakersTitle" xml:space="preserve">
+    <value>المتحدثون</value>
+  </data>
+  <data name="TravelView_Title" xml:space="preserve">
+    <value>سفر و مواصلات</value>
+  </data>
+  <data name="SpeakersInfo_Title" xml:space="preserve">
+    <value>بيانات المتحدث</value>
+  </data>
+  <data name="RegistrationForm_Information" xml:space="preserve">
+    <value>&lt;span style="font-weight:bold;"&gt;المؤتمر الدولي الأول للقياس والتقويم: "معايير القبول في التعليم العالي"
+معلومات هامة للتسجيل: 
+&lt;/span&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+    إن حضور جلسات المؤتمر "مجاني"
+    &lt;/li&gt;
+    &lt;li&gt;
+    أخر موعد للتسجيل في المؤتمر وورش العمل من خارج المملكة بتاريخ 20 ذو القعدة 1433هـ الموافق  6 اكتوبر 2012م
+    &lt;/li&gt;
+    &lt;li&gt;
+    ستعقد جميع ورش العمل بقاعة الملك فيصل للمؤتمرات بفندق الانتركونتيننتال في الرياض حسب التواريخ والاوقات والقاعات الموضحة في الجدول ادناه.
+    نأمل التنبيه بأن عدد مقاعد التسجيل في الورش محدودة.
+    &lt;/li&gt;
+    &lt;li&gt;
+    رسوم التسجيل للورشة الواحدة : 
+    &lt;ul&gt;
+        &lt;li&gt;
+        التسجيل المبكر  وحتى تاريخ 17/12/1433هـ الموافق 02/11/2012م : (300 دولار ) ما يعادل (1,125 ريال)
+        &lt;/li&gt;
+        &lt;li&gt;التسجيل بعد تاريخ 17/12/1433هـ الموافق 02/11/2012م : (400 دولار) ما يعادل (1,500ريال)      &lt;/li&gt;
+
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    	نأمل التنبيه إلى ان الورشة الثانية والثالثة ستعقد متزامنة ولا يمكن التسجيل فيهما معاً في نفس الوقت وفي حال الرغبة بالتسجيل في اكثر من ورشة فيمكن الاختيار بالتسجيل في الورشة الاولي والثانية او الورشة الاولي والثالثة. 
+    &lt;/li&gt;
+    &lt;li&gt;
+    يتسلم الحضور حقيبة بمواد الورشة  و "شهادة حضور"، لذلك يتوجب على المسجل التأكد من كتابة الاسم بدقة عند التسجيل في الموقع لكي تتم طباعته على الشهادة.
+    &lt;/li&gt;
+    &lt;li&gt;سينسق مقدم ورشة العمل مع الحضور مواعيد (الاستراحة والصلاة) في بداية الورشة.
+	&lt;/li&gt;
+    &lt;li&gt;
+    لن يتم اتمام التسجيل حتى يتم تحصيل المبلغ.
+    &lt;/li&gt;
+&lt;/ul&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="RegistrationForm_PreConferenceWorkshop2" xml:space="preserve">
+    <value>عنوان ورشة  العمل  :
+بناء وتطوير الاختبار</value>
+  </data>
+  <data name="RegistrationForm_TableAfterReg1" xml:space="preserve">
+    <value>&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br /&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableAfterReg2" xml:space="preserve">
+    <value>&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableBeforeReg1" xml:space="preserve">
+    <value>&lt;table style="width:100%;"&gt;
+&lt;tr&gt;
+    &lt;td colspan="2" style="font-weight:bold;text-align:center;"&gt;يوم السبت 17 محرم 1434 هـ الموافق 1 ديسمبر 2012م&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color:#18335F;color:#FFFFFF;"&gt;
+    &lt;td style="text-align:center;"&gt;
+    الوقت
+    &lt;/td&gt;
+    &lt;td style="text-align:center;"&gt;
+    الورشة الاولي (ستعقد هذه الورشة باللغة الانجليزية) 
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;
+    8:00 – 16:30
+    &lt;/td&gt;
+    &lt;td style="font-weight:bold;"&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableBeforeReg2" xml:space="preserve">
+    <value>&lt;table style="width:100%;"&gt;
+    &lt;tr&gt;
+    &lt;td colspan="2" style="font-weight:bold;text-align:center;"&gt;يوم الاحد 18 محرم 1434هـ  الموافق 2 ديسمبر 2012م&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr style="background-color:#18335F;color:#FFFFFF;"&gt;
+        &lt;td style="text-align:center;"&gt;
+            الوقت
+        &lt;/td&gt;
+        &lt;td style="text-align:center;"&gt;
+        الورشة الثانية (ستعقد هذه الورشة باللغة الانجليزية)
+        &lt;/td&gt;
+        &lt;td style="text-align:center;"&gt;
+        الورشة الثالثة (ستعقد هذه الورشة باللغة العربية)
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+        8:00 – 16:30
+        &lt;/td&gt;
+        &lt;td style="font-weight:bold;"&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableBetReg2" xml:space="preserve">
+    <value>&lt;/td&gt;
+        &lt;td style="font-weight:bold;"&gt;</value>
+  </data>
+  <data name="FinishRegistration_Currency" xml:space="preserve">
+    <value>ريال</value>
+  </data>
+  <data name="TwitterBox_Title" xml:space="preserve">
+    <value>تغريداتنا</value>
+  </data>
+  <data name="RegistrationForm_Tab3" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="RegistrationForm_Time" xml:space="preserve">
+    <value>الوقت</value>
+  </data>
+  <data name="RegistrationForm_Confirmation" xml:space="preserve">
+    <value>تأكيد الحجز</value>
+  </data>
+  <data name="PageTab_LeftImage" xml:space="preserve">
+    <value>~/Conference/images/tab-right.png</value>
+  </data>
+  <data name="PageTab_RightImage" xml:space="preserve">
+    <value>~/Conference/images/tab-left.png</value>
+  </data>
+  <data name="PageTab_SelectedLeftImage" xml:space="preserve">
+    <value>~/Conference/images/right-selected.png</value>
+  </data>
+  <data name="PageTab_SelectedRightImage" xml:space="preserve">
+    <value>~/Conference/images/left-selected.png</value>
+  </data>
+  <data name="RegisterationForm_Finish" xml:space="preserve">
+    <value>نهاية التسجيل</value>
+  </data>
+  <data name="ContactInfo_Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>right</value>
+  </data>
+  <data name="RegistrationForm_Finish" xml:space="preserve">
+    <value>نهاية التسجيل</value>
+  </data>
+  <data name="Registeration_ConfirmAddress" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="Registeration_ConfirmBusinessPhone" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+  <data name="Registeration_ConfirmDate" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="Registeration_ConfirmEmail" xml:space="preserve">
+    <value>البريد الالكترونى</value>
+  </data>
+  <data name="Registeration_ConfirmFullName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="Registeration_ConfirmTitle" xml:space="preserve">
+    <value>تأكد من معلومات التسجيل ثم إضغط على حفظ التسجيل</value>
+  </data>
+  <data name="Registration_Currency" xml:space="preserve">
+    <value>ريال</value>
+  </data>
+  <data name="Registration_Total" xml:space="preserve">
+    <value>المجموع</value>
+  </data>
+  <data name="PaymentCurrency" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="ContactForm_RegisteredEmail" xml:space="preserve">
+    <value>هذا البريد الالكترونى مسجل بالفعل</value>
+  </data>
+  <data name="VisaRequest_City" xml:space="preserve">
+    <value>مدينة القدوم</value>
+  </data>
+  <data name="VisaRequest_Company" xml:space="preserve">
+    <value>جهة العمل</value>
+  </data>
+  <data name="VisaRequest_Country" xml:space="preserve">
+    <value>جهة القدوم</value>
+  </data>
+  <data name="VisaRequest_IsOrganizationApproved" xml:space="preserve">
+    <value>موافقة على الطلب</value>
+  </data>
+  <data name="VisaRequest_IsTaken" xml:space="preserve">
+    <value>موافقة على الفيزا</value>
+  </data>
+  <data name="VisaRequest_Job" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="VisaRequest_PassportAttachment" xml:space="preserve">
+    <value>صورة الجواز</value>
+  </data>
+  <data name="VisaRequest_Religion" xml:space="preserve">
+    <value>الديانة</value>
+  </data>
+  <data name="VisaRequest_Title" xml:space="preserve">
+    <value>طلب تأشيرة</value>
+  </data>
+  <data name="VisaRequest_VisaAttachment" xml:space="preserve">
+    <value>صورة الفيزا</value>
+  </data>
+  <data name="VisaRequest_SuccessMessage" xml:space="preserve">
+    <value>شكرا للتسجيل سيتم التدقيق على المعلومات و من ثم إرسال طلب تأشيرة</value>
+  </data>
+  <data name="Speakers_MoreAbout" xml:space="preserve">
+    <value>المزيد</value>
+  </data>
+  <data name="SponsorControl_ImagePathLink" xml:space="preserve">
+    <value>~/ContentData/SponsershipBrochureArabic.pdf</value>
+  </data>
+  <data name="VisaRequest_Summary" xml:space="preserve">
+    <value>تنبيه : بالنسبة للمسجلين في المؤتمر او ورش العمل ويتطلب حضورهم تأشيرة دخول إلى المملكة فإن أمانة المؤتمر "لا تضمن" حصولهم على تأشيرات بعد التاريخ المحدد والمعلن للتسجيل من خارج المملكة وهو بتاريخ 20 ذو القعدة 1433هـ الموافق  6 اكتوبر 2012م.</value>
+  </data>
+</root>

@@ -1,0 +1,6 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v11.1, Version=11.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxEditors" Assembly="DevExpress.Web.ASPxEditors.v11.1, Version=11.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<dx:ASPxFilterControl runat="server" >
+  <Styles CssPostfix="DXConnect" CssFilePath="~/App_Themes/Qiyas/DevExpress.css" />
+<Images SpriteCssFilePath="~/App_Themes/DXConnect/{0}/sprite.css" />
+</dx:ASPxFilterControl>

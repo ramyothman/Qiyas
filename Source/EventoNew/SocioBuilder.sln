@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{F9E3146E-644C-4589-9A8B-7AD82B4DC10B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E1725FCE-E1E8-4109-81A1-A596E6DC62D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{2E2D4897-5A56-4C59-9562-BB5008B0D922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{65A732E9-AD5D-41FC-A697-3FDE8505E356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{36E7A3B7-98E6-4431-B20C-419D873D4224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocioBuilderSite", "SocioBuilderSite\SocioBuilderSite.csproj", "{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{43DF0E9F-43C9-451B-A723-8968D6AAA31C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITDayRegistration", "ITDayRegistration\ITDayRegistration.csproj", "{33E09E21-378A-4EB2-9318-880402300133}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "QiyasDatabase", "QiyasDatabase\QiyasDatabase.sqlproj", "{375FD87D-B134-49E8-92F2-55CFB147B1DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{542BA1CA-85FE-49DA-BEF0-B82503CABD8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356}.Release|x86.ActiveCfg = Release|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{36E7A3B7-98E6-4431-B20C-419D873D4224}.Release|x86.ActiveCfg = Release|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875}.Release|x86.ActiveCfg = Release|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{43DF0E9F-43C9-451B-A723-8968D6AAA31C}.Release|x86.ActiveCfg = Release|Any CPU
+		{33E09E21-378A-4EB2-9318-880402300133}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Debug|x86.ActiveCfg = Debug|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Debug|x86.Build.0 = Debug|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Release|Any CPU.ActiveCfg = Release|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Release|Mixed Platforms.Build.0 = Release|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Release|x86.ActiveCfg = Release|x86
+		{33E09E21-378A-4EB2-9318-880402300133}.Release|x86.Build.0 = Release|x86
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65A732E9-AD5D-41FC-A697-3FDE8505E356} = {F9E3146E-644C-4589-9A8B-7AD82B4DC10B}
+		{36E7A3B7-98E6-4431-B20C-419D873D4224} = {F9E3146E-644C-4589-9A8B-7AD82B4DC10B}
+		{FFFD4538-1535-4C92-85DD-8D2CC5FEE875} = {E1725FCE-E1E8-4109-81A1-A596E6DC62D4}
+		{33E09E21-378A-4EB2-9318-880402300133} = {2E2D4897-5A56-4C59-9562-BB5008B0D922}
+		{375FD87D-B134-49E8-92F2-55CFB147B1DC} = {542BA1CA-85FE-49DA-BEF0-B82503CABD8B}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

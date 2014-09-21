@@ -1,0 +1,165 @@
+﻿
+#navigationmain
+{
+    height:38px;
+    margin-top:30px;
+    text-shadow:0 1px 0 #FFFFFF;
+    width:100%;
+    
+}
+
+.rbmleft-menu-text
+{
+    color:#616161;
+    font-family:Arial,Verdan,Sans-Serif;
+    border-bottom:1px dotted #8F8F8F;
+    padding-bottom:5px;
+    margin-bottom:5px;
+}
+
+.rbmleft-menu-text a
+{
+    padding-left:5px;
+    color:#4F6B8A;
+    text-decoration:underline;
+}
+.rbmleft-menu-text a:hover
+{
+    text-decoration:none;
+}
+.rbmleft-menu-value
+{
+    color:#222222;
+    font-weight:bold;
+    font-family:Arial,Verdan,Sans-Serif;
+}
+
+.rbmcenter-label
+{
+    color:#222222;
+    font-weight:bold;
+    font-family:Arial,Verdan,Sans-Serif;
+}
+
+.rbmcenterform table
+{
+}
+
+.rbmcenterform-tr-td
+{
+    padding-bottom:8px;
+    padding-left:5px;
+}
+
+.rbmiconhover 
+{
+    
+}
+.rbmiconhover:hover
+{
+    background-image: url(images/ui-icons_217bc0_256x240.png);
+}
+
+.rbm-low-border
+{
+    border-bottom:1px dotted #8F8F8F;
+}
+
+.rbm-top-border
+{
+    border-top:1px dotted #8F8F8F;
+}
+
+.rbmbed
+{
+    background-image: url('images/bedms1.png');
+    background-color:Yellow;
+    background-position:4px center;
+    background-repeat:no-repeat;
+    width:20px;
+    height:20px;
+    text-align:right;font-size:8px;
+}
+.rbmbedprivate
+{
+    background-image: url('images/privatebedroom.png');
+    background-position:4px center;
+    background-repeat:no-repeat;
+    width:20px;
+    height:20px;
+    text-align:right;font-size:8px;
+}
+.rbmward
+{
+    min-width:600px;
+    overflow:auto;
+}
+
+.rbmward-closed
+{
+    background-image: url('images/cancel_32.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    width:20px;
+    height:20px;
+    text-align:right;font-size:8px;
+}
+.rbmward-td{/*border-left:solid 1px black;*/}
+.rbmward-makebold{font-weight:bold;}
+
+.rbmward table td{border-bottom:solid 1px black;border-right:solid 1px black;padding:2px;font-size:9px;}
+
+.rbm-makesmall{font-size:11px;}
+
+.even-row{background-color:#CDE9FF;line-height:15px;}
+.odd-row{line-height:15px;}
+
+.rbm-tablehover td{font-weight:bold;}
+.rbm-tablehover tr:hover{background-color:#FFFFCF;}
+
+.rbm-tableleft{text-align:right;}
+
+.rbm-bedmanagement{font-size:11px;overflow:auto;margin-top:20px;}
+
+.rbm-bedmanagement .wardcode{line-height:24px;font-size:11px;font-weight:bold;padding:4px;text-align:center;}
+.rbm-bedmanagement table td{border-bottom:solid 1px black;border-right:solid 1px black;}
+.rbm-bedmanagement .warddescription{line-height:24px;font-size:9px;padding:4px;text-align:center;}
+.rbm-bedmanagement .wardcapacity{line-height:24px;font-size:9px;font-weight:bold;padding:4px;text-align:center;}
+.rbm-bedmanagement .wardphone{line-height:24px;font-size:9px;font-weight:bold;padding:4px;text-align:center;}
+
+.rbm-bedmanagement-right{width:200px;min-height:400px;float:right;}
+.rbm-bedmanagement-closed{background-color:Black;height:16px;width:25px;}
+.rbm-bedmanagement-bed
+{
+    background-image: url('images/bedms1.png');
+    background-position:0px center;
+    background-repeat:no-repeat;
+    height:16px;
+    width:16px;
+    text-align:right;font-size:8px;
+}
+
+.rbm-bedmanagement-emptybed
+{
+    width:16px;
+    height:16px;
+    text-align:right;font-size:8px;
+}
+
+.rbm-bedmanagement-redstatus{background-color:Red;}
+.rbm-bedmanagement-greenstatus{background-color:Lime;}
+.rbm-bedmanagement-yellowstatus{background-color:Yellow;}
+
+.rbm-bedmanagement-maintable{overflow:auto;}
+
+.rbm-editform
+{
+    /*color:#4582C4;*/
+}
+
+.rbm-editformtitle
+{
+    font-weight:bold;   
+    text-shadow:0 1px 0 #FFFFFF, 0 2px 4px #BBBBBB;
+    padding:10px;
+}

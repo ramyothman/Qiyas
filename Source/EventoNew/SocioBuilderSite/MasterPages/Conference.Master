@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Conference.master.cs" Inherits="SocioBuilderSite.MasterPages.Conference" %>
+<%@ Register Src="~/Controls/Conference/TopMenuMain.ascx" TagName="TopMenuControl" TagPrefix="Rbm" %>
+<%@ Register Src="~/Controls/Conference/LoginControl.ascx" TagName="LoginControlMain" TagPrefix="Rbm" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta content="SSN Conference,SSN,Conference,Nephrology,Saudi Society For Nephrology,Prince Fahd Ben Salman" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+   
+    <script src="/Scripts/jquery.js" type="text/javascript"></script>
+    
+    
+        <!--[if lte IE 6]>        
+    <script type="text/javascript" src="Scripts/IE8.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="Scripts/script.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    
+<div id="bg-top">
+<div id="bg-down">
+<!--Body-->
+    <div id="cont-all">
+        <div id="slidetop"><h5 runat="server" id="ConferenceDateLabel"></h5></div>
+        <br class="clear" />
+        <div id="banner"><img runat="server" id="ConferenceMainLogoImage" src="" width="860" height="160" alt="Conference Logo" /></div>
+        <div class="clear"></div>
+        <!--Content-->
+        	<div id="mainbody">
+            <div id="mainbodydown">
+      			<div id="mainbody-left">
+
+                <!--Menu-->
+                	
+
+                    
+                    <Rbm:TopMenuControl runat="server" ID="mainTopMenu" />
+                	<%--<div id="main-menu">
+                        
+                    	
+                    </div>--%>
+
+                <!--End-Menu-->
+
+                <!--Body-Content-->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+               	 
+<!--End-Body-Content-->
+                </div>
+      			<div id="mainbody-right">
+      			  <h1 runat="server" id="ConferenceCodeH1"></h1>
+      			  <div id="slide-right"> <br />
+      			    <br />
+                    <div runat="server" id="RightMenuScreen">
+              <h2 runat="server" id="RightMenuLabelScreen">Menu</h2>
+   			      <br />
+   			      <div class="rightside-top">&nbsp;</div>
+   			      <div class="rightside-back">
+   			        <div id="userboard">
+   			          <div class="text">
+   			            <h4><a href="~/Conferences/AcceptedAbstracts.aspx" runat="server" id="OnlinePostersLink">Online Posters</a></h4>
+                        <h4><a href="#">Exhibition</a></h4>
+                        <h4><a href="#">Sponsors</a></h4>
+                        <h4><a runat="server" id="OrganizingCommitteeLink" href="~/Conferences/OrganizingCommittee.aspx">Organizing Committee</a></h4>
+                        <h4><a runat="server" id="ScientificCommitteeLink" href="~/Conferences/ScientificCommittee.aspx">Scientific Committee</a></h4>
+                        <h4><a href="~/Conferences/Venue.aspx" runat="server" id="A2" >Venue</a></h4>
+                        <h4><a id="A1" runat="server" href="~/Conferences/Accomodations.aspx" >Accommodation</a></h4>
+                        <!--<h4><a href="#" >Riyadh</a></h4>-->
+   			            
+		              </div>
+		            </div>
+		          </div>
+   			      <div class="rightside-down">&nbsp;</div>
+                  <br />
+              </div>
+      			    <Rbm:LoginControlMain runat="server" id="LoginControlMainRight"></Rbm:LoginControlMain>
+            <br />
+      			    <%--<h2>Sponsores</h2>
+      			    <br />
+      			    <div class="ads">&nbsp;</div>
+      			    <div class="ads1"> <a href="#"><img src="images/pic-01.jpg" alt="pic1" width="191" height="115" class="imgcls1" /></a> <a href="#"><img src="images/pic-02.jpg" alt="pic1" width="191" height="115" class="imgcls1" /></a> <a href="#"><img src="images/pic-03.jpg" alt="pic1" width="191" height="116" class="imgcls1" /></a> <a href="#"><img src="images/pic-04.jpg" alt="pic1" width="191" height="115" class="imgcls1" /></a> <a href="#"><img src="images/pic-05.jpg" alt="pic1" width="191" height="114" class="imgcls1" /></a> <a href="#"><img src="images/pic-06.jpg" alt="pic1" width="191" height="116" class="imgcls1" /></a></div>
+      			    <div class="ads2">&nbsp;</div>--%>
+      			    <br />
+      			    <h2>Organizers</h2>
+      			    <br />
+      			    <div class="rightside-top">&nbsp;</div>
+      			    <div class="rightside-back">
+      			      <div id="userboard">
+                      <div style="position:relative;"><img runat="server" id="OrganizersMainImage" src="~/images/logosleft.png" alt="Organizers" />
+                      <div style="position:absolute;width:115px;height:100px;left:0px;top:0px;"><a href="http://www.ssn-sa.com" style="width:115px;height:100px;"></a></div>
+                      </div>
+                      <br />
+                      <img runat="server" id="Img1" src="~/images/ps2.png" alt="Organizers" /><br />
+                      <img runat="server" id="Img2" src="~/images/ps3.png" alt="Organizers" />
+      			        <div class="text" class="margin-right:8px;">
+      			          
+   			            </div>
+   			          </div>
+   			        </div>
+      			    <div class="rightside-down">&nbsp;</div>
+      			    
+                     <br />
+      			    <h2>Sponsor Book</h2>
+      			    <br />
+      			    <div class="rightside-top">&nbsp;</div>
+      			    <div class="rightside-back">
+      			      <div id="userboard">
+                      <a runat="server" id="sponsorprogramlink" href="~/ContentData/SponsershipBrochureEn.pdf" target="_blank">
+                      <img runat="server" id="Img3" width="90" style="width:100px;padding-left:10px;" src="~/Conferences/images/sponsorshipProgramEn.jpg" alt="Organizers" /></a>
+					  
+					   <a runat="server" id="sponsorprogramlinkAr" href="~/images/SponsershipBrochureAr.pdf" target="_blank">
+                      <img runat="server" id="Img3ar" width="90" style="width:100px;padding-left:10px;" src="~/Conferences/images/sponsorshipProgramAr.jpg" alt="Organizers" /></a> 
+      			        <div class="text" class="margin-right:8px;">
+      			          
+   			            </div>
+   			          </div>
+   			        </div>
+      			    <div class="rightside-down">&nbsp;</div>
+					
+					<br />
+      			    <h2>Announcement Book</h2>
+      			    <br />
+      			    <div class="rightside-top">&nbsp;</div>
+      			    <div class="rightside-back">
+      			      <div id="userboard">
+                     
+					  <a runat="server" id="firstAnnouncementLink" href="~/ContentData/1stannouncement.pdf" target="_blank">
+                      <img runat="server" id="Img3ar1" width="220" style="width:220px;padding-left:10px;" src="~/Conferences/images/firstannouncement.jpg" alt="Organizers" /></a>
+      			        <div class="text" class="margin-right:8px;">
+      			          
+   			            </div>
+   			          </div>
+   			        </div>
+      			    <div class="rightside-down">&nbsp;</div>
+      			  </div>
+      			  <div class="clear"></div>
+   			  </div>
+      			<div class="clear"></div>
+            </div>
+            </div>
+        
+        <!--End-Content-->
+        <!--Footer-->
+        <div id="footer">
+           <!-- <ul> 
+            	<li><a href="#">Home</a></li>
+            	<li><a href="#">Speakers</a></li>
+            	<li><a href="#">Submitting Abstracts</a></li>
+            	<li><a href="#">Conference Schedule </a></li>
+            	<li><a href="#">Registration</a></li>
+            	<li><a href="#">Submissions</a></li>
+            	<li><a href="#">Contact Us</a></li>
+            	<li><a href="#">Maps</a></li>
+
+            	<li><a href="#">Hotels Information</a></li>
+            	<li class="fix"><a href="#">Local Information</a></li>
+            </ul> -->
+        </div>
+        <!--End-Footer-->
+    </div>
+    <!--End-Body-->
+</div>
+</div>
+    
+    </form>
+    <script type="text/javascript">
+        var menu = new menu.dd("menu");
+        menu.init("menu", "menuhover");
+</script>
+</body>
+</html>

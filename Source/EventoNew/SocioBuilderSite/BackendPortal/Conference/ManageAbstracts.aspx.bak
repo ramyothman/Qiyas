@@ -1,0 +1,312 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/AdministrationMaster.Master" AutoEventWireup="true" CodeBehind="ManageAbstracts.aspx.cs" Inherits="SocioBuilderSite.BackendPortal.Conference.ManageAbstracts" %>
+
+<%@ Register Assembly="DevExpress.Web.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxCallbackPanel" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.ASPxGridView.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.ASPxEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPanel" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxHiddenField" tagprefix="dx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+ <style type="text/css">
+        .templateTable {
+            border-collapse: collapse;
+            background: #F3F8F7;
+            width: 100%;
+        }
+        .templateTable td {
+            border: solid 1px #C2D4DA;
+            padding: 2px;
+        }
+        .templateTable td.caption {
+            background: #ECF2F3;
+            width:120px;
+            font-weight:bold;
+        }    
+    </style>
+    <script type="text/javascript">
+        function StartEditGrid(key) {
+            AbstractsGrid.StartEditRowByKey(key);
+        }
+        function DeleteRowFromGrid(key) {
+            var x = window.confirm("Are you sure you want to delete this record?");
+            if (x)
+                AbstractsGrid.DeleteRowByKey(key);
+        }
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MessagePlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainPlaceHolder" runat="server">
+<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all form-container">
+        <div class="portlet-header ui-widget-header">
+            <table>
+                <tr>
+                    <td>
+                        <img runat="server" id="Img1" src="~/images/view_icon.png" height="16" width="16"
+                            alt="" />
+                    </td>
+                    <td style="font-size: 12px;">
+                        Manage Abstracts
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="portlet-content">
+            <dx:ASPxGridView ID="AbstractsGrid" ClientInstanceName="AbstractsGrid" 
+                runat="server" AutoGenerateColumns="False" 
+                DataSourceID="AbstractsObjectDS" KeyFieldName="AbstractId" 
+                onrowupdating="AbstractsGrid_RowUpdating">
+                
+                <Columns>
+                    <dx:GridViewCommandColumn VisibleIndex="0">
+                        <EditButton Visible="True">
+                        </EditButton>
+                        <DeleteButton Visible="True">
+                        </DeleteButton>
+                    </dx:GridViewCommandColumn>
+                    <dx:GridViewDataTextColumn FieldName="AbstractId" ReadOnly="True" 
+                        VisibleIndex="1">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn Caption="Code" FieldName="ABCode" 
+                        VisibleIndex="2" ReadOnly="True">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="PersonId" VisibleIndex="2" 
+                        Visible="False">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="ConferenceId" VisibleIndex="3" 
+                        Visible="False">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="ConferenceName" VisibleIndex="3" 
+                        Caption="Conference">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataComboBoxColumn Caption="Category" 
+                        FieldName="ConferenceCategoryId" VisibleIndex="4">
+                        <PropertiesComboBox DataSourceID="CategoryObjectDS" TextField="CategoryName" 
+                            ValueField="ConferenceCategoryId" ValueType="System.Int32">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataTextColumn FieldName="AbstractTitle" VisibleIndex="5">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="AbstractIntro" VisibleIndex="7" 
+                        Visible="False">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="AbstractAuthors" VisibleIndex="6" 
+                        Caption="Authors">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="CoverLetter" VisibleIndex="9" 
+                        Visible="False">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataCheckColumn FieldName="IsAccepted" VisibleIndex="7">
+                    </dx:GridViewDataCheckColumn>
+                    <dx:GridViewDataComboBoxColumn FieldName="AcceptanceType" VisibleIndex="8">
+                        <PropertiesComboBox ValueType="System.String">
+                            <Items>
+                                <dx:ListEditItem Text="Pending" Value="Pending" />
+                                <dx:ListEditItem Text="Cancelled" Value="Cancelled" />
+                                <dx:ListEditItem Text="Poster" Value="Poster" />
+                                <dx:ListEditItem Text="Oral" Value="Oral" />
+                                <dx:ListEditItem Text="Not Accepted" Value="Not Accepted" />
+                            </Items>
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataTextColumn FieldName="PresentationPath" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="PosterPath" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Topic" Visible="False" VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Background" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Methods" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Results" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Conclusions" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="AbstractTerms" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="AbstractKeywords" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="DocumentPath1" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="DocumentPath2" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="DocumentPath3" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="AuthorContactName" Visible="False" 
+                        VisibleIndex="12">
+                        <EditFormSettings Visible="False" />
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn Caption="Download" FieldName="AbstractId" 
+                        VisibleIndex="9">
+                        <DataItemTemplate>
+                        <asp:LinkButton runat="server" id="AbstractPDFView" Text="Abstract(PDF)" ToolTip="Abstract Pdf" CommandArgument="<%# Container.KeyValue %>" 
+                                         onclick="AbstractPDFView_Click">Download</asp:LinkButton>
+                        </DataItemTemplate>
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn Caption="Email" FieldName="AbstractId" 
+                        VisibleIndex="10">
+                        <DataItemTemplate>
+                        <a href="javascript:void(0);" onclick="hiddenEmail.Set('Id',<%# Container.KeyValue %>);SendEmailPopup.Show();">Send Email</a>
+                        </DataItemTemplate>
+                    </dx:GridViewDataTextColumn>
+                </Columns>
+                <SettingsBehavior AllowFocusedRow="True" ConfirmDelete="True" 
+                    EnableRowHotTrack="True" />
+                <SettingsEditing Mode="PopupEditForm" PopupEditFormWidth="450px" />
+                <Settings ShowGroupPanel="True" ShowFilterRowMenu="True" ShowFilterRow="True" />
+                <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
+            </dx:ASPxGridView>
+            <asp:ObjectDataSource ID="AbstractsObjectDS" runat="server" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.AbstractsLogic" 
+                DeleteMethod="Delete" UpdateMethod="Update" InsertMethod="Insert">
+                <DeleteParameters>
+                    <asp:Parameter Name="Original_AbstractId" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="PersonId" Type="Int32" />
+                    <asp:Parameter Name="ConferenceId" Type="Int32" />
+                    <asp:Parameter Name="ConferenceCategoryId" Type="Int32" />
+                    <asp:Parameter Name="AbstractTitle" Type="String" />
+                    <asp:Parameter Name="AbstractIntro" Type="String" />
+                    <asp:Parameter Name="AbstractAuthors" Type="String" />
+                    <asp:Parameter Name="CoverLetter" Type="String" />
+                    <asp:Parameter Name="IsAccepted" Type="Boolean" />
+                    <asp:Parameter Name="AcceptanceType" Type="String" />
+                    <asp:Parameter Name="PresentationPath" Type="String" />
+                    <asp:Parameter Name="PosterPath" Type="String" />
+                    <asp:Parameter Name="Topic" Type="String" />
+                    <asp:Parameter Name="Background" Type="String" />
+                    <asp:Parameter Name="Methods" Type="String" />
+                    <asp:Parameter Name="Results" Type="String" />
+                    <asp:Parameter Name="Conclusions" Type="String" />
+                    <asp:Parameter Name="AbstractTerms" Type="String" />
+                    <asp:Parameter Name="AbstractKeywords" Type="String" />
+                    <asp:Parameter Name="DocumentPath1" Type="String" />
+                    <asp:Parameter Name="DocumentPath2" Type="String" />
+                    <asp:Parameter Name="DocumentPath3" Type="String" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="PersonId" Type="Int32" />
+                    <asp:Parameter Name="ConferenceId" Type="Int32" />
+                    <asp:Parameter Name="ConferenceCategoryId" Type="Int32" />
+                    <asp:Parameter Name="AbstractTitle" Type="String" />
+                    <asp:Parameter Name="AbstractIntro" Type="String" />
+                    <asp:Parameter Name="AbstractAuthors" Type="String" />
+                    <asp:Parameter Name="CoverLetter" Type="String" />
+                    <asp:Parameter Name="IsAccepted" Type="Boolean" />
+                    <asp:Parameter Name="AcceptanceType" Type="String" />
+                    <asp:Parameter Name="PresentationPath" Type="String" />
+                    <asp:Parameter Name="PosterPath" Type="String" />
+                    <asp:Parameter Name="Topic" Type="String" />
+                    <asp:Parameter Name="Background" Type="String" />
+                    <asp:Parameter Name="Methods" Type="String" />
+                    <asp:Parameter Name="Results" Type="String" />
+                    <asp:Parameter Name="Conclusions" Type="String" />
+                    <asp:Parameter Name="AbstractTerms" Type="String" />
+                    <asp:Parameter Name="AbstractKeywords" Type="String" />
+                    <asp:Parameter Name="DocumentPath1" Type="String" />
+                    <asp:Parameter Name="DocumentPath2" Type="String" />
+                    <asp:Parameter Name="DocumentPath3" Type="String" />
+                    <asp:Parameter Name="Original_AbstractId" Type="Int32" />
+                </UpdateParameters>
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="CategoryObjectDS" runat="server" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ConferenceCategoryLogic">
+            </asp:ObjectDataSource>
+            <dx:ASPxHiddenField ID="hiddenEmail" runat="server" 
+                ClientInstanceName="hiddenEmail">
+            </dx:ASPxHiddenField>
+            <br />
+        </div>
+        </div>
+    <dx:ASPxPopupControl ID="SendEmailPopup" ClientInstanceName="SendEmailPopup" 
+        runat="server" HeaderText="Send Email" Height="261px" 
+        PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" 
+        Width="395px">
+        <ContentCollection>
+<dx:PopupControlContentControl runat="server" SupportsDisabledAttribute="True">
+    <dx:ASPxCallbackPanel ID="SendEmailCallback" 
+        ClientInstanceName="SendEmailCallback" runat="server" 
+        OnCallback="SendEmailCallback_Callback">
+        <PanelCollection>
+<dx:PanelContent runat="server">
+
+<table>
+    <tr>
+        <td>Email:</td>
+        <td>
+            <dx:ASPxTextBox ID="SendEmailText" runat="server" Width="300px">
+            </dx:ASPxTextBox>
+        </td>
+    </tr>
+    <tr>
+        <td>Title:</td>
+        <td>
+            <dx:ASPxTextBox ID="SendEmailTitle" runat="server" Width="300px">
+            </dx:ASPxTextBox>
+        </td>
+    </tr>
+    <tr>
+        <td>Email Content:</td>
+        <td>
+            <dx:ASPxMemo ID="SendEmailContent" runat="server" Width="299px" Height="199px">
+            </dx:ASPxMemo>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <dx:ASPxButton ID="btnSendEmail" runat="server" Text="Send Email" 
+                OnClick="btnSendEmail_Click">
+            </dx:ASPxButton>
+        </td>
+    </tr>
+    
+
+</table>
+</dx:PanelContent>
+</PanelCollection>
+    </dx:ASPxCallbackPanel>
+
+</dx:PopupControlContentControl>
+</ContentCollection>
+    </dx:ASPxPopupControl>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="DashBoardContentPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="LeftSideBar" runat="server">
+</asp:Content>

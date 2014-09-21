@@ -1,0 +1,1466 @@
+/* TrackBar */
+.dxeTrackBar_DXConnect
+{
+	border: 1px solid transparent;
+	user-select: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+.dxeTrackBarFocused_DXConnect
+{
+}
+
+.dxeTBHSys_DXConnect.dxeTrackBar_DXConnect
+{
+	width: 256px;
+	height: 60px;
+}
+.dxeTBVSys_DXConnect.dxeTrackBar_DXConnect
+{
+	height: 256px;
+	width: 60px;
+}
+.dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect.dxeTrackBar_DXConnect
+{
+	width: 80px;
+	height: 256px;
+}
+.dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect.dxeTrackBar_DXConnect
+{	
+	height: 80px;
+	width: 256px;
+}
+
+.dxeTBTrack_DXConnect 
+{
+	position: absolute;
+}
+
+.dxeTBHSys_DXConnect .dxeTBTrack_DXConnect
+{
+	background-image:  url('edtTrackBarTrackH.png');
+}
+.dxeTBVSys_DXConnect .dxeTBTrack_DXConnect
+{
+	background-image:  url('edtTrackBarTrackV.png');
+}
+
+.dxeTBHSys_DXConnect .dxeTBTrack_DXConnect
+{
+	height: 5px;
+	left: 28px;
+}
+.dxeTBVSys_DXConnect .dxeTBTrack_DXConnect
+{
+	width: 5px;
+	top: 28px;
+}
+
+.dxeTBHSys_DXConnect .dxeTBMainDH_DXConnect, .dxeTBHSys_DXConnect .dxeTBSecondaryDH_DXConnect
+{	
+	top: -5px;
+}
+.dxeTBVSys_DXConnect .dxeTBMainDH_DXConnect, .dxeTBVSys_DXConnect .dxeTBSecondaryDH_DXConnect
+{
+	left: -6px;
+}
+.dxeTBMainDH_DXConnect, .dxeTBSecondaryDH_DXConnect
+{
+	display: block;
+	position: absolute;
+}
+
+.dxeTBVSys_DXConnect.dxeTBRBScaleSys_DXConnect .dxeTBTrack_DXConnect
+{
+	left: 12px;
+}
+.dxeTBVSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBTrack_DXConnect
+{
+	right: 12px;
+}
+.dxeTBHSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBTrack_DXConnect
+{
+	bottom: 12px;
+}
+.dxeTBHSys_DXConnect.dxeTBRBScaleSys_DXConnect .dxeTBTrack_DXConnect
+{
+	top: 12px;
+}
+
+.dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBTrack_DXConnect
+{
+	top: 50%;
+	margin-top: -3px;
+}
+.dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBTrack_DXConnect
+{
+	left: 50%;
+	margin-left: -3px;
+}
+
+.dxeTBShutter_DXConnect
+{
+	left: 0px;
+	top: 0px;
+	position:absolute;
+}
+
+.dxeTBHSys_DXConnect .dxeTBShutter_DXConnect
+{
+	background-image:  url('edtTrackBarShutterH.png');
+}
+.dxeTBVSys_DXConnect .dxeTBShutter_DXConnect
+{
+	background-image:  url('edtTrackBarShutterV.png');
+}
+
+.dxeTBHSys_DXConnect .dxeTBShutter_DXConnect
+{
+	height: 5px;
+}
+.dxeTBVSys_DXConnect .dxeTBShutter_DXConnect
+{
+	width: 5px;
+}
+
+.dxeTBRBLabel_DXConnect, .dxeTBLTLabel_DXConnect
+{
+	position: absolute;
+	font-size: 10px;
+	text-align: center;
+}
+
+.dxeTBIncBtn_DXConnect, .dxeTBDecBtn_DXConnect
+{
+    display: block;
+    padding: 5px;
+	position:absolute;
+}
+.dxeTBShutterHover_DXConnect
+{
+}
+.dxeTBShutterPressed_DXConnect
+{
+}
+.dxeTBShutterHover_DXConnect, .dxeTBShutterPressed_DXConnect
+{
+	cursor: pointer;
+}
+
+.dxeTBVSys_DXConnect .dxeTBRBLabel_DXConnect, .dxeTBVSys_DXConnect .dxeTBLTLabel_DXConnect
+{
+	padding-top: 2px;
+}
+.dxeTBHSys_DXConnect .dxeTBLTLabel_DXConnect
+{
+	margin-left: -4px;
+}
+.dxeTBVSys_DXConnect.dxeTBRBScaleSys_DXConnect .dxeTBRBLabel_DXConnect, .dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBLTLabel_DXConnect
+{
+	right: 0px;
+}
+.dxeTBVSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBLTLabel_DXConnect, .dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBRBLabel_DXConnect
+{
+	left: 0px;
+}
+.dxeTBHSys_DXConnect.dxeTBRBScaleSys_DXConnect .dxeTBRBLabel_DXConnect, .dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBLTLabel_DXConnect
+{
+	bottom: 0px;
+}
+.dxeTBHSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBLTLabel_DXConnect, .dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBRBLabel_DXConnect
+{
+	top: 0px;
+}
+
+.dxeTBHSys_DXConnect .dxeTBScale_DXConnect
+{
+	left: 28px;
+}
+.dxeTBVSys_DXConnect .dxeTBScale_DXConnect
+{
+	top: 28px;
+}
+
+.dxeTBItem_DXConnect
+{
+	text-align: center;
+}
+.dxeTBSelectedItem_DXConnect, .dxeTBSelectedTick_DXConnect
+{
+	color: #6E96FF;
+}
+
+.dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-position: center left;
+}
+.dxeTBHSys_DXConnect.dxeTBRBScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-position: top left;
+}
+.dxeTBHSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-position: bottom left;
+}
+
+.dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-position: top center;
+}
+.dxeTBVSys_DXConnect.dxeTBRBScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-position: top left;
+}
+.dxeTBVSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-position: top right;
+}
+.dxeTBHSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-image:  url('edtTrackBarMinorTickH.png');
+}
+.dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-image:  url('edtTrackBarDoubleMinorTickH.png');
+}
+.dxeTBVSys_DXConnect .dxeTBItem_DXConnect 
+{
+	background-image:  url('edtTrackBarMinorTickV.png');
+}
+.dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBItem_DXConnect
+{
+	background-image:  url('edtTrackBarDoubleMinorTickV.png');
+}
+
+.dxeTBHSys_DXConnect .dxeTBMTick_DXConnect
+{
+	background-image:  url('edtTrackBarMajorTickH.png');
+}
+.dxeTBVSys_DXConnect .dxeTBMTick_DXConnect
+{
+	background-image: url('edtTrackBarMajorTickV.png');
+}
+.dxeTBHSys_DXConnect .dxeTBmTick_DXConnect
+{
+	background-image: url('edtTrackBarMinorTickH.png');
+}
+.dxeTBVSys_DXConnect .dxeTBmTick_DXConnect
+{
+	background-image: url('edtTrackBarMinorTickV.png');
+}
+.dxeTBHSys_DXConnect .dxeTBDMTick_DXConnect
+{
+	background-image: url('edtTrackBarDoubleMajorTickH.png');
+}
+.dxeTBVSys_DXConnect .dxeTBDMTick_DXConnect
+{
+	background-image: url('edtTrackBarDoubleMajorTickV.png');
+}
+.dxeTBHSys_DXConnect .dxeTBDmTick_DXConnect
+{
+	background-image: url('edtTrackBarDoubleMinorTickH.png');
+}
+.dxeTBVSys_DXConnect .dxeTBDmTick_DXConnect
+{
+	background-image: url('edtTrackBarDoubleMinorTickV.png');
+}
+
+.dxeTBVSys_DXConnect .dxeTBIncBtn_DXConnect
+{
+	bottom: 0px;
+}
+.dxeTBHSys_DXConnect .dxeTBDecBtn_DXConnect
+{
+	left: 0px;
+}
+.dxeTBHSys_DXConnect .dxeTBIncBtn_DXConnect
+{
+	right: 0px;
+}
+
+.dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBDecBtn_DXConnect, .dxeTBVSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBIncBtn_DXConnect
+{ 
+	left: 50%; margin-left: -15px;
+}
+.dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBDecBtn_DXConnect, .dxeTBHSys_DXConnect.dxeTBBScaleSys_DXConnect .dxeTBIncBtn_DXConnect
+{ 
+	top: 50%; margin-top: -15px;
+}
+.dxeTBVSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBDecBtn_DXConnect, .dxeTBVSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBIncBtn_DXConnect
+{
+	right: 0px;
+}
+.dxeTBHSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBDecBtn_DXConnect, .dxeTBHSys_DXConnect.dxeTBLTScaleSys_DXConnect .dxeTBIncBtn_DXConnect
+{
+	bottom: 0px;
+}
+
+.dxeTBValuelabel_DXConnect
+{
+	padding: 3px;
+    display: inline;
+    position:absolute;
+    background: white;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.398438) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.398438) 0 1px 3px;
+    border: 1px solid;
+    border-color: #E5E5E5 #DBDBDB #D2D2D2;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* Loading */
+.dxeLoadingDiv_DXConnect
+{
+	background: White none;
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+	cursor: wait;
+}
+.dxeLoadingDivWithContent_DXConnect
+{
+	background: White none;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+
+.dxeLoadingPanel_DXConnect
+{
+	font: 12px Tahoma;
+	color: #303030;
+}
+.dxeLoadingPanelWithContent_DXConnect
+{
+	font: 12px Tahoma;
+	color: #303030;
+	background: #FFFFFF none;
+	border: 1px solid #D6D6D6;
+}
+
+.dxeLoadingPanel_DXConnect td.dx, 
+.dxeLoadingPanelWithContent_DXConnect td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px;
+}
+
+.dxeReadOnly_DXConnect
+{
+}
+.dxeBase_DXConnect
+{
+	font-size: 14px;
+	font-family: Segoe UI;
+	
+}
+td.dxic
+{
+	font-size: 0;
+}
+/* InternalCheckBox */
+.dxeIRBFocused_DXConnect
+{
+	border: 1px dotted #ffb100;
+	margin: 0px!important;
+}
+.dxeIRadioButton_DXConnect
+{
+	margin: 1px;
+	display: inline-block;
+	vertical-align: middle;
+}
+/* -- ErrorFrame -- */
+.dxeErrorCell_DXConnect,
+.dxeErrorCell_DXConnect td
+{
+	font: 12px Tahoma;
+	color: Red;
+}
+.dxeErrorCell_DXConnect
+{
+	padding-left: 4px;
+	padding-right: 5px;
+}
+.dxeErrorFrameWithoutError_DXConnect
+{
+}
+.dxeErrorFrameWithoutError_DXConnect .dxeControlsCell_DXConnect
+{
+}
+
+.dxeEditArea_DXConnect
+{
+	font: 14px Segoe UI;
+	color: #3C5C90;
+}
+/* -- ValidationSummary -- */
+
+.dxvsValidationSummary_DXConnect
+{
+	font: 12px Tahoma;
+	color: Red;
+}
+.dxvsValidationSummary_DXConnect td.dxvsRC
+{
+	text-align: center;
+}
+.dxvsValidationSummary_DXConnect .dxvsE
+{
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+/* ValidationSummary - Header */
+
+.dxvsValidationSummary_DXConnect table.dxvsHT
+{
+	width: 100%;
+}
+.dxvsValidationSummary_DXConnect td.dxvsH
+{
+	padding: 2px 0;
+}
+
+/* ValidationSummary - Hyperlink */
+
+.dxvsValidationSummary_DXConnect a.dxvsHL,
+.dxvsValidationSummary_DXConnect a.dxvsHL:visited
+{
+	color: red;
+}
+.dxvsValidationSummary_DXConnect a.dxvsHL
+{
+	text-decoration: none;
+	border-bottom: 1px dashed #f70;
+}
+.dxvsValidationSummary_DXConnect a.dxvsHL:hover
+{
+	color: #f70;
+}
+
+/* ValidationSummary - Table Layout */
+
+.dxvsValidationSummary_DXConnect table.dxvsT
+{
+}
+.dxvsValidationSummary_DXConnect tr.dxvsE
+{
+}
+.dxvsValidationSummary_DXConnect td.dxvsETC
+{
+	padding: 2px 0;
+}
+
+/* ValidationSummary - List Layout */
+
+.dxvsValidationSummary_DXConnect ul.dxvsL
+{
+}
+.dxvsValidationSummary_DXConnect ol.dxvsL
+{
+}
+.dxvsValidationSummary_DXConnect li.dxvsE
+{
+	padding: 2px 0;
+}
+
+/* -- Buttons -- */
+.dxeButtonEditButton_DXConnect,
+.dxeCalendarButton_DXConnect,
+.dxeSpinIncButton_DXConnect,
+.dxeSpinDecButton_DXConnect,
+.dxeSpinLargeIncButton_DXConnect,
+.dxeSpinLargeDecButton_DXConnect
+{
+	vertical-align: middle;
+	border: 1px solid Transparent;
+	cursor: pointer;
+	height: 26px;
+} 
+.dxeButtonEditButton_DXConnect,
+.dxeCalendarButton_DXConnect,
+.dxeButtonEditButton_DXConnect td.dx,
+.dxeCalendarButton_DXConnect td.dx,
+.dxeSpinIncButton_DXConnect,
+.dxeSpinDecButton_DXConnect,
+.dxeSpinLargeIncButton_DXConnect,
+.dxeSpinLargeDecButton_DXConnect,
+.dxeSpinIncButton_DXConnect td.dx,
+.dxeSpinDecButton_DXConnect td.dx,
+.dxeSpinLargeIncButton_DXConnect td.dx,
+.dxeSpinLargeDecButton_DXConnect td.dx
+{
+	font: normal 11px Tahoma;
+	text-align: center;
+	white-space: nowrap;
+} 
+.dxeButtonEditButton_DXConnect,
+.dxeSpinIncButton_DXConnect,
+.dxeSpinDecButton_DXConnect,
+.dxeSpinLargeIncButton_DXConnect,
+.dxeSpinLargeDecButton_DXConnect
+{
+	padding: 0px 2px 0px 3px;
+	background: repeat-x 50% top;
+}
+.dxeSpinIncButton_DXConnect
+{
+	background: #F0F0F0 url('edtSpinIncBtnBack.gif') repeat-x top;
+}
+.dxeSpinDecButton_DXConnect
+{
+	background: #E6E6E6 url('edtSpinDecBtnBack.gif') repeat-x top;
+}
+
+.dxeButtonEditButton_DXConnect table.dxbebt,
+.dxeSpinIncButton_DXConnect table.dxbebt,
+.dxeSpinDecButton_DXConnect table.dxbebt, 
+.dxeSpinLargeIncButton_DXConnect table.dxbebt,
+.dxeSpinLargeDecButton_DXConnect table.dxbebt
+{
+	width: 16px;
+	margin-top: 1px;
+}
+.dxeCalendarButton_DXConnect
+{
+	font-size: 12px;
+	background: #e5e5e5 url('edtCalendarButtonBack.gif') repeat-x top;
+	padding: 3px 11px 4px;
+	width: 32px;
+}
+.dxeCalendarButton_DXConnect td.dx
+{
+	font-size: 12px;
+	text-align: center;
+	white-space: nowrap;
+}
+.dxeCalendarButton_DXConnect table.dxbebt
+{
+	width: 100%;
+}
+
+/* -- Pressed -- */
+.dxeCalendarButtonPressed_DXConnect,
+.dxeButtonEditButtonPressed_DXConnect,
+.dxeSpinIncButtonPressed_DXConnect,
+.dxeSpinDecButtonPressed_DXConnect,
+.dxeSpinLargeIncButtonPressed_DXConnect, 
+.dxeSpinLargeDecButtonPressed_DXConnect
+{
+	background: url('edtDropDownButtonPressedBack.gif') repeat-x top;
+	border: 1px Solid #888888;
+}
+/* -- Hover -- */
+.dxeCalendarButtonHover_DXConnect,
+.dxeButtonEditButtonHover_DXConnect,
+.dxeSpinIncButtonHover_DXConnect,
+.dxeSpinDecButtonHover_DXConnect,
+.dxeSpinLargeIncButtonHover_DXConnect,
+.dxeSpinLargeDecButtonHover_DXConnect
+{
+	background: url('edtDropDownButtonHoverBack.gif') repeat-x top;
+	border: 1px Solid #888888;
+}
+.dxeButtonEditButtonHover_DXConnect, .dxeButtonEditButtonPressed_DXConnect
+{
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+.dxeCalendarButtonHover_DXConnect
+{
+	background: url('edtCalendarButtonHBack.gif') repeat-x top;
+}
+
+.dxeButtonEdit_DXConnect
+{
+	background-color: white;
+	border: 1px solid #9F9F9F;
+	width: 170px;
+	border-collapse: separate;
+}
+.dxeButtonEdit_DXConnect .dxeEditArea_DXConnect
+{
+	background-color: transparent;
+}
+.dxeButtonEdit_DXConnect .dxeEditArea_DXConnect,
+.dxeButtonEdit_DXConnect td.dxic
+{
+	width: 100%;
+}
+.dxeButtonEdit_DXConnect td.dxic
+{
+	padding: 0.5px 3px 1.5px 5px !important;
+}
+.dxeButtonEdit_DXConnect td.dxic input
+{
+	margin: 0 !important;
+}
+.dxeButtonEdit_DXConnect .dxeIIC img
+{
+	padding-left: 3px;
+	vertical-align: middle;
+	margin-top: 1px;
+}
+.dxeTextBox_DXConnect,
+.dxeButtonEdit_DXConnect,
+.dxeMemo_DXConnect
+{	
+	background-color: white;
+	border-top: 1px solid #adadad;
+	border-right: 1px solid #bfbfbf;
+	border-bottom: 1px solid #d2d2d2;
+	border-left: 1px solid #bfbfbf;
+	
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;	
+	-o-border-radius: 4px;
+
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15) inset;
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15) inset;
+    -o-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15) inset;
+	
+}
+.dxeTextBox_DXConnect
+{
+	width: 234px;
+	height: 32px;
+}
+.dxeTextBox_DXConnect td.dxic
+{
+	padding: 1.5px 3px 2.5px 6px !important;
+}
+.dxeTextBox_DXConnect td.dxic input
+{
+	margin: 0 !important;
+}
+.dxeTextBox_DXConnect .dxeEditArea_DXConnect
+{
+	background-color: transparent;
+}
+.dxeRadioButtonList_DXConnect
+{
+	border: 1px Solid #9F9F9F;
+}
+.dxeRadioButtonList_DXConnect,
+.dxeRadioButtonList_DXConnect table
+{
+	font: 12px Tahoma;
+}
+.dxeRadioButtonList_DXConnect td.dxe
+{
+	padding: 7px 5px 6px 11px;
+}
+.dxeRadioButtonList_DXConnect label
+{
+	margin-right: 6px;
+}
+
+/* -- Memo -- */
+.dxeMemo_DXConnect
+{
+}
+.dxeMemoEditArea_DXConnect
+{
+	background-color: white;
+	font: 12px Tahoma;
+	outline: none;
+}
+.dxeMemo_DXConnect td
+{
+	padding: 0 0 0 1px;
+	width: 100%;
+}
+
+/* -- Hyperlink -- */
+.dxeHyperlink_DXConnect
+{
+	font: normal 12px Tahoma;
+	color: #0d45b7;
+}
+a.dxeHyperlink_DXConnect:hover
+{
+	color: #5494ea;
+}
+a.dxeHyperlink_DXConnect:visited
+{
+	color: #ab59a6;
+}
+
+/* -- ListBox -- */
+.dxeListBox_DXConnect
+{
+	background-color: white;
+	border: 1px solid #AFAFAF;
+	font: 12px Tahoma;
+	width: 70px;
+	height: 109px;
+	border-radius: 3.5px;
+    -webkit-border-radius: 3.5px;
+    -moz-border-radius: 3.5px;
+    -o-border-radius: 3.5px;
+    -khtml-border-radius: 3.5px;
+    
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.15), -1px 0px 3px rgba(0, 0, 0, 0.15), 0px 1px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.15), -1px 0px 3px rgba(0, 0, 0, 0.15), 0px 1px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.15), -1px 0px 3px rgba(0, 0, 0, 0.15), 0px 1px 4px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.15), -1px 0px 3px rgba(0, 0, 0, 0.15), 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+.dxeListBox_DXConnect div.dxlbd
+{	
+	height: 107px;
+	padding: 1px !important;
+}
+.dxeListBoxItemRow_DXConnect
+{
+	cursor: default;
+}
+.dxeListBoxItem_DXConnect
+{
+	border: 1px solid Transparent;
+	font: 14px Segoe UI;
+	color: #3C5C90;
+	padding: 3px 2px 4px 10px;
+	white-space: nowrap;
+	text-align: left;
+}
+.dxeListBoxItem_DXConnect img 
+{
+	vertical-align: middle;
+	margin-top: 2px;
+}
+.dxeListBoxItem_DXConnect em
+{
+	background: #CFCFCF none repeat 0 0;
+	color: #333333;
+	font-weight: bold;
+	font-style: normal;
+	border: 1px solid Transparent;
+}
+
+.dxeListBox_DXConnect td.dxeI,
+.dxeListBox_DXConnect td.dxeIM,
+.dxeListBox_DXConnect .dxeHIC, 
+.dxeListBox_DXConnect td.dxeFTM,
+.dxeListBox_DXConnect td.dxeTM,
+.dxeListBox_DXConnect td.dxeC,
+.dxeListBox_DXConnect td.dxeCM,
+.dxeListBox_DXConnect td.dxeHCC,
+.dxeListBox_DXConnect td.dxeMI,
+.dxeListBox_DXConnect td.dxeMIM
+{
+	border-right-width: 0!important;
+}
+
+.dxeListBox_DXConnect td.dxeIR,
+.dxeListBox_DXConnect td.dxeIMR,
+.dxeListBox_DXConnect .dxeHICR, 
+.dxeListBox_DXConnect td.dxeFTMR,
+.dxeListBox_DXConnect td.dxeTMR,
+.dxeListBox_DXConnect td.dxeCR,
+.dxeListBox_DXConnect td.dxeCMR,
+.dxeListBox_DXConnect td.dxeHCCR,
+.dxeListBox_DXConnect td.dxeMIR,
+.dxeListBox_DXConnect td.dxeMIMR
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_DXConnect td.dxeCM,
+.dxeListBox_DXConnect td.dxeHCC,
+.dxeListBox_DXConnect td.dxeCMR,
+.dxeListBox_DXConnect td.dxeHCCR
+{
+	width: 25px;
+}
+
+.dxeListBox_DXConnect td.dxeIM,
+.dxeListBox_DXConnect td.dxeIMR
+{
+	width: 0;
+}
+
+.dxeListBox_DXConnect td.dxeT
+{
+	width: 100%;
+	padding-left: 10px !important;
+}
+
+.dxeListBox_DXConnect td.dxeTR
+{
+	width: 100%;
+	padding-right: 0!important;
+}
+
+
+.dxeListBox_DXConnect td.dxeT,
+.dxeListBox_DXConnect td.dxeMI
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_DXConnect td.dxeTR,
+.dxeListBox_DXConnect td.dxeMIR
+{
+	border-right-width: 0!important;
+}
+
+
+.dxeListBox_DXConnect td.dxeFTM,
+.dxeListBox_DXConnect td.dxeTM,
+.dxeListBox_DXConnect td.dxeLTM, 
+.dxeListBox_DXConnect .dxeHFC,
+.dxeListBox_DXConnect .dxeHC,
+.dxeListBox_DXConnect .dxeHLC,
+.dxeListBox_DXConnect td.dxeFTMR,
+.dxeListBox_DXConnect td.dxeTMR,
+.dxeListBox_DXConnect td.dxeLTMR, 
+.dxeListBox_DXConnect .dxeHFCR,
+.dxeListBox_DXConnect .dxeHCR,
+.dxeListBox_DXConnect .dxeHLCR
+{
+	overflow: hidden;
+}
+
+.dxeListBox_DXConnect td.dxeFTM,
+.dxeListBox_DXConnect td.dxeTM, 
+.dxeListBox_DXConnect .dxeHFC,
+.dxeListBox_DXConnect .dxeHC
+{
+	padding-right: 6px!important;
+}
+
+.dxeListBox_DXConnect td.dxeFTMR,
+.dxeListBox_DXConnect td.dxeTMR, 
+.dxeListBox_DXConnect .dxeHFCR,
+.dxeListBox_DXConnect .dxeHCR
+{
+	padding-left: 6px!important;
+}
+
+
+.dxeListBox_DXConnect td.dxeLTM,
+.dxeListBox_DXConnect td.dxeTM, 
+.dxeListBox_DXConnect .dxeHC,
+.dxeListBox_DXConnect .dxeHLC
+{
+	padding-left: 6px!important;
+}
+
+.dxeListBox_DXConnect td.dxeLTMR,
+.dxeListBox_DXConnect td.dxeTMR, 
+.dxeListBox_DXConnect .dxeHCR,
+.dxeListBox_DXConnect .dxeHLCR
+{
+	padding-right: 6px!important;
+}
+
+/*Grid lines*/
+
+.dxeListBox_DXConnect td.dxeLTM,
+.dxeListBox_DXConnect td.dxeTM,
+.dxeListBox_DXConnect td.dxeMIM
+{
+	border-left: 1px solid #cfcfcf!important;
+}
+
+.dxeListBox_DXConnect td.dxeLTMR,
+.dxeListBox_DXConnect td.dxeTMR,
+.dxeListBox_DXConnect td.dxeMIMR
+{
+	border-right: 1px solid #cfcfcf!important;
+}
+
+.dxeListBox_DXConnect td.dxeIM,
+.dxeListBox_DXConnect td.dxeFTM,
+.dxeListBox_DXConnect td.dxeTM,
+.dxeListBox_DXConnect td.dxeLTM,
+.dxeListBox_DXConnect td.dxeCM,
+.dxeListBox_DXConnect td.dxeMIM,
+.dxeListBox_DXConnect td.dxeIMR,
+.dxeListBox_DXConnect td.dxeFTMR,
+.dxeListBox_DXConnect td.dxeTMR,
+.dxeListBox_DXConnect td.dxeLTMR,
+.dxeListBox_DXConnect td.dxeCMR,
+.dxeListBox_DXConnect td.dxeMIMR
+{
+	border-bottom: 1px solid #cfcfcf;
+}
+
+.dxeListBoxItemSelected_DXConnect     /* inherits dxeListBoxItem */
+{
+}
+.dxeListBoxItemHover_DXConnect        /* inherits dxeListBoxItem */
+{
+	background-color: #C1DCFD;
+	border-color: #B1C4DB;
+	border-width: 1px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -khtml-border-radius: 2px;
+}
+.dxeListBoxItemHover_DXConnect.dxeI
+{
+	border-radius: 2px 0px 0px 2px;
+	-webkit-border-radius: 2px 0px 0px 2px;
+    -moz-border-radius: 2px 0px 0px 2px;
+    -o-border-radius: 2px 0px 0px 2px;
+    -khtml-border-radius: 2px 0px 0px 2px;
+}
+.dxeListBoxItemHover_DXConnect.dxeT
+{
+	border-radius: 0px 2px 2px 0px;
+	-webkit-border-radius: 0px 2px 2px 0px;
+    -moz-border-radius: 0px 2px 2px 0px;
+    -o-border-radius: 0px 2px 2px 0px;
+    -khtml-border-radius: 0px 2px 2px 0px;
+}
+.dxeListBoxItemHover_DXConnect em,
+.dxeListBoxItemSelected_DXConnect em
+{
+	background-image: none;
+}
+
+/*Header*/
+
+.dxeListBox_DXConnect .dxeHD
+{
+	background-color: #dcdcdc;
+	border-bottom: 1px solid #A0A0A0;
+}
+
+.dxeListBox_DXConnect .dxeHC,
+.dxeListBox_DXConnect .dxeHLC,
+.dxeListBox_DXConnect td.dxeHMIC
+{
+	border-left: 1px solid #A0A0A0;
+}
+
+.dxeListBox_DXConnect .dxeHCR,
+.dxeListBox_DXConnect .dxeHLCR,
+.dxeListBox_DXConnect td.dxeHMICR
+{
+	border-right: 1px solid #A0A0A0;
+	text-align: right;
+}
+
+.dxeListBox_DXConnect .dxeHIC,
+.dxeListBox_DXConnect .dxeHFC,
+.dxeListBox_DXConnect .dxeHCC
+{
+	border-left: 1px solid #dcdcdc;
+}
+
+.dxeListBox_DXConnect .dxeHICR,
+.dxeListBox_DXConnect .dxeHFCR,
+.dxeListBox_DXConnect .dxeHCCR
+{
+	border-right: 1px solid #dcdcdc;
+	text-align: right;
+}
+
+.dxeListBox_DXConnect .dxeHFC,
+.dxeListBox_DXConnect .dxeHC,
+.dxeListBox_DXConnect .dxeHMIC
+{
+	border-right-width: 0;
+}
+
+.dxeListBox_DXConnect .dxeHFCR,
+.dxeListBox_DXConnect .dxeHCR,
+.dxeListBox_DXConnect .dxeHMICR
+{
+	border-left-width: 0;
+	text-align: right;
+}
+
+.dxeListBox_DXConnect .dxeHLC
+{
+	border-right: 1px solid #dcdcdc;
+}
+
+.dxeListBox_DXConnect .dxeHLCR
+{
+	border-left: 1px solid #dcdcdc;
+	text-align: right;
+}
+
+/* -- Calendar -- */
+.dxeCalendar_DXConnect
+{
+	border: 1px solid #9f9f9f;
+	background-color: White;
+	color: Black;
+	font-weight: normal;
+	cursor: default;
+}
+.dxeCalendar_DXConnect td.dxMonthGrid_DXConnect
+{
+	padding: 8px 20px;
+}
+.dxeCalendar_DXConnect td.dxMonthGridWithWeekNumbers_DXConnect
+{
+	padding: 5px 20px 8px 8px;
+}
+.dxeCalendar_DXConnect td.dxMonthGridWithWeekNumbersRtl_DXConnect
+{
+	padding: 5px 8px 8px 20px;
+}
+.dxeCalendarDayHeader_DXConnect
+{
+	font: 12px Tahoma;
+	padding: 2px 4px 5px;
+	border-bottom: 1px solid #cfcfcf;
+}
+.dxeCalendarWeekNumber_DXConnect
+{
+	font: 9px Tahoma;
+	text-align: right;
+	padding: 6px 8px 6px 4px;
+	color: #bfbfbf;
+}
+.dxeCalendarDay_DXConnect
+{
+	font: 12px Tahoma;
+	padding: 4px 6px;
+	text-align: center;
+}
+.dxeCalendarWeekend_DXConnect        /* inherits dxeCalendarDay */
+{
+	color: #c00000;
+}
+.dxeCalendarOtherMonth_DXConnect     /* inherits dxeCalendarDay */
+{
+	color: #888;
+}
+.dxeCalendarOutOfRange_DXConnect     /* inherits dxeCalendarDay */
+{
+	color: #d0d0d0;
+}
+.dxeCalendarSelected_DXConnect       /* inherits dxeCalendarDay */
+{
+	color: White;
+	background-color: #8d8d8d;
+}
+.dxeCalendarToday_DXConnect         /* inherits dxeCalendarDay */
+{
+	padding: 3px 3px 2px;
+	border: 1px solid #c00000;
+}
+.dxeCalendarHeader_DXConnect
+{
+	background-color: #dcdcdc;
+	border-top: 1px solid #c9c9c9;
+	border-right: 0 solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	border-left: 0 solid #c9c9c9;
+	padding: 4px 7px;
+}
+.dxeCalendarHeader_DXConnect td.dxe
+{
+	font: 12px Tahoma;
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarFooter_DXConnect
+{
+	background-color: #ededed;
+	padding: 8px 0px;
+	border-top: 1px solid #d6d6d6;
+}
+.dxeCalendarFastNav_DXConnect
+{
+	color: Black;
+	background: White none;
+	border-top: 1px solid #9f9f9f;
+	border-right: 1px solid #9f9f9f;
+	border-bottom: 0px solid #9f9f9f;
+	border-left: 1px solid #9f9f9f;
+	padding: 12px 8px;
+}
+.dxeCalendarFastNavMonthArea_DXConnect
+{
+	padding: 0px 9px;
+}
+.dxeCalendarFastNavYearArea_DXConnect
+{
+}
+.dxeCalendarFastNavFooter_DXConnect
+{
+	color: Black;
+	background-color: #ededed;
+	padding: 8px 0px;
+	border-right: 1px solid #9f9f9f;
+	border-bottom: 1px solid #9f9f9f;
+	border-left: 1px solid #9f9f9f;
+	border-top: 1px solid #d6d6d6;
+}
+.dxeCalendarFastNavMonth_DXConnect,
+.dxeCalendarFastNavYear_DXConnect
+{
+	font: normal 12px Tahoma;
+	color: Black;
+	padding: 3px 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarFastNavMonth_DXConnect
+{
+	padding: 6px;
+}
+.dxeCalendarFastNavMonthSelected_DXConnect,
+.dxeCalendarFastNavYearSelected_DXConnect
+{
+	color: White;
+	background: #8d8d8d none;
+}
+.dxeCalendarFastNavMonthHover_DXConnect,
+.dxeCalendarFastNavYearHover_DXConnect
+{
+	color: Black;
+	background: #e5e5e5 none;
+	padding: 2px 4px;
+	border: 1px solid #d6d6d6;
+}
+.dxeCalendarFastNavMonthHover_DXConnect
+{
+	padding: 5px;
+}
+/* Disabled */
+.dxeDisabled_DXConnect,
+.dxeDisabled_DXConnect td.dxe
+{
+	color: #acacac;
+	cursor: default;
+}
+a.dxeDisabled_DXConnect:hover
+{
+	color: #acacac;
+}
+.dxeButtonDisabled_DXConnect,
+.dxeButtonDisabled_DXConnect td.dxe
+{
+	border-color: #c3c3c3;
+	color: #808080;
+	cursor: default;
+}
+/* -- Button -- */
+.dxbButton_DXConnect
+{
+	color: #000000;
+	font: normal 12px Tahoma;
+	vertical-align: middle;
+	border-style: none;
+	background: url('bg-button.png') no-repeat 50% top;
+	cursor: pointer;
+	width: 130px;
+	height: 41px;
+}
+
+.blue .dxbButton_DXConnect
+{
+	background: url('bg-button-blue.png') no-repeat 50% top;
+	width: 130px;
+	height: 41px;
+}
+.dxbButtonHover_DXConnect
+{
+	color: #000000;
+	background: url('bg-button.png') no-repeat 50% top;
+	border-color: #606060;
+	border-style: none;
+}
+.dxbButtonChecked_DXConnect
+{
+	color: #FFFFFF;
+}
+.dxbButtonPressed_DXConnect
+{
+}
+.dxbButton_DXConnect div.dxb
+{
+	border-width: 0px;
+	height: 17px;
+}
+.dxbButton_DXConnect div.dxb img
+{
+	margin-top: 3px;
+}
+.withImage .dxbButton_DXConnect div.dxb img
+{
+	margin-top: -1px;
+}
+.dxbButton_DXConnect div.dxbf
+{
+	border-style: none;
+}
+.dxbButton_DXConnect div.dxb td.dxb
+{
+	background: transparent url('')!important;
+	border-width: 0px!important;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 0px!important;
+}
+.dxbButtonPressed_DXConnect div.dxb
+{
+	margin-top: 2px;
+}
+
+/* Disabled */
+.dxbDisabled_DXConnect
+{
+	border-color: #c3c3c3;
+	color: #808080;
+	cursor: default;
+}
+.dxbDisabled_DXConnect td.dxb
+{
+	color: #808080;
+}
+/* -- FilterControl -- */
+.dxfcTable_DXConnect
+{
+	border-collapse: separate!important;
+}
+.dxfcTable_DXConnect td.dxfc
+{
+	padding: 0px 0px 0px 3px;
+	vertical-align: middle;
+	font: 12px Tahoma;
+	color: Black;
+}
+a.dxfcPropertyName_DXConnect
+{
+	white-space: nowrap!important;
+	color: Blue!important;
+}
+a.dxfcGroupType_DXConnect
+{
+	white-space: nowrap!important;
+	padding: 0px 3px!important;
+	color: Red!important;
+}
+a.dxfcOperation_DXConnect
+{
+	white-space: nowrap!important;
+	color: Green!important;
+}
+a.dxfcValue_DXConnect
+{
+	white-space: nowrap!important;
+	color: Gray!important;
+}
+
+.dxfcLoadingDiv_DXConnect
+{
+	background: white none;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+.dxfcLoadingPanel_DXConnect
+{
+	font: 12px Tahoma;
+	color: #303030;
+	border: 1px solid #9F9F9F;
+	background: white none;
+}
+.dxfcLoadingPanel_DXConnect td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px;
+}
+
+.dxeMaskHint_DXConnect
+{
+	background: #ffffe1 none;
+	border: 1px solid black;
+	padding: 2px 5px 3px;
+	color: Black;
+	font: 12px Tahoma;
+}
+
+/* -- ProgressBar -- */
+.dxeProgressBar_DXConnect
+{
+	border: 1px Solid #696969;
+	background-color: #FFFFFF;
+}
+.dxeProgressBar_DXConnect,
+.dxeProgressBar_DXConnect td.dxe
+{
+	font: 12px Tahoma;
+	color: Black;
+}
+.dxeProgressBar_DXConnect .dxePBMainCell_DXConnect,
+.dxeProgressBar_DXConnect td.dxe
+{
+	padding: 0;
+}
+.dxeProgressBarIndicator_DXConnect
+{
+	background-color: #E0DFDF;
+}
+
+/* -- DropDownWindow -- */
+.dxeDropDownWindow_DXConnect
+{
+	background-color: white;
+	border: 1px solid #9F9F9F;
+}
+
+/*----------------- ColorTable -----------------*/
+.dxeColorIndicator_DXConnect
+{
+	border: 1px solid #9F9F9F;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.dxeColorTable_DXConnect,
+.dxeItemPicker_DXConnect
+{
+	background-color: #ffffff;
+	border: 1px solid #9F9F9F;
+}
+.dxeColorTable_DXConnect td.dx,
+.dxeItemPicker_DXConnect td.dx
+{
+	padding: 4px;
+}
+.dxeColorTableCell_DXConnect,
+.dxeItemPickerCell_DXConnect
+{
+	padding: 3px;
+	cursor: pointer;
+}
+.dxeColorTableCellDiv_DXConnect
+{
+	border: 1px solid #808080;
+	width: 12px;
+	height: 12px;
+	font-size: 0px;
+}
+.dxeColorTableCellSelected_DXConnect
+{
+	padding: 2px!important;
+	background-color: #CBCBCB;
+	border: 1px solid #888888;
+}
+.dxeColorTableCellHover_DXConnect,
+.dxeItemPickerCellHover_DXConnect
+{
+	padding: 2px!important;
+	background-color: #F2F2F2;
+	border: 1px solid #888888;
+}
+
+/* -- Invalid Style -- */
+.dxeInvalid_DXConnect
+{	
+	box-shadow: 1px 0px 2px #fec3c3 inset, -1px 0px 2px #fec3c3 inset, 0px -1px 2px 1px #fff2f2 inset, 0px 1px 1px #f98383 inset;
+    -weblit-box-shadow: 1px 0px 2px #fec3c3 inset, -1px 0px 2px #fec3c3 inset, 0px -1px 2px 1px #fff2f2 inset, 0px 1px 1px #f98383 inset;
+    -moz-box-shadow: 1px 0px 2px #fec3c3 inset, -1px 0px 2px #fec3c3 inset, 0px -1px 2px 1px #fff2f2 inset, 0px 1px 1px #f98383 inset;
+    -o-box-shadow: 1px 0px 2px #fec3c3 inset, -1px 0px 2px #fec3c3 inset, 0px -1px 2px 1px #fff2f2 inset, 0px 1px 1px #f98383 inset;
+}
+.dxeInvalid_DXConnect .dxeEditArea_DXConnect,
+.dxeInvalid_DXConnect .dxeMemoEditArea_DXConnect
+{
+	color: #ee1111;
+}
+
+/* -- Focused Style -- */
+.dxeFocused_DXConnect
+{
+	border: 1px solid #3d3d3d;
+}
+
+/* -- Null Text Style -- */
+.dxeNullText_DXConnect .dxeEditArea_DXConnect,
+.dxeNullText_DXConnect .dxeMemoEditArea_DXConnect
+{
+	color: #818181;
+}
+
+/* -- Captcha -- */
+.dxcaRefreshButton_DXConnect
+{
+	font: 13px Tahoma;
+	text-decoration: none;
+	color: #1e3695;
+}
+
+.dxcaDisabledRefreshButton_DXConnect
+{
+	color: #acacac;
+}
+
+.dxcaRefreshButtonCell_DXConnect
+{
+	padding-left: 4px;
+}
+
+.dxcaRefreshButtonText_DXConnect
+{
+}
+
+.dxcaDisabledRefreshButtonText_DXConnect
+{
+}
+
+.dxcaTextBoxCell_DXConnect
+{
+	font: 12px Tahoma;
+}
+
+.dxcaTextBoxCell_DXConnect,
+.dxcaTextBoxCellNoIndent_DXConnect
+{
+	font: 12px Tahoma;
+}
+
+.dxcaTextBoxCell_DXConnect .dxeErrorCell_DXConnect
+{
+}
+
+.dxcaTextBoxCellNoIndent_DXConnect .dxeErrorCell_DXConnect
+{
+	padding-left: 0px;
+	padding-top: 4px;
+	color: Red;
+}
+
+.dxcaTextBoxLabel_DXConnect
+{
+	padding-bottom: 4px;
+	display: block;
+}
+
+.dxcaLoadingPanel_DXConnect
+{
+	font: 12px Tahoma;
+	color: #303030;
+}
+
+.dxcaLoadingPanel_DXConnect td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 12px;
+}
+
+
+

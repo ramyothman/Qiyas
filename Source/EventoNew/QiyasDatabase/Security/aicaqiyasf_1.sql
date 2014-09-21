@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [aicaqiyasf]
+    WITH PASSWORD = N'zd7j=c<|qv4whdql{VEwZu{xmsFT7_&#$!~<oJbtUeG{gjMe', SID = 0xF49623DC5B91EA409F5187895502410F, DEFAULT_DATABASE = [SaudiTimes], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

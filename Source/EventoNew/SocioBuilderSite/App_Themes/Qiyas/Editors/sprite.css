@@ -1,0 +1,559 @@
+.dxEditors_edtError_DXConnect,
+.dxEditors_edtCalendarPrevYear_DXConnect,
+.dxEditors_edtCalendarPrevYearDisabled_DXConnect,
+.dxEditors_edtCalendarPrevMonth_DXConnect,
+.dxEditors_edtCalendarPrevMonthDisabled_DXConnect,
+.dxEditors_edtCalendarNextMonth_DXConnect,
+.dxEditors_edtCalendarNextMonthDisabled_DXConnect,
+.dxEditors_edtCalendarNextYear_DXConnect,
+.dxEditors_edtCalendarNextYearDisabled_DXConnect,
+.dxEditors_edtCalendarFNPrevYear_DXConnect,
+.dxEditors_edtCalendarFNNextYear_DXConnect,
+.dxEditors_edtRadioButtonChecked_DXConnect,
+.dxEditors_edtRadioButtonUnchecked_DXConnect,
+.dxEditors_edtRadioButtonCheckedDisabled_DXConnect,
+.dxEditors_edtRadioButtonUncheckedDisabled_DXConnect,
+.dxEditors_edtEllipsis_DXConnect,
+.dxEditors_edtEllipsisDisabled_DXConnect,
+.dxEditors_edtDropDownDisabled_DXConnect,
+.dxEditors_edtSpinEditIncrementImage_DXConnect,
+.dxEditors_edtSpinEditIncrementImageDisabled_DXConnect,
+.dxEditors_edtSpinEditDecrementImage_DXConnect,
+.dxEditors_edtSpinEditDecrementImageDisabled_DXConnect,
+.dxEditors_edtSpinEditLargeIncImage_DXConnect,
+.dxEditors_edtSpinEditLargeIncImageDisabled_DXConnect,
+.dxEditors_edtSpinEditLargeDecImage_DXConnect,
+.dxEditors_edtSpinEditLargeDecImageDisabled_DXConnect,
+.dxEditors_fcadd_DXConnect,
+.dxEditors_fcaddhot_DXConnect,
+.dxEditors_fcremove_DXConnect,
+.dxEditors_fcremovehot_DXConnect,
+.dxEditors_fcgroupaddcondition_DXConnect,
+.dxEditors_fcgroupaddgroup_DXConnect,
+.dxEditors_fcgroupremove_DXConnect,
+.dxEditors_fcopany_DXConnect,
+.dxEditors_fcopbegin_DXConnect,
+.dxEditors_fcopbetween_DXConnect,
+.dxEditors_fcopcontain_DXConnect,
+.dxEditors_fcopnotcontain_DXConnect,
+.dxEditors_fcopnotequal_DXConnect,
+.dxEditors_fcopend_DXConnect,
+.dxEditors_fcopequal_DXConnect,
+.dxEditors_fcopgreater_DXConnect,
+.dxEditors_fcopgreaterorequal_DXConnect,
+.dxEditors_fcopnotblank_DXConnect,
+.dxEditors_fcopblank_DXConnect,
+.dxEditors_fcopless_DXConnect,
+.dxEditors_fcoplessorequal_DXConnect,
+.dxEditors_fcoplike_DXConnect,
+.dxEditors_fcopnotany_DXConnect,
+.dxEditors_fcopnotbetween_DXConnect,
+.dxEditors_fcopnotlike_DXConnect,
+.dxEditors_fcgroupand_DXConnect,
+.dxEditors_fcgroupor_DXConnect,
+.dxEditors_fcgroupnotand_DXConnect,
+.dxEditors_fcgroupnotor_DXConnect,
+.dxEditors_caRefresh_DXConnect,
+.dxEditors_edtTBDecBtn_DXConnect,
+.dxEditors_edtTBIncBtn_DXConnect,
+.dxEditors_edtTBMainDH_DXConnect,
+.dxEditors_edtTBSecondaryDH_DXConnect
+{
+    background-image: url('sprite.png');
+    -background-image: url('sprite.gif'); /* for IE6 */
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxEditors_edtDropDown_DXConnect
+{
+	background-image: url('ddBtnSprite.png');
+	background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+/* TrackBar */
+.dxeTBHSys_DXConnect .dxEditors_edtTBDecBtn_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBIncBtn_DXConnect,
+.dxeTBHSys_DXConnect .dxEditors_edtTBDecBtnHover_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBIncBtnHover_DXConnect,
+.dxeTBHSys_DXConnect .dxEditors_edtTBDecBtnPressed_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBIncBtnPressed_DXConnect
+{
+	width: 18px;
+	height: 19px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBIncBtn_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBDecBtn_DXConnect,
+.dxeTBVSys_DXConnect .dxEditors_edtTBIncBtnHover_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBDecBtnHover_DXConnect,
+.dxeTBVSys_DXConnect .dxEditors_edtTBIncBtnPressed_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBDecBtnPressed_DXConnect
+{
+	width:19px;
+	height:18px;
+}
+
+.dxeTBHSys_DXConnect .dxEditors_edtTBMainDH_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBSecondaryDH_DXConnect,
+.dxeTBHSys_DXConnect .dxEditors_edtTBMainDHHover_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBSecondaryDHHover_DXConnect,
+.dxeTBHSys_DXConnect .dxEditors_edtTBMainDHPressed_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBSecondaryDHPressed_DXConnect
+{
+	width:7px;
+	height:18px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBMainDH_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBSecondaryDH_DXConnect,
+.dxeTBVSys_DXConnect .dxEditors_edtTBMainDHHover_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBSecondaryDHHover_DXConnect,
+.dxeTBVSys_DXConnect .dxEditors_edtTBMainDHPressed_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBSecondaryDHPressed_DXConnect
+{
+	width:18px;
+	height:7px;
+}
+
+.dxeTBHSys_DXConnect .dxEditors_edtTBDecBtn_DXConnect 
+{
+	background-position: -38px -123px;
+}
+.dxeTBHSys_DXConnect .dxEditors_edtTBDecBtnHover_DXConnect
+{
+	background-position: -94px -148px;
+}
+.dxeTBHSys_DXConnect .dxEditors_edtTBDecBtnPressed_DXConnect
+{
+	background-position: -94px -148px;
+	opacity:0.5;
+}
+
+.dxeTBHSys_DXConnect .dxEditors_edtTBIncBtn_DXConnect
+{
+	background-position: -15px -123px;
+}
+.dxeTBHSys_DXConnect .dxEditors_edtTBIncBtnHover_DXConnect
+{
+	background-position: -67px -148px;
+}
+.dxeTBHSys_DXConnect .dxEditors_edtTBIncBtnPressed_DXConnect
+{ 
+	background-position: -67px -148px;
+	opacity:0.5;
+}
+
+.dxeTBVSys_DXConnect .dxEditors_edtTBDecBtn_DXConnect
+{
+	background-position: -132px -123px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBDecBtnHover_DXConnect
+{
+	background-position: -8px -148px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBDecBtnPressed_DXConnect
+{
+	background-position: -8px -148px;
+	opacity:0.5;
+}
+
+.dxeTBVSys_DXConnect .dxEditors_edtTBIncBtn_DXConnect
+{
+	background-position: -107px -123px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBIncBtnHover_DXConnect
+{
+	background-position: -37px -148px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBIncBtnPressed_DXConnect
+{
+	background-position: -37px -148px;
+	opacity:0.5; 
+}
+
+.dxeTBHSys_DXConnect .dxEditors_edtTBMainDH_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBSecondaryDH_DXConnect
+{
+	background-position: -68px -128px;
+}
+.dxeTBHSys_DXConnect .dxEditors_edtTBMainDHHover_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBSecondaryDHHover_DXConnect
+{
+	background-position: -144px -153px;
+}
+.dxeTBHSys_DXConnect .dxEditors_edtTBMainDHPressed_DXConnect, .dxeTBHSys_DXConnect .dxEditors_edtTBSecondaryDHPressed_DXConnect
+{
+	background-position: -153px -153px;
+}
+
+.dxeTBVSys_DXConnect .dxEditors_edtTBMainDH_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBSecondaryDH_DXConnect
+{
+	background-position: -161px -128px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBMainDHHover_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBSecondaryDHHover_DXConnect
+{
+	background-position: -161px -137px;
+}
+.dxeTBVSys_DXConnect .dxEditors_edtTBMainDHPressed_DXConnect, .dxeTBVSys_DXConnect .dxEditors_edtTBSecondaryDHPressed_DXConnect
+{
+	background-position: -161px -146px;
+}
+
+/* RadioButton */
+.dxEditors_edtRadioButtonChecked_DXConnect,
+.dxEditors_edtRadioButtonUnchecked_DXConnect,
+.dxEditors_edtRadioButtonCheckedDisabled_DXConnect,
+.dxEditors_edtRadioButtonUncheckedDisabled_DXConnect {
+	width: 15px;
+    height: 28px;
+}
+.dxEditors_edtRadioButtonUnchecked_DXConnect {
+    background-position: 0px -40px;
+}
+.dxEditors_edtRadioButtonChecked_DXConnect {
+    background-position: -15px -40px;
+}
+.dxEditors_edtRadioButtonUncheckedDisabled_DXConnect {
+    background-position: -30px -40px;
+}
+.dxEditors_edtRadioButtonCheckedDisabled_DXConnect {
+    background-position: -45px -40px;
+}
+
+.dxEditors_edtError_DXConnect,
+.dxEditors_edtCalendarPrevYear_DXConnect,
+.dxEditors_edtCalendarPrevYearDisabled_DXConnect,
+.dxEditors_edtCalendarPrevMonth_DXConnect,
+.dxEditors_edtCalendarPrevMonthDisabled_DXConnect,
+.dxEditors_edtCalendarNextMonth_DXConnect,
+.dxEditors_edtCalendarNextMonthDisabled_DXConnect,
+.dxEditors_edtCalendarNextYear_DXConnect,
+.dxEditors_edtCalendarNextYearDisabled_DXConnect,
+.dxEditors_edtCalendarFNPrevYear_DXConnect,
+.dxEditors_edtCalendarFNNextYear_DXConnect,
+.dxEditors_edtEllipsis_DXConnect,
+.dxEditors_edtEllipsisDisabled_DXConnect,
+.dxEditors_edtDropDown_DXConnect,
+.dxEditors_edtDropDownDisabled_DXConnect,
+.dxEditors_edtSpinEditIncrementImage_DXConnect,
+.dxEditors_edtSpinEditIncrementImageDisabled_DXConnect,
+.dxEditors_edtSpinEditDecrementImage_DXConnect,
+.dxEditors_edtSpinEditDecrementImageDisabled_DXConnect,
+.dxEditors_edtSpinEditLargeIncImage_DXConnect,
+.dxEditors_edtSpinEditLargeIncImageDisabled_DXConnect,
+.dxEditors_edtSpinEditLargeDecImage_DXConnect,
+.dxEditors_edtSpinEditLargeDecImageDisabled_DXConnect
+{
+	display:block;
+	margin:auto;
+}
+
+.dxEditors_edtError_DXConnect {
+    background-position: -170px 0px;
+    width: 14px;
+    height: 14px;
+}
+
+.dxEditors_edtCalendarPrevYear_DXConnect {
+    background-position: -80px 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.dxEditors_edtCalendarPrevYearDisabled_DXConnect {
+    background-position: -80px -20px;
+    width: 20px;
+    height: 20px;
+}
+
+.dxEditors_edtCalendarPrevMonth_DXConnect {
+    background-position: -57px 0px;
+    width: 11px;
+    height: 12px;
+}
+
+.dxEditors_edtCalendarPrevMonthDisabled_DXConnect {
+    background-position: -60px -20px;
+    width: 20px;
+    height: 20px;
+}
+
+.dxEditors_edtCalendarNextMonth_DXConnect {
+    background-position: -19px 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.dxEditors_edtCalendarNextMonthDisabled_DXConnect {
+    background-position: -19px -20px;
+    width: 20px;
+    height: 20px;
+}
+
+.dxEditors_edtCalendarNextYear_DXConnect {
+    background-position: -38px 0px;
+    width: 11px;
+    height: 12px;
+}
+
+.dxEditors_edtCalendarNextYearDisabled_DXConnect {
+    background-position: -38px -20px;
+    width: 20px;
+    height: 20px;
+}
+
+.dxEditors_edtCalendarFNPrevYear_DXConnect {
+    background-position: 0px 0px;
+    width: 11px;
+    height: 12px;
+}
+
+.dxEditors_edtCalendarFNNextYear_DXConnect {
+    background-position: 0px -20px;
+    width: 11px;
+    height: 12px;
+}
+
+.dxEditors_edtEllipsis_DXConnect {
+    background-position: -113px 0px;
+    width: 11px;
+    height: 14px;
+}
+
+.dxEditors_edtEllipsisDisabled_DXConnect {
+    background-position: -113px -22px;
+    width: 11px;
+    height: 14px;
+}
+
+.dxEditors_edtDropDown_DXConnect {
+    background-position: 0px 0px;
+    width: 9px;
+    height: 5px;
+}
+.dxeButtonEditButtonHover_DXConnect .dxEditors_edtDropDown_DXConnect
+{
+	background-position: 0px -5px;
+}
+.dxeButtonEditButtonPressed_DXConnect .dxEditors_edtDropDown_DXConnect
+{
+	background-position: 0px -10px;
+}
+.dxEditors_edtDropDownDisabled_DXConnect {
+    background-position: -95px -22px;
+    width: 10px;
+    height: 14px;
+}
+
+.dxEditors_edtSpinEditIncrementImage_DXConnect {
+    background-position: -150px 0px;
+    width: 10px;
+    height: 5px;
+}
+
+.dxEditors_edtSpinEditIncrementImageDisabled_DXConnect {
+    background-position: -150px -13px;
+    width: 10px;
+    height: 5px;
+}
+
+.dxEditors_edtSpinEditDecrementImage_DXConnect {
+    background-position: -132px 0px;
+    width: 10px;
+    height: 5px;
+}
+
+.dxEditors_edtSpinEditDecrementImageDisabled_DXConnect {
+    background-position: -132px -13px;
+    width: 10px;
+    height: 5px;
+}
+
+.dxEditors_edtSpinEditLargeIncImage_DXConnect {
+    background-position: -145px -26px;
+    width: 5px;
+    height: 7px;
+}
+
+.dxEditors_edtSpinEditLargeIncImageDisabled_DXConnect {
+    background-position: -171px -26px;
+    width: 5px;
+    height: 7px;
+}
+
+.dxEditors_edtSpinEditLargeDecImage_DXConnect {
+    background-position: -132px -26px;
+    width: 5px;
+    height: 7px;
+}
+
+.dxEditors_edtSpinEditLargeDecImageDisabled_DXConnect {
+    background-position: -158px -26px;
+    width: 5px;
+    height: 7px;
+}
+
+.dxEditors_fcadd_DXConnect {
+    background-position: 0px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcaddhot_DXConnect {
+    background-position: -21px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcremove_DXConnect {
+    background-position: -42px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcremovehot_DXConnect {
+    background-position: -63px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcgroupaddcondition_DXConnect {
+    background-position: -168px -46px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcgroupaddgroup_DXConnect {
+    background-position: -147px -46px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcgroupremove_DXConnect {
+    background-position: -126px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopany_DXConnect {
+    background-position: 0px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopbegin_DXConnect {
+    background-position: -42px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopbetween_DXConnect {
+    background-position: -84px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopcontain_DXConnect {
+    background-position: -105px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopnotcontain_DXConnect {
+    background-position: -147px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopnotequal_DXConnect {
+    background-position: -168px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopend_DXConnect {
+    background-position: -63px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopequal_DXConnect {
+    background-position: 0px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopgreater_DXConnect {
+    background-position: -21px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopgreaterorequal_DXConnect {
+    background-position: -42px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopnotblank_DXConnect {
+    background-position: -105px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopblank_DXConnect {
+    background-position: -126px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopless_DXConnect {
+    background-position: -63px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcoplessorequal_DXConnect {
+    background-position: -84px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcoplike_DXConnect {
+    background-position: -126px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopnotany_DXConnect {
+    background-position: -21px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopnotbetween_DXConnect {
+    background-position: -147px -88px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcopnotlike_DXConnect {
+    background-position: -168px -109px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcgroupand_DXConnect {
+    background-position: -84px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcgroupor_DXConnect {
+    background-position: -168px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcgroupnotand_DXConnect {
+    background-position: -105px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_fcgroupnotor_DXConnect {
+    background-position: -147px -67px;
+    width: 13px;
+    height: 13px;
+}
+
+.dxEditors_caRefresh_DXConnect {	
+	background-position: 0px -130px;
+	width: 13px;
+	height: 13px;
+}

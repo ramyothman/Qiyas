@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdministrationMaster.master.cs" Inherits="SocioBuilderSite.MasterPages.AdministrationMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/Controls/BackendPortal/Header.ascx" TagName="HeaderControl" TagPrefix="Rbm" %>
+<%@ Register Src="~/Controls/BackendPortal/Footer.ascx" TagName="Footer" TagPrefix="Rbm" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Portal</title>
+        <!--[if IE 6]>
+	<link href="~/CSS/ie6.css" rel="stylesheet" media="all" />
+	
+	<script src="~/Scripts/pngfix.js"></script>
+	<script>
+	  /* EXAMPLE */
+	  DD_belatedPNG.fix('.logo, .other ul#dashboard-buttons li a');
+
+	</script>
+	<![endif]-->
+    <!--[if IE 7]>
+	<link href="~/CSS/ie7.css" rel="stylesheet" media="all" />
+	<![endif]-->
+    <script type="text/javascript" src="../Scripts/jquery-1.4.1.js"></script>
+    <script src="../Scripts/jquery-ui-1.8.custom.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../Scripts/tooltip.js"></script>
+	<script type="text/javascript" src="../Scripts/cookie.js"></script>
+	<script type="text/javascript" src="../Scripts/custom.js"></script>
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="MainAdministrationMasterForm" runat="server">
+    <div style="min-width:960px">
+    <Rbm:HeaderControl runat="server" ID="mainHeaderControl" />
+    <div id="page-wrapper">
+        <div id="main-wrapper">
+            <div id="main-content">
+                <asp:ContentPlaceHolder ID="MessagePlaceHolder" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="DashBoardContentPlaceHolder" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="sidebar">
+            <div class="side-col ui-sortable">
+                <asp:ContentPlaceHolder ID="LeftSideBar" runat="server">
+                </asp:ContentPlaceHolder>
+                
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <Rbm:Footer runat="server" ID="FooterControl" />
+    <div>
+        
+    </div>
+    </div>
+    </form>
+</body>
+</html>

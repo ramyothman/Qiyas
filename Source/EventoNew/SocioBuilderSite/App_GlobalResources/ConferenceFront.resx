@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConferenceTheme" xml:space="preserve">
+    <value>Qiyas</value>
+  </data>
+  <data name="ContactInfo_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ContactInfo_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ContactInfo_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="ContactInfo_ConfirmPasswordError" xml:space="preserve">
+    <value>Password and Confirm Password Must Match</value>
+  </data>
+  <data name="ContactInfo_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ContactInfo_DateofBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="ContactInfo_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ContactInfo_EnterConfirmPassword" xml:space="preserve">
+    <value>Please Confirm Password</value>
+  </data>
+  <data name="ContactInfo_EnterEmail" xml:space="preserve">
+    <value>Please Enter Email</value>
+  </data>
+  <data name="ContactInfo_EnterFirstName" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="ContactInfo_EnterLastName" xml:space="preserve">
+    <value>Please Enter Last Name</value>
+  </data>
+  <data name="ContactInfo_EnterMobileNumber" xml:space="preserve">
+    <value>Please Enter Mobile</value>
+  </data>
+  <data name="ContactInfo_EnterPassword" xml:space="preserve">
+    <value>Please Enter Password</value>
+  </data>
+  <data name="ContactInfo_EnterPhone" xml:space="preserve">
+    <value>Please Enter Phone</value>
+  </data>
+  <data name="ContactInfo_EnterTitle" xml:space="preserve">
+    <value>Please Enter Title</value>
+  </data>
+  <data name="ContactInfo_ErrorMessage" xml:space="preserve">
+    <value>Error Saving Data</value>
+  </data>
+  <data name="ContactInfo_FaxNumber" xml:space="preserve">
+    <value>Fax Number</value>
+  </data>
+  <data name="ContactInfo_FaxNumberCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ContactInfo_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ContactInfo_Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="ContactInfo_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="ContactInfo_MiddleName" xml:space="preserve">
+    <value>Middle Name</value>
+  </data>
+  <data name="ContactInfo_MobileNumber" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="ContactInfo_MobileNumberCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ContactInfo_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ContactInfo_PasswordError" xml:space="preserve">
+    <value>Password must be at least 6 characters</value>
+  </data>
+  <data name="ContactInfo_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Contactinfo_PhoneNumberCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ContactInfo_POBox" xml:space="preserve">
+    <value>PO Box</value>
+  </data>
+  <data name="ContactInfo_ProfileImage" xml:space="preserve">
+    <value>Profile Image</value>
+  </data>
+  <data name="ContactInfo_ProfileSavedSuccessfully" xml:space="preserve">
+    <value>You have been successfully signed up to the system. An email has been sent to you for verification. Please Verify your Email to start using site features</value>
+  </data>
+  <data name="ContactInfo_ProfileUpdatedSuccessfully" xml:space="preserve">
+    <value>Your profile has been updated successfully</value>
+  </data>
+  <data name="ContactInfo_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ContactInfo_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ContactInfo_ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="FooterMenu" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="HomePage_FirstImage" xml:space="preserve">
+    <value>/Conference/images/banner-1.jpg</value>
+  </data>
+  <data name="HomePage_LanguageLink" xml:space="preserve">
+    <value>~/Conference/Default.aspx?culture=ar</value>
+  </data>
+  <data name="HomePage_LanguageText" xml:space="preserve">
+    <value>عربي</value>
+  </data>
+  <data name="HomePage_SecondImage" xml:space="preserve">
+    <value>/Conference/images/banner.jpg</value>
+  </data>
+  <data name="LoginFront_ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="LoginFront_LoginButton" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="LoginFront_LoginEmail" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="LoginFront_LoginForgotPassword" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="LoginFront_LoginH1" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginFront_LoginPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LoginFront_LoginProfile" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+  <data name="LoginFront_LoginSignup" xml:space="preserve">
+    <value>Signup for a new account?</value>
+  </data>
+  <data name="LoginFront_Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="OrganizerSectionHeader" xml:space="preserve">
+    <value>Organizer</value>
+  </data>
+  <data name="SchedulerSectionHeader" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="SiteMenu" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SpeakersSectionHeader" xml:space="preserve">
+    <value>Speakers</value>
+  </data>
+  <data name="SponsorsSectionHeader" xml:space="preserve">
+    <value>Sponsors</value>
+  </data>
+  <data name="TimeandDate" xml:space="preserve">
+    <value>Conference Date</value>
+  </data>
+  <data name="TopMenu" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RegisterPage_Signup" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="RequestLogin_Content" xml:space="preserve">
+    <value>In order to register online or submit an abstract for &lt;strong&gt;The Conference&lt;/strong&gt;, you must be &lt;strong&gt;logged in&lt;/strong&gt;.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;Please &lt;strong&gt;login&lt;/strong&gt; with your email address and password using the form on the left.&lt;br /&gt;If you cannot remember your password you can retrieve it using the &lt;strong&gt;&lt;a runat="server" id="A1" href="ForgetPassword.aspx"&gt;forgot password&lt;/a&gt;&lt;/strong&gt; form.&lt;br /&gt;If you don't have an account yet kindly use the &lt;strong&gt;&lt;a runat="server" id="SignupFormLink" href="RegisterSignup.aspx"&gt;Sign up&lt;/a&gt;&lt;/strong&gt; form.</value>
+  </data>
+  <data name="RequestLogin_Title" xml:space="preserve">
+    <value>Request Login</value>
+  </data>
+  <data name="FinishRegistration_Content" xml:space="preserve">
+    <value>Thank you for registering with us. &lt;br/&gt;&lt;strong style="font-size:16px;"&gt;Payment Method:&lt;/strong&gt;
+&lt;strong&gt;Bank Transfer&lt;/strong&gt;
+&lt;p&gt;Workshop payments are paid via bank transfer to the following account:&lt;/p&gt;
+&lt;p&gt;Beneficiary: National Center for Assessment in Higher Education&lt;/p&gt;
+&lt;p&gt;Account No. (IBAN): &lt;strong&gt;SA8510000025011999000106&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A copy of bank transfer should be emailed to (ica@qiyas.org) or fax to + 9961 490 7000 ext 7049 &lt;/p&gt;
+
+&lt;strong&gt;On site / Cash payment&lt;/strong&gt;
+&lt;p&gt;Participant must pay Workshop/s Fees cash or via Sadad ATM located at the basement hall of the Conference Auditorium.
+Note: This service availability depends on availability of seats prior to the Workshop/s.
+&lt;/p&gt;</value>
+  </data>
+  <data name="FinishRegistration_Title" xml:space="preserve">
+    <value>Registration Completed</value>
+  </data>
+  <data name="HomePage_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="HomePage_Submit" xml:space="preserve">
+    <value>Submit Abstract</value>
+  </data>
+  <data name="RegistrationForm_AcademicInformation" xml:space="preserve">
+    <value>Academic Information</value>
+  </data>
+  <data name="RegistrationForm_AlliedHealthProfessional" xml:space="preserve">
+    <value>Using Item Response Theory in Test Development</value>
+  </data>
+  <data name="RegistrationForm_Bachelor" xml:space="preserve">
+    <value>Bs.</value>
+  </data>
+  <data name="RegistrationForm_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="RegistrationForm_ConfirmMessage" xml:space="preserve">
+    <value>Check here to confirm your information</value>
+  </data>
+  <data name="RegistrationForm_Degree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="RegistrationForm_DegreeOther" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="RegistrationForm_Dietitian" xml:space="preserve">
+    <value>Dietitian</value>
+  </data>
+  <data name="RegistrationForm_HealthCareProfessional" xml:space="preserve">
+    <value>Health Care Professional</value>
+  </data>
+  <data name="RegistrationForm_HospitalAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="RegistrationForm_HospitalDepartment" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="RegistrationForm_HospitalInstitude" xml:space="preserve">
+    <value>Work Organization</value>
+  </data>
+  <data name="RegistrationForm_HospitalName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="RegistrationForm_LicenseNumber" xml:space="preserve">
+    <value>License Number</value>
+  </data>
+  <data name="RegistrationForm_LicenseNumberDescription" xml:space="preserve">
+    <value>If you are practicing in Saudi Arabia please enter Saudi Commission For Health Specialties Licensing Number(to claim your CME hours)</value>
+  </data>
+  <data name="RegistrationForm_Masters" xml:space="preserve">
+    <value>MD.</value>
+  </data>
+  <data name="RegistrationForm_MBBS" xml:space="preserve">
+    <value>MBBS.</value>
+  </data>
+  <data name="RegistrationForm_MedicalDoctor" xml:space="preserve">
+    <value>Medical Doctor</value>
+  </data>
+  <data name="RegistrationForm_Member" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="RegistrationForm_Membership" xml:space="preserve">
+    <value>Membership</value>
+  </data>
+  <data name="RegistrationForm_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="RegistrationForm_NonMember" xml:space="preserve">
+    <value>Non Member</value>
+  </data>
+  <data name="RegistrationForm_Nurse" xml:space="preserve">
+    <value>Nurse</value>
+  </data>
+  <data name="RegistrationForm_PhD" xml:space="preserve">
+    <value>Ph.D.</value>
+  </data>
+  <data name="RegistrationForm_Physiotherapist" xml:space="preserve">
+    <value>Physiotherapist</value>
+  </data>
+  <data name="RegistrationForm_Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="RegistrationForm_PreConferenceWorkshop" xml:space="preserve">
+    <value>Monte Carlo Simulation Using R</value>
+  </data>
+  <data name="RegistrationForm_RegistrarInformation" xml:space="preserve">
+    <value>Registrar Information</value>
+  </data>
+  <data name="RegistrationForm_RegistrationCategory" xml:space="preserve">
+    <value>Registration Category</value>
+  </data>
+  <data name="RegistrationForm_RegistrationConfirmation" xml:space="preserve">
+    <value>Registration Confirmation</value>
+  </data>
+  <data name="RegistrationForm_RegistrationFee" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RegistrationForm_RespiratoryTherapist" xml:space="preserve">
+    <value>Respiratory Therapist</value>
+  </data>
+  <data name="RegistrationForm_SelfSponsor" xml:space="preserve">
+    <value>Self Sponsor</value>
+  </data>
+  <data name="RegistrationForm_SponsorOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="RegistrationForm_SponsorshipType" xml:space="preserve">
+    <value>Sponsorship Type</value>
+  </data>
+  <data name="RegistrationForm_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="RegistrationForm_Title" xml:space="preserve">
+    <value>Registration Form</value>
+  </data>
+  <data name="ForgetPassword_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ForgetPassword_EmailHelp" xml:space="preserve">
+    <value>Please enter the email you signed up with here. An email will be send with the new generated password.</value>
+  </data>
+  <data name="ForgetPassword_EmailValidation" xml:space="preserve">
+    <value>Please Enter Email</value>
+  </data>
+  <data name="ForgetPassword_NoticeError" xml:space="preserve">
+    <value>This email is not registered in the system.</value>
+  </data>
+  <data name="ForgetPassword_SendPassword" xml:space="preserve">
+    <value>Send Password</value>
+  </data>
+  <data name="ForgetPassword_SuccessMessage" xml:space="preserve">
+    <value>An Email has been send with credentials</value>
+  </data>
+  <data name="ForgetPassword_Title" xml:space="preserve">
+    <value>Forget Password</value>
+  </data>
+  <data name="ContactInfo_GenderFemale" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="ContactInfo_GenderMale" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ContactInfo_TitleDr" xml:space="preserve">
+    <value>Dr.</value>
+  </data>
+  <data name="ContactInfo_TitleMiss" xml:space="preserve">
+    <value>Miss.</value>
+  </data>
+  <data name="ContactInfo_TitleMr" xml:space="preserve">
+    <value>Mr.</value>
+  </data>
+  <data name="ContactInfo_TitleMrs" xml:space="preserve">
+    <value>Mrs.</value>
+  </data>
+  <data name="ContactInfo_TitleMs" xml:space="preserve">
+    <value>Ms.</value>
+  </data>
+  <data name="ContactInfo_TitleProf" xml:space="preserve">
+    <value>Prof.</value>
+  </data>
+  <data name="ProfileInformation_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ProfileInformation_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ProfileInformation_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ProfileInformation_DateofBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="ProfileInformation_EditProfile" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+  <data name="ProfileInformation_FaxNumber" xml:space="preserve">
+    <value>Fax Number</value>
+  </data>
+  <data name="ProfileInformation_Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="ProfileInformation_MobileNumber" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="ProfileInformation_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="ProfileInformation_POBox" xml:space="preserve">
+    <value>PO Box</value>
+  </data>
+  <data name="ProfileInformation_ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="SponsorControl_ImagePath" xml:space="preserve">
+    <value>~/Conference/images/c_en.jpg</value>
+  </data>
+  <data name="MasterPage_LanguageImage" xml:space="preserve">
+    <value>~/Conference/images/ar.jpg</value>
+  </data>
+  <data name="Footer_CopyRights" xml:space="preserve">
+    <value>all rights reserved &amp;copy; ica.Qiyas.sa - 2012</value>
+  </data>
+  <data name="ChangePassword_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="ChangePassword_ConfirmPasswordError" xml:space="preserve">
+    <value>Please Confirm Password</value>
+  </data>
+  <data name="ChangePassword_Error" xml:space="preserve">
+    <value>&lt;strong&gt;Error&lt;/strong&gt;&lt;br /&gt;&lt;span&gt;{0}&lt;/span&gt;</value>
+  </data>
+  <data name="ChangePassword_PageTitle" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePassword_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ChangePassword_PasswordError" xml:space="preserve">
+    <value>Plesae Enter Password</value>
+  </data>
+  <data name="ChangePassword_SaveButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ChangePassword_Success" xml:space="preserve">
+    <value>&lt;strong&gt;Success&lt;/strong&gt;&lt;br /&gt;&lt;p&gt;Your Password Have Been Updated Successfully&lt;/p&gt;</value>
+  </data>
+  <data name="MediaReference_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="MediaReference_Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="MediaReference_Reference" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="MediaReference_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="SpeakersTitle" xml:space="preserve">
+    <value>Speakers</value>
+  </data>
+  <data name="TravelView_Title" xml:space="preserve">
+    <value>Travel &amp; Transportation</value>
+  </data>
+  <data name="SpeakersInfo_Title" xml:space="preserve">
+    <value>Speaker Information</value>
+  </data>
+  <data name="RegistrationForm_Information" xml:space="preserve">
+    <value>&lt;ul&gt;
+    &lt;li&gt;
+    Conference lectures attendance is FREE.
+    &lt;/li&gt;
+    &lt;li&gt;
+    Conference Sessions and Workshops Registration Deadline from outside the Kingdom is 6th October 2012.
+    &lt;/li&gt;
+    &lt;li&gt;
+    All Workshops will be held in King Faisal Conference Auditorium in Riyadh InterContinental as per Dates, Time and Halls shown in below table.
+Workshop seats are limited.
+
+    &lt;/li&gt;
+    &lt;li&gt;
+    Workshop Registration Fees :
+    &lt;ul&gt;
+        &lt;li&gt;
+        Early Registration up to 2nd November 2012 ($300) OR (SR1,125).  
+        &lt;/li&gt;
+        &lt;li&gt;Registration after 2nd November 2012 ($400) OR (SR1,500).      &lt;/li&gt;
+
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    Kindly note that Second and Third Workshops are Parallel, therefore it is not possible to register in both of them at the same time. If you wish to attend more than one Workshop, you may select First and Second Workshops OR First and Third Workshop.
+Attendants will receive a Workshop material bag, Attendance Certificate, therefore when registering, ensure writing down your name correctly for the Certificate print out.
+Coffee Breaks and Prayer Time will be announced by the workshop Lecturer at the start of the Workshop.
+Registration is not valid without FULL PAYMENT.
+
+    &lt;/li&gt;
+&lt;/ul&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="RegistrationForm_PreConferenceWorkshop2" xml:space="preserve">
+    <value>Test Development</value>
+  </data>
+  <data name="RegistrationForm_TableAfterReg1" xml:space="preserve">
+    <value>&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br /&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableAfterReg2" xml:space="preserve">
+    <value>&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableBeforeReg1" xml:space="preserve">
+    <value>&lt;table style="width:100%;"&gt;
+&lt;tr&gt;
+    &lt;td colspan="2" style="font-weight:bold;text-align:center;"&gt;Sat.  December 1st  , 2012&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color:#18335F;color:#FFFFFF;"&gt;
+    &lt;td style="text-align:center;"&gt;
+    Time
+    &lt;/td&gt;
+&lt;td style="text-align:center;"&gt;
+    1st  Workshop :  This workshop will be held in English
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;
+    8:00 – 16:30
+    &lt;/td&gt;
+    &lt;td style="font-weight:bold;"&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableBeforeReg2" xml:space="preserve">
+    <value>&lt;table style="width:100%;"&gt;
+&lt;tr&gt;
+    &lt;td colspan="2" style="font-weight:bold;text-align:center;"&gt; Sun.  December 2nd , 2012&lt;/td&gt;
+    &lt;/tr&gt;
+ &lt;tr style="background-color:#18335F;color:#FFFFFF;"&gt;
+    &lt;td style="text-align:center;"&gt;
+            Time
+        &lt;/td&gt;
+         &lt;td style="text-align:center;"&gt;
+        2nd  Workshop :  This workshop will be held in English
+        &lt;/td&gt;
+        &lt;td style="text-align:center;"&gt;
+        3rd  Workshop :  This workshop will be held in Arabic 
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+        8:00 – 16:30
+        &lt;/td&gt;
+        &lt;td style="font-weight:bold;"&gt;</value>
+  </data>
+  <data name="RegistrationForm_TableBetReg2" xml:space="preserve">
+    <value>&lt;/td&gt;
+        &lt;td style="font-weight:bold;"&gt;</value>
+  </data>
+  <data name="FinishRegistration_Currency" xml:space="preserve">
+    <value>SR</value>
+  </data>
+  <data name="TwitterBox_Title" xml:space="preserve">
+    <value>Our Tweets</value>
+  </data>
+  <data name="RegistrationForm_Tab3" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RegistrationForm_Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="RegistrationForm_Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="PageTab_LeftImage" xml:space="preserve">
+    <value>~/Conference/images/tab-left.png</value>
+  </data>
+  <data name="PageTab_RightImage" xml:space="preserve">
+    <value>~/Conference/images/tab-right.png</value>
+  </data>
+  <data name="PageTab_SelectedLeftImage" xml:space="preserve">
+    <value>~/Conference/images/left-selected.png</value>
+  </data>
+  <data name="PageTab_SelectedRightImage" xml:space="preserve">
+    <value>~/Conference/images/right-selected.png</value>
+  </data>
+  <data name="RegisterationForm_Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="ContactInfo_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Direction" xml:space="preserve">
+    <value>left</value>
+  </data>
+  <data name="RegistrationForm_Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Registeration_ConfirmAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Registeration_ConfirmBusinessPhone" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Registeration_ConfirmDate" xml:space="preserve">
+    <value>Registration Date</value>
+  </data>
+  <data name="Registeration_ConfirmEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Registeration_ConfirmFullName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Registeration_ConfirmTitle" xml:space="preserve">
+    <value>Verify the information you have entered and click Finish</value>
+  </data>
+  <data name="Registration_Currency" xml:space="preserve">
+    <value>SR</value>
+  </data>
+  <data name="Registration_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PaymentCurrency" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="ContactForm_RegisteredEmail" xml:space="preserve">
+    <value>This email is already registered</value>
+  </data>
+  <data name="VisaRequest_City" xml:space="preserve">
+    <value>Departure City</value>
+  </data>
+  <data name="VisaRequest_Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="VisaRequest_Country" xml:space="preserve">
+    <value>Departure Country</value>
+  </data>
+  <data name="VisaRequest_IsOrganizationApproved" xml:space="preserve">
+    <value>Request Approved</value>
+  </data>
+  <data name="VisaRequest_IsTaken" xml:space="preserve">
+    <value>Visa Taken</value>
+  </data>
+  <data name="VisaRequest_Job" xml:space="preserve">
+    <value>Job Position</value>
+  </data>
+  <data name="VisaRequest_PassportAttachment" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  <data name="VisaRequest_Religion" xml:space="preserve">
+    <value>Religion</value>
+  </data>
+  <data name="VisaRequest_Title" xml:space="preserve">
+    <value>Visa Request</value>
+  </data>
+  <data name="VisaRequest_VisaAttachment" xml:space="preserve">
+    <value>Visa Attachment</value>
+  </data>
+  <data name="VisaRequest_SuccessMessage" xml:space="preserve">
+    <value>Thank you for registering, will look into the submitted information and then send the visa request</value>
+  </data>
+  <data name="Speakers_MoreAbout" xml:space="preserve">
+    <value>More About</value>
+  </data>
+  <data name="SponsorControl_ImagePathLink" xml:space="preserve">
+    <value>~/ContentData/SponsershipBrochureEnglishLast.pdf</value>
+  </data>
+  <data name="VisaRequest_Summary" xml:space="preserve">
+    <value>Note: The Conference General Directorate will not guarantee the issuing of entry visa for Workshop/s Registered Attendants after registration deadline of 6 October 2012</value>
+  </data>
+</root>

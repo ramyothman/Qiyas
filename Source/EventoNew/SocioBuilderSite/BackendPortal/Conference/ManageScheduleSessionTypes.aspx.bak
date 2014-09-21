@@ -1,0 +1,84 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/AdministrationMaster.Master" AutoEventWireup="true" CodeBehind="ManageScheduleSessionTypes.aspx.cs" Inherits="SocioBuilderSite.BackendPortal.Conference.ManageScheduleSessionTypes" %>
+
+<%@ Register Assembly="DevExpress.Web.ASPxGridView.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.ASPxEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MessagePlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="DashBoardContentPlaceHolder" runat="server">
+     <div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all form-container">
+        <div class="portlet-header ui-widget-header">
+            <table>
+                <tr>
+                    <td>
+                        <img runat="server" id="Img1" src="~/images/view_icon.png" height="16" width="16"
+                            alt="" />
+                    </td>
+                    <td style="font-size: 12px;">
+                        Manage Schedule Session Types
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="portlet-content">
+            <dx:ASPxGridView ID="ConferenceProgramGrid" runat="server" 
+                AutoGenerateColumns="False" DataSourceID="ConferenceProgramsObjectDS" 
+                KeyFieldName="ScheduleSessionTypeId">
+                <Columns>
+                    <dx:GridViewCommandColumn VisibleIndex="0">
+                        <EditButton Visible="True">
+                        </EditButton>
+                        <NewButton Visible="True">
+                        </NewButton>
+                        <DeleteButton Visible="True">
+                        </DeleteButton>
+                    </dx:GridViewCommandColumn>
+                    <dx:GridViewDataTextColumn FieldName="ScheduleSessionTypeId" ReadOnly="True" 
+                        VisibleIndex="1" Caption="Id">
+                        <EditFormSettings Visible="False" />
+<EditFormSettings Visible="False"></EditFormSettings>
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Name" VisibleIndex="2">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataComboBoxColumn Caption="Conference" FieldName="ConferenceId" 
+                        VisibleIndex="3">
+                        <PropertiesComboBox DataSourceID="ConferenceObjectDS" 
+                            TextField="ConferenceName" ValueField="ConferenceId" ValueType="System.Int32">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                </Columns>
+                <Settings ShowFilterRow="True" />
+
+<Settings ShowFilterRow="True"></Settings>
+            </dx:ASPxGridView>
+            <asp:ObjectDataSource ID="ConferenceProgramsObjectDS" runat="server" 
+                DeleteMethod="Delete" InsertMethod="Insert" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ScheduleSessionTypeLogic" 
+                UpdateMethod="Update">
+                <DeleteParameters>
+                    <asp:Parameter Name="Original_ScheduleSessionTypeId" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="Name" Type="String" />
+                    <asp:Parameter Name="ConferenceId" Type="Int32" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="Name" Type="String" />
+                    <asp:Parameter Name="ConferenceId" Type="Int32" />
+                    <asp:Parameter Name="Original_ScheduleSessionTypeId" Type="Int32" />
+                </UpdateParameters>
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ConferenceObjectDS" runat="server" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ConferencesLogic">
+            </asp:ObjectDataSource>
+        </div>
+        </div>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="LeftSideBar" runat="server">
+</asp:Content>

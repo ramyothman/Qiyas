@@ -1,0 +1,26 @@
+﻿CREATE TABLE [Conference].[ConferenceSpeakers] (
+    [ConferenceSpeakerId] INT             IDENTITY (1, 1) NOT NULL,
+    [PersonId]            INT             NULL,
+    [ConferenceId]        INT             NULL,
+    [DateRegistered]      DATETIME        NULL,
+    [SpeakerImage]        NVARCHAR (150)  NULL,
+    [SpeakerPosition]     NVARCHAR (500)  NULL,
+    [SpeakerBio]          NVARCHAR (2000) NULL,
+    [FlightfromCountry]   NVARCHAR (50)   NULL,
+    [FlightFromCity]      NVARCHAR (50)   NULL,
+    [FlightToCountry]     NVARCHAR (50)   NULL,
+    [FlightToCity]        NVARCHAR (50)   NULL,
+    [FlightNO]            NVARCHAR (50)   NULL,
+    [ArrivalDate]         DATETIME        NULL,
+    [ArrivalTime]         NVARCHAR (50)   NULL,
+    [DepratureDate]       DATETIME        NULL,
+    [DepratureTime]       NVARCHAR (50)   NULL,
+    [AirllineID]          INT             NULL,
+    [HotelID]             INT             NULL,
+    [ResponsiblePersonID] INT             NULL,
+    [ArrivalTimeAMorPM]   NVARCHAR (50)   NULL,
+    [DepratureTimeAMorPM] NVARCHAR (50)   NULL,
+    [SpeakerOrder]        INT             NULL,
+    CONSTRAINT [PK_ConferenceSpeakers] PRIMARY KEY CLUSTERED ([ConferenceSpeakerId] ASC)
+);
+

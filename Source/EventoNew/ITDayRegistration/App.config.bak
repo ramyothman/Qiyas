@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+  </configSections>
+  <connectionStrings>
+    <add name="MainDB" connectionString="Data Source= RBM-NLAP\RBM;Initial Catalog=SocioBuilderNew;Persist Security Info=True;User ID= sa;Password=welcome;"
+      providerName="System.Data.SqlClient" />
+    <add name="ITDayRegistration.Properties.Settings.SocioBuilderNewConnectionString"
+      connectionString="Data Source=10.0.24.169\RBM;Initial Catalog=SocioBuilderNew;Persist Security Info=True;User ID=sa;Password=welcome"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+</configuration>

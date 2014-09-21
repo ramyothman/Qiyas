@@ -1,0 +1,150 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/AdministrationMaster.Master" AutoEventWireup="true" CodeBehind="ManageConferenceSchedule.aspx.cs" Inherits="SocioBuilderSite.BackendPortal.Conference.ManageConferenceSchedule" %>
+
+<%@ Register Assembly="DevExpress.Web.ASPxGridView.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.ASPxEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MessagePlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainPlaceHolder" runat="server">
+ <div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all form-container">
+        <div class="portlet-header ui-widget-header">
+            <table>
+                <tr>
+                    <td>
+                        <img runat="server" id="Img1" src="~/images/view_icon.png" height="16" width="16"
+                            alt="" />
+                    </td>
+                    <td style="font-size: 12px;">
+                        Manage Conference Schedule
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="portlet-content">
+            <dx:ASPxGridView ID="ConferenceProgramGrid" runat="server" 
+                AutoGenerateColumns="False" DataSourceID="ConferenceProgramsObjectDS" 
+                KeyFieldName="ScheduleId">
+                <Columns>
+                    <dx:GridViewCommandColumn ShowInCustomizationForm="True" VisibleIndex="0">
+                        <EditButton Visible="True">
+                        </EditButton>
+                        <NewButton Visible="True">
+                        </NewButton>
+                        <DeleteButton Visible="True">
+                        </DeleteButton>
+                    </dx:GridViewCommandColumn>
+                    <dx:GridViewDataTextColumn FieldName="ScheduleId" ReadOnly="True" 
+                        VisibleIndex="1" Caption="Id" ShowInCustomizationForm="True">
+                        <EditFormSettings Visible="False" />
+<EditFormSettings Visible="False"></EditFormSettings>
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataComboBoxColumn Caption="Program" 
+                        FieldName="ConferenceProgramId" ShowInCustomizationForm="True" VisibleIndex="2">
+                        <PropertiesComboBox DataSourceID="ProgramObjectDS" TextField="ProgramName" 
+                            ValueField="ConferenceProgramId" ValueType="System.Int32">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataTextColumn FieldName="Title" VisibleIndex="3" 
+                        ShowInCustomizationForm="True">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn Caption="Speaker" FieldName="PersonId" 
+                        ShowInCustomizationForm="True" Visible="False" VisibleIndex="4">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataComboBoxColumn Caption="Session Type" 
+                        FieldName="ScheduleSessionTypeId" VisibleIndex="4">
+                        <PropertiesComboBox DataSourceID="SessionTypeObjectDS" TextField="Name" 
+                            ValueField="ScheduleSessionTypeId" ValueType="System.Int32">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataDateColumn FieldName="StartTime" ShowInCustomizationForm="True" 
+                        VisibleIndex="5">
+                        <PropertiesDateEdit DisplayFormatString="dd/MM/yyyy hh:mm tt" 
+                            EditFormat="DateTime">
+                        </PropertiesDateEdit>
+                    </dx:GridViewDataDateColumn>
+                    <dx:GridViewDataDateColumn FieldName="EndTime" ShowInCustomizationForm="True" 
+                        VisibleIndex="6">
+                        <PropertiesDateEdit DisplayFormatString="dd/MM/yyyy hh:mm tt" 
+                            EditFormat="DateTime">
+                        </PropertiesDateEdit>
+                    </dx:GridViewDataDateColumn>
+                    <dx:GridViewDataTextColumn FieldName="SpeakerName" 
+                        ShowInCustomizationForm="True" VisibleIndex="7">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataComboBoxColumn Caption="Hall" FieldName="ConferenceHallId" 
+                        VisibleIndex="8">
+                        <PropertiesComboBox DataSourceID="HallObjectDS" TextField="Name" 
+                            ValueField="ConferenceHallsId" ValueType="System.Int32">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataTextColumn FieldName="Description" 
+                        ShowInCustomizationForm="True" VisibleIndex="9">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataMemoColumn FieldName="AllDescription" 
+                        ShowInCustomizationForm="True" Visible="False" VisibleIndex="10">
+                        <EditFormSettings Visible="True" />
+                    </dx:GridViewDataMemoColumn>
+                </Columns>
+                <Settings ShowFilterRow="True" />
+
+<Settings ShowFilterRow="True"></Settings>
+            </dx:ASPxGridView>
+            <asp:ObjectDataSource ID="HallObjectDS" runat="server" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ConferenceHallsLogic">
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="SessionTypeObjectDS" runat="server" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ScheduleSessionTypeLogic">
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ConferenceProgramsObjectDS" runat="server" 
+                DeleteMethod="Delete" InsertMethod="Insert" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ConferenceScheduleLogic" 
+                UpdateMethod="Update">
+                <DeleteParameters>
+                    <asp:Parameter Name="Original_ScheduleId" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="ConferenceProgramId" Type="Int32" />
+                    <asp:Parameter Name="Title" Type="String" />
+                    <asp:Parameter Name="PersonId" Type="Int32" />
+                    <asp:Parameter Name="ScheduleSessionTypeId" Type="Int32" />
+                    <asp:Parameter Name="StartTime" Type="DateTime" />
+                    <asp:Parameter Name="EndTime" Type="DateTime" />
+                    <asp:Parameter Name="SpeakerName" Type="String" />
+                    <asp:Parameter Name="ConferenceHallId" Type="Int32" />
+                    <asp:Parameter Name="Description" Type="String" />
+                    <asp:Parameter Name="AllDescription" Type="String" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="ConferenceProgramId" Type="Int32" />
+                    <asp:Parameter Name="Title" Type="String" />
+                    <asp:Parameter Name="PersonId" Type="Int32" />
+                    <asp:Parameter Name="ScheduleSessionTypeId" Type="Int32" />
+                    <asp:Parameter Name="StartTime" Type="DateTime" />
+                    <asp:Parameter Name="EndTime" Type="DateTime" />
+                    <asp:Parameter Name="SpeakerName" Type="String" />
+                    <asp:Parameter Name="ConferenceHallId" Type="Int32" />
+                    <asp:Parameter Name="Description" Type="String" />
+                    <asp:Parameter Name="AllDescription" Type="String" />
+                    <asp:Parameter Name="Original_ScheduleId" Type="Int32" />
+                </UpdateParameters>
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ConferenceObjectDS" runat="server" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ConferencesLogic">
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ProgramObjectDS" runat="server" 
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+                TypeName="BusinessLogicLayer.Components.Conference.ConferenceProgramsLogic">
+            </asp:ObjectDataSource>
+        </div>
+        </div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="DashBoardContentPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="LeftSideBar" runat="server">
+</asp:Content>

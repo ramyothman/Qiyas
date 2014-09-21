@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36E7A3B7-98E6-4431-B20C-419D873D4224}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogicLayer</RootNamespace>
+    <AssemblyName>BusinessLogicLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="Components\AluminiManagement\AluminiesLogic.cs" />
+    <Compile Include="Components\BedManagement\AdmissionStayChangeLogic.cs" />
+    <Compile Include="Components\BedManagement\AdmissionStayTypeLogic.cs" />
+    <Compile Include="Components\BedManagement\ConsultantLogic.cs" />
+    <Compile Include="Components\BedManagement\DischargeTypeLogic.cs" />
+    <Compile Include="Components\BedManagement\PatientAdmissionLogic.cs" />
+    <Compile Include="Components\Conference\AbstractAuthorsLanguageLogic.cs" />
+    <Compile Include="Components\Conference\AbstractAuthorsLogic.cs" />
+    <Compile Include="Components\Conference\AbstractReviewerAssignmentLogic.cs" />
+    <Compile Include="Components\Conference\AbstractReviewerLogic.cs" />
+    <Compile Include="Components\Conference\AbstractReviewLogic.cs" />
+    <Compile Include="Components\Conference\AbstractsLanguageLogic.cs" />
+    <Compile Include="Components\Conference\AbstractsLogic.cs" />
+    <Compile Include="Components\Conference\AbstractStatusLogic.cs" />
+    <Compile Include="Components\Conference\AirLineLanguageLogic.cs" />
+    <Compile Include="Components\Conference\AirLineLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceCategoryLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceCategoryLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceHallsLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceHallsLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceMainImagesLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceMediaReferenceLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceProgramsLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceProgramsLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceRegisterationsLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceRegisterationsLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceRegistrationItemsLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceRegistrationSettingLanguagesLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceRegistrationSettingsLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceRegistrationTypeLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceRegistrationTypeLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceScheduleLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceScheduleLogic.cs" />
+    <Compile Include="Components\Conference\ConferencesLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferencesLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceSpeakersLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ConferenceSpeakersLogic.cs" />
+    <Compile Include="Components\Conference\EmailTemplateLogic.cs" />
+    <Compile Include="Components\Conference\HotelLanguageLogic.cs" />
+    <Compile Include="Components\Conference\HotelLogic.cs" />
+    <Compile Include="Components\Conference\InvitedGuestsLanguageLogic.cs" />
+    <Compile Include="Components\Conference\InvitedGuestsLogic.cs" />
+    <Compile Include="Components\Conference\ScheduleSessionTypeLanguageLogic.cs" />
+    <Compile Include="Components\Conference\ScheduleSessionTypeLogic.cs" />
+    <Compile Include="Components\Conference\SponsorslanguageLogic.cs" />
+    <Compile Include="Components\Conference\SponsorsLogic.cs" />
+    <Compile Include="Components\Conference\TransportationTypeLanguageLogic.cs" />
+    <Compile Include="Components\Conference\TransportationTypeLogic.cs" />
+    <Compile Include="Components\Conference\TravelLogic.cs" />
+    <Compile Include="Components\Conference\VenuesLanguageLogic.cs" />
+    <Compile Include="Components\Conference\VenuesLogic.cs" />
+    <Compile Include="Components\Conference\SystemEmailTypeLogic.cs" />
+    <Compile Include="Components\Conference\VisaRequestLogic.cs" />
+    <Compile Include="Components\ContentManagement\MenuEntityPositionLogic.cs" />
+    <Compile Include="Components\Eligibility\DivisionLogic.cs" />
+    <Compile Include="Components\Eligibility\EligibilityConsultantLogic.cs" />
+    <Compile Include="Components\Eligibility\EligibilityDepartmentActionLogic.cs" />
+    <Compile Include="Components\Eligibility\EligibilityDepartmentLogic.cs" />
+    <Compile Include="Components\Eligibility\EligibilityStatusLogic.cs" />
+    <Compile Include="Components\Eligibility\EligibleFilesLogic.cs" />
+    <Compile Include="Components\Eligibility\EligibleLogic.cs" />
+    <Compile Include="Components\Eligibility\EligibleRequestStatusHistoryLogic.cs" />
+    <Compile Include="Components\Eligibility\HospitalLogic.cs" />
+    <Compile Include="Components\ContentManagement\EmailTemplateLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormDocumentLanguageLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormDocumentLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormDocumentStatusLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormFieldColumnLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormFieldLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormFieldTypeLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormFieldValueLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormSubmissionAnswerLogic.cs" />
+    <Compile Include="Components\FormBuilder\FormSubmissionLogic.cs" />
+    <Compile Include="Components\FormBuilder\JSON\AnswerJSON.cs" />
+    <Compile Include="Components\FormBuilder\JSON\QuestionsJSON.cs" />
+    <Compile Include="Components\FormBuilder\JSON\SurveyJSON.cs" />
+    <Compile Include="Components\HISBedManagement\BedSpecialityLogic.cs" />
+    <Compile Include="Components\HISBedManagement\BedStatusLogic.cs" />
+    <Compile Include="Components\HISBedManagement\BedTypeLogic.cs" />
+    <Compile Include="Components\HISBedManagement\RoomTypeLogic.cs" />
+    <Compile Include="Components\HISBedManagement\SpecialityLogic.cs" />
+    <Compile Include="Components\HISBedManagement\WardForLogic.cs" />
+    <Compile Include="Components\HISBedManagement\WardRoomBedLogic.cs" />
+    <Compile Include="Components\HISBedManagement\WardRoomLogic.cs" />
+    <Compile Include="Components\HISBedManagement\WardRoomSpecialityLogic.cs" />
+    <Compile Include="Components\HISBedManagement\WardsLogic.cs" />
+    <Compile Include="Components\HISBedManagement\WardSpecialityLogic.cs" />
+    <Compile Include="Components\HISBedManagement\WardTypeLogic.cs" />
+    <Compile Include="Components\RoleSecurity\UserMonitorLogic.cs" />
+    <Compile Include="Entities\Conference\ConferenceMainImages.cs" />
+    <Compile Include="Entities\Conference\ConferenceMediaReference.cs" />
+    <Compile Include="Entities\Conference\ConferenceRegistrationItems.cs" />
+    <Compile Include="Entities\Conference\ConferenceRegistrationSettingLanguages.cs" />
+    <Compile Include="Entities\Conference\ConferenceRegistrationSettings.cs" />
+    <Compile Include="Entities\Conference\EmailTemplate.cs" />
+    <Compile Include="Entities\Conference\SystemEmailType.cs" />
+    <Compile Include="Entities\Conference\VisaRequest.cs" />
+    <Compile Include="Entities\ContentManagement\MenuEntityItemLanguage.cs" />
+    <Compile Include="Components\ContentManagement\MenuEntityItemLanguageLogic.cs" />
+    <Compile Include="Components\Organization\SpecialityLogic.cs" />
+    <Compile Include="Components\BedManagement\WardBedLogic.cs" />
+    <Compile Include="Components\BedManagement\WardLogic.cs" />
+    <Compile Include="Components\BedManagement\WardRoomLogic.cs" />
+    <Compile Include="Components\BedManagement\WardRoomTypeLogic.cs" />
+    <Compile Include="Components\BedManagement\WardSpecialityLogic.cs" />
+    <Compile Include="Components\Persons\AddressLogic.cs" />
+    <Compile Include="Components\Persons\AddressTypeLogic.cs" />
+    <Compile Include="Components\ContentManagement\ArticleCategoryLogic.cs" />
+    <Compile Include="Components\ContentManagement\ArticleCommentLogic.cs" />
+    <Compile Include="Components\ContentManagement\ArticleLanguageLogic.cs" />
+    <Compile Include="Components\ContentManagement\ArticleLogic.cs" />
+    <Compile Include="Components\ContentManagement\ArticleStatusLogic.cs" />
+    <Compile Include="Components\ContentManagement\ArticleTagLogic.cs" />
+    <Compile Include="Components\Persons\BusinessEntityAddressLogic.cs" />
+    <Compile Include="Components\Persons\BusinessEntityContactLogic.cs" />
+    <Compile Include="Components\Persons\BusinessEntityLogic.cs" />
+    <Compile Include="Components\BusinessLogic.cs" />
+    <Compile Include="Components\ContentManagement\CommentStatusLogic.cs" />
+    <Compile Include="Components\ContentManagement\CommentTypeLogic.cs" />
+    <Compile Include="Components\Persons\ContactTypeLogic.cs" />
+    <Compile Include="Components\ContentManagement\ContentEntityLogic.cs" />
+    <Compile Include="Components\Persons\CountryRegionLogic.cs" />
+    <Compile Include="Components\Persons\CredentialLogic.cs" />
+    <Compile Include="Components\HumanResources\DepartmentLanguagesLogic.cs" />
+    <Compile Include="Components\HumanResources\DepartmentsLogic.cs" />
+    <Compile Include="Components\HumanResources\DivisionsLogic.cs" />
+    <Compile Include="Components\Persons\EducationTypeLogic.cs" />
+    <Compile Include="Components\Persons\EmailAddressLogic.cs" />
+    <Compile Include="Components\Persons\EmailAddressTypeLogic.cs" />
+    <Compile Include="Components\HumanResources\EmployeesLogic.cs" />
+    <Compile Include="Components\ContentManagement\LanguageLogic.cs" />
+    <Compile Include="Components\ContentManagement\LookupLanguagesLogic.cs" />
+    <Compile Include="Components\ContentManagement\LookupsLogic.cs" />
+    <Compile Include="Components\ContentManagement\MasterPageTemplateLogic.cs" />
+    <Compile Include="Components\ContentManagement\MenuEntityItemLogic.cs" />
+    <Compile Include="Components\ContentManagement\MenuEntityLogic.cs" />
+    <Compile Include="Components\ContentManagement\MenuEntityTypeLogic.cs" />
+    <Compile Include="Components\HumanResources\OrganizationLanguagesLogic.cs" />
+    <Compile Include="Components\HumanResources\OrganizationsLogic.cs" />
+    <Compile Include="Components\ContentManagement\PageStatusLogic.cs" />
+    <Compile Include="Components\Persons\PersonDependentLogic.cs" />
+    <Compile Include="Components\Persons\PersonEducationLogic.cs" />
+    <Compile Include="Components\Persons\PersonExtraLogic.cs" />
+    <Compile Include="Components\Persons\PersonInternshipLogic.cs" />
+    <Compile Include="Components\Persons\PersonLanguageProficiencyLogic.cs" />
+    <Compile Include="Components\Persons\PersonLanguagesLogic.cs" />
+    <Compile Include="Components\Persons\PersonLogic.cs" />
+    <Compile Include="Components\Persons\PersonPersonTypesLogic.cs" />
+    <Compile Include="Components\Persons\PersonPhoneLogic.cs" />
+    <Compile Include="Components\Persons\PersonPublicationLogic.cs" />
+    <Compile Include="Components\Persons\PersonWorkExperienceLogic.cs" />
+    <Compile Include="Components\PGME\PersonPGMERegisterationLogic.cs" />
+    <Compile Include="Components\PGME\PersonReferenceLogic.cs" />
+    <Compile Include="Components\PGME\PersonRegisterationStatusLogic.cs" />
+    <Compile Include="Components\PGME\PersonSCHealthSpecialityLogic.cs" />
+    <Compile Include="Components\PGME\ProgramLogic.cs" />
+    <Compile Include="Components\PGME\ProgramTypeLogic.cs" />
+    <Compile Include="Components\RoleSecurity\PersonRoleLogic.cs" />
+    <Compile Include="Components\Persons\PersonTypeLogic.cs" />
+    <Compile Include="Components\Persons\PhoneNumberTypeLogic.cs" />
+    <Compile Include="Components\Organization\ResearchChairLanguagesLogic.cs" />
+    <Compile Include="Components\Organization\ResearchChairsLogic.cs" />
+    <Compile Include="Components\RoleSecurity\RoleLogic.cs" />
+    <Compile Include="Components\RoleSecurity\RolePrivilegeLogic.cs" />
+    <Compile Include="Components\ContentManagement\SectionFilesLogic.cs" />
+    <Compile Include="Components\RoleSecurity\SecurityAccessTypeLogic.cs" />
+    <Compile Include="Components\ContentManagement\SiteCategoryLogic.cs" />
+    <Compile Include="Components\ContentManagement\SiteLogic.cs" />
+    <Compile Include="Components\ContentManagement\SitePageCategoryLogic.cs" />
+    <Compile Include="Components\ContentManagement\SitePageLanguageLogic.cs" />
+    <Compile Include="Components\ContentManagement\SitePageLogic.cs" />
+    <Compile Include="Components\ContentManagement\SiteSectionLogic.cs" />
+    <Compile Include="Components\ContentManagement\SiteSectionStatusLogic.cs" />
+    <Compile Include="Components\Persons\StateProvinceLogic.cs" />
+    <Compile Include="Components\ContentManagement\SystemFolderLogic.cs" />
+    <Compile Include="Components\RoleSecurity\SystemFunctionLogic.cs" />
+    <Compile Include="Components\ContentManagement\SystemPageLogic.cs" />
+    <Compile Include="Entities\AluminiManagement\Aluminies.cs" />
+    <Compile Include="Entities\BedManagement\AdmissionStayChange.cs" />
+    <Compile Include="Entities\BedManagement\AdmissionStayType.cs" />
+    <Compile Include="Entities\BedManagement\Consultant.cs" />
+    <Compile Include="Entities\BedManagement\DischargeType.cs" />
+    <Compile Include="Entities\BedManagement\PatientAdmission.cs" />
+    <Compile Include="Entities\Conference\AbstractAuthors.cs" />
+    <Compile Include="Entities\Conference\AbstractAuthorsLanguage.cs" />
+    <Compile Include="Entities\Conference\AbstractReview.cs" />
+    <Compile Include="Entities\Conference\AbstractReviewer.cs" />
+    <Compile Include="Entities\Conference\AbstractReviewerAssignment.cs" />
+    <Compile Include="Entities\Conference\Abstracts.cs" />
+    <Compile Include="Entities\Conference\AbstractsLanguage.cs" />
+    <Compile Include="Entities\Conference\AbstractStatus.cs" />
+    <Compile Include="Entities\Conference\AirLine.cs" />
+    <Compile Include="Entities\Conference\AirLineLanguage.cs" />
+    <Compile Include="Entities\Conference\ConferenceCategory.cs" />
+    <Compile Include="Entities\Conference\ConferenceCategoryLanguage.cs" />
+    <Compile Include="Entities\Conference\ConferenceHalls.cs" />
+    <Compile Include="Entities\Conference\ConferenceHallsLanguage.cs" />
+    <Compile Include="Entities\Conference\ConferencePrograms.cs" />
+    <Compile Include="Entities\Conference\ConferenceProgramsLanguage.cs" />
+    <Compile Include="Entities\Conference\ConferenceRegisterations.cs" />
+    <Compile Include="Entities\Conference\ConferenceRegisterationsLanguage.cs" />
+    <Compile Include="Entities\Conference\ConferenceRegistrationType.cs" />
+    <Compile Include="Entities\Conference\ConferenceRegistrationTypeLanguage.cs" />
+    <Compile Include="Entities\Conference\Conferences.cs" />
+    <Compile Include="Entities\Conference\ConferenceSchedule.cs" />
+    <Compile Include="Entities\Conference\ConferenceScheduleLanguage.cs" />
+    <Compile Include="Entities\Conference\ConferencesLanguage.cs" />
+    <Compile Include="Entities\Conference\ConferenceSpeakers.cs" />
+    <Compile Include="Entities\Conference\ConferenceSpeakersLanguage.cs" />
+    <Compile Include="Entities\Conference\Hotel.cs" />
+    <Compile Include="Entities\Conference\HotelLanguage.cs" />
+    <Compile Include="Entities\Conference\InvitedGuests.cs" />
+    <Compile Include="Entities\Conference\InvitedGuestsLanguage.cs" />
+    <Compile Include="Entities\Conference\ScheduleSessionType.cs" />
+    <Compile Include="Entities\Conference\ScheduleSessionTypeLanguage.cs" />
+    <Compile Include="Entities\Conference\Sponsors.cs" />
+    <Compile Include="Entities\Conference\Sponsorslanguage.cs" />
+    <Compile Include="Entities\Conference\TransportationType.cs" />
+    <Compile Include="Entities\Conference\TransportationTypeLanguage.cs" />
+    <Compile Include="Entities\Conference\Travel.cs" />
+    <Compile Include="Entities\Conference\Venues.cs" />
+    <Compile Include="Entities\Conference\VenuesLanguage.cs" />
+    <Compile Include="Entities\ContentManagement\MenuEntityPosition.cs" />
+    <Compile Include="Entities\Eligibility\Division.cs" />
+    <Compile Include="Entities\Eligibility\EligibilityConsultant.cs" />
+    <Compile Include="Entities\Eligibility\EligibilityDepartment.cs" />
+    <Compile Include="Entities\Eligibility\EligibilityDepartmentAction.cs" />
+    <Compile Include="Entities\Eligibility\EligibilityStatus.cs" />
+    <Compile Include="Entities\Eligibility\Eligible.cs" />
+    <Compile Include="Entities\Eligibility\EligibleFiles.cs" />
+    <Compile Include="Entities\Eligibility\EligibleRequestStatusHistory.cs" />
+    <Compile Include="Entities\Eligibility\Hospital.cs" />
+    <Compile Include="Entities\ContentManagement\EmailTemplate.cs" />
+    <Compile Include="Entities\FormBuilder\FormDocument.cs" />
+    <Compile Include="Entities\FormBuilder\FormDocumentLanguage.cs" />
+    <Compile Include="Entities\FormBuilder\FormDocumentStatus.cs" />
+    <Compile Include="Entities\FormBuilder\FormField.cs" />
+    <Compile Include="Entities\FormBuilder\FormFieldColumn.cs" />
+    <Compile Include="Entities\FormBuilder\FormFieldType.cs" />
+    <Compile Include="Entities\FormBuilder\FormFieldValue.cs" />
+    <Compile Include="Entities\FormBuilder\FormSubmission.cs" />
+    <Compile Include="Entities\FormBuilder\FormSubmissionAnswer.cs" />
+    <Compile Include="Entities\HISBedManagement\BedSpeciality.cs" />
+    <Compile Include="Entities\HISBedManagement\BedStatus.cs" />
+    <Compile Include="Entities\HISBedManagement\BedType.cs" />
+    <Compile Include="Entities\HISBedManagement\RoomType.cs" />
+    <Compile Include="Entities\HISBedManagement\Speciality.cs" />
+    <Compile Include="Entities\HISBedManagement\WardFor.cs" />
+    <Compile Include="Entities\HISBedManagement\WardRoom.cs" />
+    <Compile Include="Entities\HISBedManagement\WardRoomBed.cs" />
+    <Compile Include="Entities\HISBedManagement\WardRoomSpeciality.cs" />
+    <Compile Include="Entities\HISBedManagement\Wards.cs" />
+    <Compile Include="Entities\HISBedManagement\WardSpeciality.cs" />
+    <Compile Include="Entities\HISBedManagement\WardType.cs" />
+    <Compile Include="Entities\Organization\Speciality.cs" />
+    <Compile Include="Entities\BedManagement\Ward.cs" />
+    <Compile Include="Entities\BedManagement\WardBed.cs" />
+    <Compile Include="Entities\BedManagement\WardRoom.cs" />
+    <Compile Include="Entities\BedManagement\WardRoomType.cs" />
+    <Compile Include="Entities\BedManagement\WardSpeciality.cs" />
+    <Compile Include="Entities\Persons\Address.cs" />
+    <Compile Include="Entities\Persons\AddressType.cs" />
+    <Compile Include="Entities\ContentManagement\Article.cs" />
+    <Compile Include="Entities\ContentManagement\ArticleCategory.cs" />
+    <Compile Include="Entities\ContentManagement\ArticleComment.cs" />
+    <Compile Include="Entities\ContentManagement\ArticleLanguage.cs" />
+    <Compile Include="Entities\ContentManagement\ArticleStatus.cs" />
+    <Compile Include="Entities\ContentManagement\ArticleTag.cs" />
+    <Compile Include="Entities\Persons\BusinessEntity.cs" />
+    <Compile Include="Entities\Persons\BusinessEntityAddress.cs" />
+    <Compile Include="Entities\Persons\BusinessEntityContact.cs" />
+    <Compile Include="Entities\ContentManagement\CommentStatus.cs" />
+    <Compile Include="Entities\ContentManagement\CommentType.cs" />
+    <Compile Include="Entities\Persons\ContactType.cs" />
+    <Compile Include="Entities\ContentManagement\ContentEntity.cs" />
+    <Compile Include="Entities\Persons\CountryRegion.cs" />
+    <Compile Include="Entities\Persons\Credential.cs" />
+    <Compile Include="Entities\HumanResources\DepartmentLanguages.cs" />
+    <Compile Include="Entities\HumanResources\Departments.cs" />
+    <Compile Include="Entities\HumanResources\Divisions.cs" />
+    <Compile Include="Entities\Persons\EducationType.cs" />
+    <Compile Include="Entities\Persons\EmailAddress.cs" />
+    <Compile Include="Entities\Persons\EmailAddressType.cs" />
+    <Compile Include="Entities\HumanResources\Employees.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\ContentManagement\Language.cs" />
+    <Compile Include="Entities\ContentManagement\LookupLanguages.cs" />
+    <Compile Include="Entities\ContentManagement\Lookups.cs" />
+    <Compile Include="Entities\ContentManagement\MasterPageTemplate.cs" />
+    <Compile Include="Entities\ContentManagement\MenuEntity.cs" />
+    <Compile Include="Entities\ContentManagement\MenuEntityItem.cs" />
+    <Compile Include="Entities\ContentManagement\MenuEntityType.cs" />
+    <Compile Include="Entities\HumanResources\OrganizationLanguages.cs" />
+    <Compile Include="Entities\HumanResources\Organizations.cs" />
+    <Compile Include="Entities\ContentManagement\PageStatus.cs" />
+    <Compile Include="Entities\Persons\Person.cs" />
+    <Compile Include="Entities\Persons\PersonDependent.cs" />
+    <Compile Include="Entities\Persons\PersonEducation.cs" />
+    <Compile Include="Entities\Persons\PersonExtra.cs" />
+    <Compile Include="Entities\Persons\PersonInternship.cs" />
+    <Compile Include="Entities\Persons\PersonLanguageProficiency.cs" />
+    <Compile Include="Entities\Persons\PersonLanguages.cs" />
+    <Compile Include="Entities\Persons\PersonPersonTypes.cs" />
+    <Compile Include="Entities\Persons\PersonPhone.cs" />
+    <Compile Include="Entities\Persons\PersonPublication.cs" />
+    <Compile Include="Entities\Persons\PersonWorkExperience.cs" />
+    <Compile Include="Entities\PGME\PersonPGMERegisteration.cs" />
+    <Compile Include="Entities\PGME\PersonReference.cs" />
+    <Compile Include="Entities\PGME\PersonRegisterationStatus.cs" />
+    <Compile Include="Entities\PGME\PersonSCHealthSpeciality.cs" />
+    <Compile Include="Entities\PGME\Program.cs" />
+    <Compile Include="Entities\PGME\ProgramType.cs" />
+    <Compile Include="Entities\RoleSecurity\PersonRole.cs" />
+    <Compile Include="Entities\Persons\PersonType.cs" />
+    <Compile Include="Entities\Persons\PhoneNumberType.cs" />
+    <Compile Include="Entities\Organization\ResearchChairLanguages.cs" />
+    <Compile Include="Entities\Organization\ResearchChairs.cs" />
+    <Compile Include="Entities\RoleSecurity\Role.cs" />
+    <Compile Include="Entities\RoleSecurity\RolePrivilege.cs" />
+    <Compile Include="Entities\ContentManagement\SectionFiles.cs" />
+    <Compile Include="Entities\RoleSecurity\SecurityAccessType.cs" />
+    <Compile Include="Entities\ContentManagement\Site.cs" />
+    <Compile Include="Entities\ContentManagement\SiteCategory.cs" />
+    <Compile Include="Entities\ContentManagement\SitePage.cs" />
+    <Compile Include="Entities\ContentManagement\SitePageCategory.cs" />
+    <Compile Include="Entities\ContentManagement\SitePageLanguage.cs" />
+    <Compile Include="Entities\ContentManagement\SiteSection.cs" />
+    <Compile Include="Entities\ContentManagement\SiteSectionStatus.cs" />
+    <Compile Include="Entities\Persons\StateProvince.cs" />
+    <Compile Include="Entities\ContentManagement\SystemFolder.cs" />
+    <Compile Include="Entities\RoleSecurity\SystemFunction.cs" />
+    <Compile Include="Entities\ContentManagement\SystemPage.cs" />
+    <Compile Include="Entities\RoleSecurity\UserMonitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Conference\Travellanguage.cs" />
+    <Compile Include="Components\Conference\TravellanguageLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{65A732E9-AD5D-41FC-A697-3FDE8505E356}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WorkFlows\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

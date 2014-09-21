@@ -1,0 +1,10 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v11.1, Version=11.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxtc" Namespace="DevExpress.Web.ASPxTabControl" Assembly="DevExpress.Web.v11.1, Version=11.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<dxtc:ASPxPageControl runat="server" CssFilePath="{0}/styles.css" SpriteCssFilePath="{0}/sprite.css" CssPostfix="DXConnect">
+    <Paddings PaddingTop="2px" />
+    <ContentStyle>
+        <Paddings Padding="0" />
+	</ContentStyle>
+    <LoadingPanelStyle ImageSpacing="5" />
+	<LoadingPanelImage Url="Web/Loading.gif" />
+</dxtc:ASPxPageControl>

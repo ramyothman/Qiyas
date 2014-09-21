@@ -1,0 +1,146 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_MasterPages/EventoAdmin.Master" AutoEventWireup="true" CodeBehind="ManageArticles.aspx.cs" Inherits="SocioBuilderSite.BackendPortal.ContentManagement.ManageArticles" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
+<%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function onArticleChanged(cmbArticle) {
+            ArticleGrid.GetEditor("SectionId").PerformCallback(cmbArticle.GetValue().toString());
+        }
+    </script>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <div class="g6 widgets">
+			<div class="widget widget-header-blue" id="widget_charts" data-icon="graph-dark">
+				<h3 class="handle">Manage Articles</h3>
+				<div class="inner-content">
+            <dx:ASPxGridView ID="ArticleGrid" runat="server" AutoGenerateColumns="False" DataSourceID="ArticleObjectDS"
+                KeyFieldName="ArticleId" ClientInstanceName="ArticleGrid">
+                <Columns>
+                    <dx:GridViewCommandColumn ButtonType="Image" VisibleIndex="0">
+                        <EditButton>
+                            <Image Height="16px" Url="~/images/editgrid.png" Width="16px">
+                            </Image>
+                        </EditButton>
+                        <NewButton>
+                            <Image Height="16px" Url="~/images/newgrid.png" Width="16px">
+                            </Image>
+                        </NewButton>
+                        <DeleteButton Visible="True">
+                            <Image Height="16px" Url="~/images/griddelete.png" Width="16px">
+                            </Image>
+                        </DeleteButton>
+                        <CancelButton>
+                            <Image Height="32px" Url="~/images/cancelsave32.png" Width="32px">
+                            </Image>
+                        </CancelButton>
+                        <UpdateButton>
+                            <Image Height="32px" Url="~/images/filesave32.png" Width="32px">
+                            </Image>
+                        </UpdateButton>
+                        <ClearFilterButton Visible="True">
+                       </ClearFilterButton>
+                        <CustomButtons>
+                            <dx:GridViewCommandColumnCustomButton Text="Edit">
+                                <Image Height="16px" Url="~/images/editgrid.png" Width="16px">
+                                </Image>
+                            </dx:GridViewCommandColumnCustomButton>
+                        </CustomButtons>
+                    </dx:GridViewCommandColumn>
+                    <dx:GridViewDataTextColumn FieldName="ArticleId" ReadOnly="True" Caption="Id"
+                        VisibleIndex="1">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataComboBoxColumn FieldName="SiteSectionId" VisibleIndex="2">
+                        <PropertiesComboBox ValueType="System.String" DataSourceID="ArticleSection">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataComboBoxColumn Caption="Creator" FieldName="CreatorId" VisibleIndex="3">
+                        <PropertiesComboBox ValueType="System.Int32" DataSourceID="PersonObjectDS" TextField="UserName" ValueField="BusinessEntityId">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataComboBoxColumn FieldName="ArticleStatusId" VisibleIndex="4" Caption="Status">
+                        <PropertiesComboBox ValueField="ArticleStatusId" TextField="Name" ValueType="System.Int32" DataSourceID="ArticleStatuesDS">
+                        </PropertiesComboBox>
+                    </dx:GridViewDataComboBoxColumn>
+                    <dx:GridViewDataTextColumn FieldName="AuthorId" ShowInCustomizationForm="True" VisibleIndex="5">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataDateColumn FieldName="PostDate" VisibleIndex="6">
+                    </dx:GridViewDataDateColumn>
+                    <dx:GridViewDataCheckColumn FieldName="AllowLanguageSpecificTags" ShowInCustomizationForm="True"
+                        Visible="False" VisibleIndex="7">
+                    </dx:GridViewDataCheckColumn>
+                    <dx:GridViewDataTextColumn FieldName="RowGuid" ShowInCustomizationForm="True" Visible="False"
+                        VisibleIndex="8">
+                    </dx:GridViewDataTextColumn>
+                    <dx:GridViewDataDateColumn FieldName="ModifiedDate" VisibleIndex="7">
+                    </dx:GridViewDataDateColumn>
+                    <dx:GridViewDataTextColumn FieldName="CommentsTypeId" ShowInCustomizationForm="True"
+                        Visible="False" VisibleIndex="8">
+                    </dx:GridViewDataTextColumn>
+                </Columns>
+                <SettingsBehavior AllowFocusedRow="True" ConfirmDelete="True" />
+                <SettingsEditing Mode="PopupEditForm" PopupEditFormWidth="450px" />
+                <Settings ShowFilterRow="True" />
+                <SettingsText ConfirmDelete="Are you sure you want to delete this record?" />
+            </dx:ASPxGridView>
+            </div>
+            </div>
+            </div>
+            <asp:ObjectDataSource ID="ArticleObjectDS" runat="server" DeleteMethod="Delete" InsertMethod="Insert"
+                OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll"
+                 TypeName="BusinessLogicLayer.Components.ContentManagement.ArticleLogic"
+                UpdateMethod="Update">
+                <DeleteParameters>
+                    <asp:Parameter Name="Original_ArticleId" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="ArticleId" Type="Int32" />
+                    <asp:Parameter Name="SiteSectionId" Type="Int32" />
+                    <asp:Parameter Name="CreatorId" Type="Int32" />
+                    <asp:Parameter Name="ArticleStatusId" Type="Int32" />
+                    <asp:Parameter Name="AuthorId" Type="Int32" />
+                    <asp:Parameter Name="PostDate" Type="DateTime" />
+                    <asp:Parameter Name="AllowLanguageSpecificTags" Type="Boolean" />
+                    <asp:Parameter DbType="Guid" Name="RowGuid" />
+                    <asp:Parameter Name="ModifiedDate" Type="DateTime" />
+                    <asp:Parameter Name="CommentsTypeId" Type="Int32" />
+                    <asp:Parameter Name="EnableModeteration" Type="Boolean" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="ArticleId" Type="Int32" />
+                    <asp:Parameter Name="SiteSectionId" Type="Int32" />
+                    <asp:Parameter Name="CreatorId" Type="Int32" />
+                    <asp:Parameter Name="ArticleStatusId" Type="Int32" />
+                    <asp:Parameter Name="AuthorId" Type="Int32" />
+                    <asp:Parameter Name="PostDate" Type="DateTime" />
+                    <asp:Parameter Name="AllowLanguageSpecificTags" Type="Boolean" />
+                    <asp:Parameter DbType="Guid" Name="RowGuid" />
+                    <asp:Parameter Name="ModifiedDate" Type="DateTime" />
+                    <asp:Parameter Name="CommentsTypeId" Type="Int32" />
+                    <asp:Parameter Name="EnableModeteration" Type="Boolean" />
+                    <asp:Parameter Name="Original_ArticleId" Type="Int32" />
+                </UpdateParameters>
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ArticleSection" runat="server" OldValuesParameterFormatString="original_{0}"
+                SelectMethod="GetAllBySiteId" TypeName="BusinessLogicLayer.Components.ContentManagement.SiteSectionLogic">
+                <SelectParameters>
+                    <asp:SessionParameter DefaultValue="0" Name="SiteId" SessionField="CurrentWorkingSite"
+                        Type="String" />
+                </SelectParameters>
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ArticleStatuesDS" runat="server"
+             OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll" 
+          TypeName="BusinessLogicLayer.Components.ContentManagement.ArticleStatusLogic">
+            </asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="PersonObjectDS" runat="server"
+             OldValuesParameterFormatString="original_{0}" SelectMethod="GetAll"
+              TypeName="BusinessLogicLayer.Components.Persons.PersonLogic">
+              </asp:ObjectDataSource>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+

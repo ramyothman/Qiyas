@@ -1,0 +1,57 @@
+﻿CREATE PROCEDURE [dbo].[UpdatePersonExtra]
+    @PersonExtraId int,
+    @OldPersonExtraId int,
+    @NationalIdType nchar(1),
+    @NationalId nvarchar(20),
+    @Gender nchar(1),
+    @Religion nvarchar(50),
+    @BirthDate datetime,
+    @BirthPlace nvarchar(50),
+    @MaritalStatus nvarchar(50),
+    @SpauseName nvarchar(50),
+    @FatherGuardianName nvarchar(150),
+    @FatherGuardianAddress nvarchar(250),
+    @FatherGuardianContactNumber nvarchar(50),
+    @EmergencyContactName nvarchar(150),
+    @EmergencyContactAddress nvarchar(250),
+    @EmergencyContactNumber nvarchar(50),
+    @EmergencyContactEmail nvarchar(150),
+    @SponsorId int,
+    @SponsorStartDate datetime,
+    @SponsorEndDate datetime,
+    @SponsorCategoryId int,
+    @IsGraduateTransfer bit,
+    @ReasonForSeekingTransfer nvarchar(250),
+    @LevelRequired nvarchar(50),
+    @OtherInformation ntext
+AS
+UPDATE [Person].[PersonExtra]
+SET
+    PersonExtraId = @PersonExtraId,
+    NationalIdType = @NationalIdType,
+    NationalId = @NationalId,
+    Gender = @Gender,
+    Religion = @Religion,
+    BirthDate = @BirthDate,
+    BirthPlace = @BirthPlace,
+    MaritalStatus = @MaritalStatus,
+    SpauseName = @SpauseName,
+    FatherGuardianName = @FatherGuardianName,
+    FatherGuardianAddress = @FatherGuardianAddress,
+    FatherGuardianContactNumber = @FatherGuardianContactNumber,
+    EmergencyContactName = @EmergencyContactName,
+    EmergencyContactAddress = @EmergencyContactAddress,
+    EmergencyContactNumber = @EmergencyContactNumber,
+    EmergencyContactEmail = @EmergencyContactEmail,
+    SponsorId = @SponsorId,
+    SponsorStartDate = @SponsorStartDate,
+    SponsorEndDate = @SponsorEndDate,
+    SponsorCategoryId = @SponsorCategoryId,
+    IsGraduateTransfer = @IsGraduateTransfer,
+    ReasonForSeekingTransfer = @ReasonForSeekingTransfer,
+    LevelRequired = @LevelRequired,
+    OtherInformation = @OtherInformation
+WHERE [PersonExtraId] = @OLDPersonExtraId
+IF @@ROWCOUNT > 0
+Select * From Person.PersonExtra 
+Where [PersonExtraId] = @PersonExtraId

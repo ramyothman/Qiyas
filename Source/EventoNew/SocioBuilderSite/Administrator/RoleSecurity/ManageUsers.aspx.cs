@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace SocioBuilderSite.BackendPortal.RoleSecurity
+{
+    public partial class ManageUsers : AdminBasePage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void manageUsersGrid_CustomButtonCallback(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewCustomButtonCallbackEventArgs e)
+        {
+            Response.Redirect("UserDetails.aspx");
+        }
+    }
+}

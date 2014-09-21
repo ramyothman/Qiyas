@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mainmenu>
+  <item Text="Home" LinkUrl="~/Conference/TestAzzam.aspx" Selected="True">
+	
+  </item>
+  <item Text="Speakers" LinkUrl="~/Conferences/Speakers.aspx" >
+  </item>
+  <item Text="Abstracts" LinkUrl="~/Conferences/Abstracts.aspx">
+    <item Text="Submit Abstract" LinkUrl="~/Conferences/SubmitAbstract.aspx">
+   
+    </item>
+	  <item Text="My Abstracts" LinkUrl="~/Conferences/MyAbstracts.aspx"/>
+	  <item Text="Accepted Abstracts" LinkUrl="#"/>
+ 
+  </item>
+  <item Text="Schedule" LinkUrl="#">
+    <item Text="Kidney Transplantation:  Post Transplant Care" LinkUrl="#">
+    </item>
+    <item Text="Annual Meeting Program" LinkUrl="#">
+    </item>
+    <item Text="Nursing Program" LinkUrl="#">
+    </item>
+  </item>
+
+	<item Text="Registration" LinkUrl="#" >
+		<item Text="Signup" LinkUrl="~/Conferences/Signup.aspx"></item>
+	</item>
+</mainmenu>

@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE [aicaqiyasf].GetByIDConferenceRegistrationSettingLanguages
+    @ConferenceRegistrationSettingLanguageID int
+
+AS
+BEGIN
+Select ConferenceRegistrationSettingLanguageID, ConferenceRegistrationSettingID, RegistrationShorInstructions, RegistrationInstructionsInFormPre, RegistrationInstructionsInFormPost, PostRegistrationInstructions, LanguageID
+From [Conference].[ConferenceRegistrationSettingLanguages]
+
+WHERE [ConferenceRegistrationSettingLanguageID] = @ConferenceRegistrationSettingLanguageID
+END

@@ -1,0 +1,25 @@
+﻿CREATE TABLE [Conference].[Conferences] (
+    [ConferenceId]                       INT             IDENTITY (1, 1) NOT NULL,
+    [SiteId]                             INT             NULL,
+    [ConferenceName]                     NVARCHAR (500)  NULL,
+    [ConferenceLogo]                     NVARCHAR (500)  NULL,
+    [StartDate]                          DATETIME        NULL,
+    [EndDate]                            DATETIME        NULL,
+    [IsActive]                           BIT             NULL,
+    [Location]                           NVARCHAR (500)  NULL,
+    [LocationName]                       NVARCHAR (500)  NULL,
+    [LocationLogo]                       NVARCHAR (500)  NULL,
+    [LocationLongitude]                  DECIMAL (18, 6) NULL,
+    [LocationLatitude]                   DECIMAL (18, 6) NULL,
+    [ConferenceDomain]                   NVARCHAR (50)   NULL,
+    [ConferenceCode]                     NVARCHAR (10)   NULL,
+    [ConferenceAlias]                    NVARCHAR (20)   NULL,
+    [ConferenceVenueID]                  INT             NULL,
+    [IsDefault]                          BIT             NULL,
+    [AbstractSubmissionStartDate]        DATETIME        NULL,
+    [AbstractSubmissionEndDate]          DATETIME        NULL,
+    [AbstractSubmissionEndMessagePageID] INT             NULL,
+    [AbstractSubmissionNotStartedPageID] INT             NULL,
+    CONSTRAINT [PK_Conferences] PRIMARY KEY CLUSTERED ([ConferenceId] ASC)
+);
+

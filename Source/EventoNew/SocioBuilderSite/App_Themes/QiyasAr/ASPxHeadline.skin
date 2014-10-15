@@ -1,10 +1,9 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxhl" Namespace="DevExpress.Web.ASPxHeadline" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<dxhl:ASPxHeadline runat="server" CssFilePath="~/App_Themes/Qiyas/DevExpress.css" DateVerticalPosition="Top" RightToLeft="True"
-	SpriteCssFilePath="{0}/sprite.css" CssPostfix="DXConnect">
-    <DateStyle Spacing="0" />
-    <ContentStyle LineHeight="14" />
-    <LeftPanelStyle Spacing="37">
-        <Paddings PaddingTop="3" />
-    </LeftPanelStyle>
-</dxhl:ASPxHeadline>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxHeadline" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxHeadline runat="server" MaxLength="300" TailPosition="KeepWithLastWord" CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css" RightToLeft="True">
+    <DateStyle Spacing="5px"></DateStyle>
+    <LeftPanelStyle Spacing="32px"></LeftPanelStyle>
+    <RightPanelStyle Spacing="32px"></RightPanelStyle>
+</dx:ASPxHeadline>
+

@@ -1,7 +1,6 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxpc" Namespace="DevExpress.Web.ASPxPopupControl" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<dxpc:ASPxPopupControl runat="server" CssFilePath="~/App_Themes/Qiyas/DevExpress.css" CssPostfix="DXConnect" RightToLeft="True"
-    SpriteCssFilePath="{0}/Sprite.css" EnableHotTrack="False">
-    <LoadingPanelImage Url="Web/Loading.gif" />
-    <LoadingPanelStyle ImageSpacing="5" />
-</dxpc:ASPxPopupControl>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxPopupControl" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxPopupControl runat="server" SpriteCssFilePath="~/App_Themes/Moderno/{0}/sprite.css" CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css" RightToLeft="True">
+</dx:ASPxPopupControl>
+

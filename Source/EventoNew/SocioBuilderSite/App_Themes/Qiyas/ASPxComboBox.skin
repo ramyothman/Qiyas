@@ -1,11 +1,6 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxEditors" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<dx:ASPxComboBox runat="server" CssPostfix="DXConnect" CssFilePath="~/App_Themes/Qiyas/DevExpress.css" SpriteCssFilePath="~/App_Themes/DXConnect/{0}/sprite.css" 
-Height="32px" ShowShadow="False">
+
+<dx:ASPxComboBox runat="server" SpriteCssFilePath="~/App_Themes/Moderno/{0}/sprite.css" CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css">
 </dx:ASPxComboBox>
-<dx:ASPxComboBox runat="server" SkinID="Attend" CssClass="combo" BackColor="Transparent" Width="133px" Height="16px"  Spacing="0"
-    DropDownWidth="160" EnableDefaultAppearance="False" EnableFocusedStyle="False" Cursor="pointer" PopupHorizontalAlign="RightSides">
-    <ItemStyle CssClass="comboItem" HoverStyle-CssClass="comboItemHover" HorizontalAlign="Left" />
-    <ListBoxStyle CssClass="comboListBox" />
-    <DropDownButton Image-Url="~/App_Themes/DXConnect/Editors/ddBtn.png" />
-</dx:ASPxComboBox>
+

@@ -1,32 +1,29 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxm" Namespace="DevExpress.Web.ASPxMenu" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<dxm:ASPxMenu runat="server" CssFilePath="~/App_Themes/Qiyas/DevExpress.css" SpriteCssFilePath="{0}/sprite.css" CssPostfix="DXConnect"
-	ShowPopOutImages="True" AutoSeparators="RootOnly">
-	<ItemStyle PopOutImageSpacing="10" DropDownButtonSpacing="10" />
-	<SubMenuStyle GutterWidth="3" GutterImageSpacing="9" />
-	<ItemSubMenuOffset FirstItemX="2" LastItemX="2" X="2" />
-	<LoadingPanelStyle ImageSpacing="5" />
-    <LoadingPanelImage Url="Web/Loading.gif" />
-</dxm:ASPxMenu>
-<dxm:ASPxMenu runat="server" SkinID="MenuToolBar" CssFilePath="{0}/styles.css"  ShowPopOutImages="True"
-    CssPostfix="DXConnect" SpriteCssFilePath="{0}/sprite.css" SeparatorHeight="100%"
-    AutoSeparators="None" Width="100%" ItemAutoWidth="False">
-    <SubMenuStyle GutterWidth="0px" />
-    <RootItemSubMenuOffset FirstItemX="-1" X="-1" FirstItemY="-1" Y="-1"/>
-    <LoadingPanelStyle ImageSpacing="5" />
-    <LoadingPanelImage Url="Web/Loading.gif" />
-</dxm:ASPxMenu>
-<dxm:ASPxMenu runat="server" SkinID="MenuButtons" SpriteCssFilePath="{0}/sprite.css" CssFilePath="{0}/styles.css" SeparatorColor="Transparent"
-    AutoSeparators="RootOnly" ItemSpacing="0px" ShowPopOutImages="True" CssPostfix="DXConnect" CssClass="menuButtons_DXConnect">
-    <Border BorderWidth="0px"/>
-    <RootItemSubMenuOffset X="-1" LastItemX="-1" FirstItemX="-1"></RootItemSubMenuOffset>
-    <SubMenuItemStyle Wrap="False" />
-    <LoadingPanelStyle ImageSpacing="5" />
-    <LoadingPanelImage Url="Web/Loading.gif" />
-</dxm:ASPxMenu>
-<dxm:ASPxMenu runat="server" SkinID="MenuLinks" CssFilePath="{0}/styles.css" ShowPopOutImages="True" 
-    CssPostfix="DXConnect" SeparatorHeight="100%" SpriteCssFilePath="{0}/sprite.css" SeparatorWidth="1px"  
-    EnableDefaultAppearance="False" CssClass="menuLinks_DXConnect">
-    <LoadingPanelStyle ImageSpacing="5" />
-    <LoadingPanelImage Url="Web/Loading.gif" />
-</dxm:ASPxMenu>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxMenu" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxMenu runat="server" AutoSeparators="RootOnly" ShowPopOutImages="True" SpriteCssFilePath="~/App_Themes/Moderno/{0}/sprite.css" CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css">
+    <ItemSubMenuOffset FirstItemX="1" FirstItemY="-2" LastItemX="1" LastItemY="-2" X="1" Y="-2"></ItemSubMenuOffset>
+</dx:ASPxMenu>
+
+<dx:ASPxMenu runat="server" ItemAutoWidth="False" GutterImageSpacing="7px" ItemSpacing="0px" SeparatorColor="#AECAF0" SeparatorWidth="1px" ShowPopOutImages="True" SpriteCssFilePath="~/App_Themes/Moderno/{0}/sprite.css" CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css" Width="100%" SkinID="MenuToolBar">
+    <RootItemSubMenuOffset FirstItemX="-1" FirstItemY="-1" X="-1" Y="-1"></RootItemSubMenuOffset>
+
+    <ItemStyle DropDownButtonSpacing="12px" PopOutImageSpacing="18px" ImageSpacing="5px" VerticalAlign="Middle"></ItemStyle>
+    <SubMenuItemStyle ImageSpacing="7px"></SubMenuItemStyle>
+    <SubMenuStyle SeparatorColor="#AECAF0" BackColor="#F9F9F9"></SubMenuStyle>
+    <Border BorderColor="#AECAF0" BorderStyle="Solid" BorderWidth="1px"></Border>
+</dx:ASPxMenu>
+
+<dx:ASPxMenu runat="server" ItemSpacing="0px" AutoSeparators="None" ShowPopOutImages="True" SpriteCssFilePath="~/App_Themes/Moderno/{0}/sprite.css"
+		 CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css" CssClass="menuButtons menuButtons_Moderno" SkinID="MenuButtons" SeparatorHeight="0px">
+    <RootItemSubMenuOffset FirstItemX="-1" LastItemX="-1" X="-1"></RootItemSubMenuOffset>
+
+    <ItemStyle DropDownButtonSpacing="11px"></ItemStyle>
+    <SubMenuItemStyle Wrap="False"></SubMenuItemStyle>
+    <Border BorderWidth="0px"></Border>
+</dx:ASPxMenu>
+
+<dx:ASPxMenu runat="server" GutterImageSpacing="7px" ItemSpacing="0px" SeparatorColor="#AECAF0" SeparatorWidth="1px" ShowPopOutImages="True" 
+    SpriteCssFilePath="~/App_Themes/Moderno/{0}/sprite.css" CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css" CssClass="menuLinks_Moderno" SkinID="MenuLinks">
+</dx:ASPxMenu>
+

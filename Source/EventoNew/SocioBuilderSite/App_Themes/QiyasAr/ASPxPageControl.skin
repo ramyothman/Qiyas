@@ -1,10 +1,6 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxtc" Namespace="DevExpress.Web.ASPxTabControl" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<dxtc:ASPxPageControl runat="server" CssFilePath="~/App_Themes/Qiyas/DevExpress.css" SpriteCssFilePath="{0}/sprite.css" CssPostfix="DXConnect" RightToLeft="True">
-    <Paddings PaddingTop="2px" />
-    <ContentStyle>
-        <Paddings Padding="0" />
-	</ContentStyle>
-    <LoadingPanelStyle ImageSpacing="5" />
-	<LoadingPanelImage Url="Web/Loading.gif" />
-</dxtc:ASPxPageControl>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxTabControl" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxPageControl runat="server" SpriteCssFilePath="~/App_Themes/Moderno/{0}/sprite.css" TabSpacing="3px" CssPostfix="Moderno" CssFilePath="~/App_Themes/Moderno/{0}/styles.css" RightToLeft="True">
+</dx:ASPxPageControl>
+

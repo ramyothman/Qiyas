@@ -77,7 +77,7 @@ namespace BusinessLogicLayer.Components.ContentManagement
             if (string.IsNullOrEmpty(site.DateFormat))
                 site.DateFormat = "";
             site.SiteId = id;
-			return siteComponent.InsertNewSite( site.SiteId,  site.Name,  site.IsActive,  site.TimeFormat,  site.DateFormat,  site.PostSize,  site.DefaultSectionId,  site.DefaultCommentStatusId,  site.DefaultSecurityAccessTypeId,  site.HomeNewsCount,  site.HomeEventsCount,  site.MasterPageTemplateId,  site.ShowFullTextArticles,  site.AllowPostingComments,  site.AllowAnonymousComments,  site.RowGuid,  site.ModifiedDate);
+			return siteComponent.InsertNewSite( site.SiteId,  site.Name,  site.IsActive,  site.TimeFormat,  site.DateFormat,  site.PostSize,  site.DefaultSectionId,  site.DefaultCommentStatusId,  site.DefaultSecurityAccessTypeId,  site.HomeNewsCount,  site.HomeEventsCount,  site.MasterPageTemplateId,  site.ShowFullTextArticles,  site.AllowPostingComments,  site.AllowAnonymousComments,  site.RowGuid,  DateTime.Now);
 		}
          [DataObjectMethod(DataObjectMethodType.Insert)]
 		public bool Insert( int SiteId,  string Name,  bool IsActive,  string TimeFormat,  string DateFormat,  int PostSize,  int DefaultSectionId,  int DefaultCommentStatusId,  int DefaultSecurityAccessTypeId,  int HomeNewsCount,  int HomeEventsCount,  int MasterPageTemplateId,  bool ShowFullTextArticles,  bool AllowPostingComments,  bool AllowAnonymousComments,  Guid RowGuid,  DateTime ModifiedDate)

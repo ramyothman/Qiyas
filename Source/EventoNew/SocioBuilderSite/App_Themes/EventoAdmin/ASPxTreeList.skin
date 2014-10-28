@@ -1,19 +1,27 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxTreeList" Assembly="DevExpress.Web.ASPxTreeList.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
 
-<dx:ASPxTreeList runat="server">
-    <Styles CssFilePath="~/App_Themes/EventoAdmin/DevExpress.css" CssPostfix="Office2010Blue">
-        <LoadingPanel ImageSpacing="5" />
-        <AlternatingNode Enabled="True" />
-    </Styles>
-    <StylesEditors ButtonEditCellSpacing="0" />
-    <StylesPager>
-        <PageNumber ForeColor="#3e4846" />
-        <Summary ForeColor="#1e395b" />
-    </StylesPager>
-    <Images SpriteCssFilePath="~/App_Themes/Office2010Blue/{0}/sprite.css">
-        <LoadingPanel Url="~/App_Themes/Office2010Blue/TreeList/Loading.gif" />
+<dx:ASPxTreeList runat="server" CssFilePath="~/App_Themes/MetropolisBlue/{0}/styles.css" CssPostfix="MetropolisBlue">
+    <Settings ShowTreeLines="False"></Settings>
+
+    <SettingsPager CurrentPageNumberFormat="{0}">
+        <PageSizeItemSettings ShowPopupShadow="False">
+        </PageSizeItemSettings>
+    </SettingsPager>
+
+    <Images SpriteCssFilePath="~/App_Themes/MetropolisBlue/{0}/sprite.css">
     </Images>
-    <Settings SuppressOuterGridLines="true" />
-    <SettingsPager CurrentPageNumberFormat="{0}" />
+
+    <Styles CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/MetropolisBlue/{0}/styles.css"></Styles>
+
+    <StylesPager>
+        <Pager ItemSpacing="1px" Spacing="1px"></Pager>
+    </StylesPager>
+
+    <StylesEditors>
+        <Calendar>
+            <Border BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px"></Border>
+        </Calendar>
+    </StylesEditors>
 </dx:ASPxTreeList>
+

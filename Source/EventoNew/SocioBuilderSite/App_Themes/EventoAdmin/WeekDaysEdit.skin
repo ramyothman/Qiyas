@@ -1,11 +1,6 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxe" Namespace="DevExpress.Web.ASPxEditors" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxwschs" Namespace="DevExpress.Web.ASPxScheduler.Controls" Assembly="DevExpress.Web.ASPxScheduler.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<dxwschs:WeekDaysEdit runat="server" 
-	CssFilePath="~/App_Themes/EventoAdmin/DevExpress.css" CssPostfix="Office2010Blue"
-	SpriteCssFilePath="~/App_Themes/Office2010Blue/{0}/sprite.css" >
-    <ButtonStyle Width="13px" />
-    <LoadingPanelStyle ImageSpacing="5" />
-    <LoadingPanelImage Url="~/App_Themes/Office2010Blue/Web/Loading.gif" />
-</dxwschs:WeekDaysEdit>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxEditors" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxScheduler.Controls" Assembly="DevExpress.Web.ASPxScheduler.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
 
+<dx:WeekDaysEdit runat="server" CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/MetropolisBlue/{0}/styles.css" SpriteCssFilePath="~/App_Themes/MetropolisBlue/{0}/sprite.css">
+</dx:WeekDaysEdit>

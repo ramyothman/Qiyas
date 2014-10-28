@@ -1,18 +1,37 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxwschs" Namespace="DevExpress.Web.ASPxScheduler" Assembly="DevExpress.Web.ASPxScheduler.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register Assembly="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraScheduler" TagPrefix="temp" %>
-<dxwschs:ASPxScheduler runat="server">
-	<Styles CssFilePath="~/App_Themes/EventoAdmin/DevExpress.css" CssPostfix="Office2010Blue" 
-		SelectionColor="#d5e8ff">
-		<ResourceNavigator ButtonSpacing="0px" />
-		<ViewNavigator ButtonSpacing="3px" />
-		<PopupForm>
-            <Content Paddings-PaddingBottom="10px" />
-        </PopupForm>
-        <LoadingPanel ImageSpacing="5" />
-	</Styles>
-	<Images SpriteCssFilePath="~/App_Themes/Office2010Blue/{0}/sprite.css">
-	    <LoadingPanel Url="~/App_Themes/Office2010Blue/Scheduler/Loading.gif" />
-	</Images>
-</dxwschs:ASPxScheduler>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxScheduler" Assembly="DevExpress.Web.ASPxScheduler.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraScheduler" TagPrefix="dx" %>
+
+<dx:ASPxScheduler runat="server">
+    <Views>
+        <DayView>
+            <DayViewStyles>
+                <TimeCellBody BackColor="#FFFFFF" />
+            </DayViewStyles>
+        </DayView>
+        <WorkWeekView>
+            <WorkWeekViewStyles>
+                <TimeCellBody BackColor="#FFFFFF" />
+            </WorkWeekViewStyles>
+        </WorkWeekView>
+        <WeekView>
+            <WeekViewStyles>
+                <DateCellBody BackColor="#FFFFFF" />
+            </WeekViewStyles>
+        </WeekView>
+        <MonthView>
+            <MonthViewStyles>
+                <DateCellBody BackColor="#FFFFFF" />
+            </MonthViewStyles>
+        </MonthView>
+        <TimelineView>
+            <TimelineViewStyles>
+                <TimelineCellBody BackColor="#FFFFFF" />
+            </TimelineViewStyles>
+        </TimelineView>
+    </Views>
+    <Styles SelectionColor="#0072C6" CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/MetropolisBlue/{0}/styles.css" />
+    <Images SpriteCssFilePath="~/App_Themes/MetropolisBlue/{0}/sprite.css">
+    </Images>
+</dx:ASPxScheduler>
 

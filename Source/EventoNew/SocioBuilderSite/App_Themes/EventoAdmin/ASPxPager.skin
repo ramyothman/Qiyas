@@ -1,8 +1,8 @@
 <%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
-<%@ Register TagPrefix="dxpg" Namespace="DevExpress.Web.ASPxPager" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxPager" Assembly="DevExpress.Web.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
 
-<dxpg:ASPxPager runat="server" CurrentPageNumberFormat="{0}" CssFilePath="~/App_Themes/EventoAdmin/DevExpress.css" CssPostfix="Office2010Blue"
-	SpriteCssFilePath="~/App_Themes/Office2010Blue/{0}/sprite.css" ItemSpacing="2">
-	<SeparatorPaddings PaddingTop="0" PaddingBottom="1" />
-</dxpg:ASPxPager>
+<dx:ASPxPager runat="server" CurrentPageNumberFormat="{0}" ItemSpacing="0px" SpriteCssFilePath="~/App_Themes/MetropolisBlue/{0}/sprite.css" CssPostfix="MetropolisBlue" CssFilePath="~/App_Themes/MetropolisBlue/{0}/styles.css">
+    <PageSizeItemSettings ShowPopupShadow="False">
+    </PageSizeItemSettings>
+</dx:ASPxPager>
 

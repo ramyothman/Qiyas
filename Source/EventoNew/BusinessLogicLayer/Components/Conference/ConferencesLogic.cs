@@ -78,6 +78,134 @@ namespace BusinessLogicLayer.Components.Conference
             return _conferencesList;
         }
 
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public Conferences GetDefaultConference()
+        {
+            ConferencesDAC _conferencesComponent = new ConferencesDAC();
+            IDataReader reader = _conferencesComponent.GetAllConferences("IsDefault = 1").CreateDataReader();
+            Conferences _conferences = null;
+            while (reader.Read())
+            {
+                _conferences = new Conferences();
+                if (reader["ConferenceId"] != DBNull.Value)
+                    _conferences.ConferenceId = Convert.ToInt32(reader["ConferenceId"]);
+                if (reader["SiteId"] != DBNull.Value)
+                    _conferences.SiteId = Convert.ToInt32(reader["SiteId"]);
+                if (reader["ConferenceName"] != DBNull.Value)
+                    _conferences.ConferenceName = Convert.ToString(reader["ConferenceName"]);
+                if (reader["ConferenceLogo"] != DBNull.Value)
+                    _conferences.ConferenceLogo = Convert.ToString(reader["ConferenceLogo"]);
+                if (reader["StartDate"] != DBNull.Value)
+                    _conferences.StartDate = Convert.ToDateTime(reader["StartDate"]);
+                if (reader["EndDate"] != DBNull.Value)
+                    _conferences.EndDate = Convert.ToDateTime(reader["EndDate"]);
+                if (reader["IsActive"] != DBNull.Value)
+                    _conferences.IsActive = Convert.ToBoolean(reader["IsActive"]);
+                if (reader["Location"] != DBNull.Value)
+                    _conferences.Location = Convert.ToString(reader["Location"]);
+                if (reader["LocationName"] != DBNull.Value)
+                    _conferences.LocationName = Convert.ToString(reader["LocationName"]);
+                if (reader["LocationLogo"] != DBNull.Value)
+                    _conferences.LocationLogo = Convert.ToString(reader["LocationLogo"]);
+                if (reader["LocationLongitude"] != DBNull.Value)
+                    _conferences.LocationLongitude = Convert.ToDecimal(reader["LocationLongitude"]);
+                if (reader["LocationLatitude"] != DBNull.Value)
+                    _conferences.LocationLatitude = Convert.ToDecimal(reader["LocationLatitude"]);
+                if (reader["ConferenceDomain"] != DBNull.Value)
+                    _conferences.ConferenceDomain = Convert.ToString(reader["ConferenceDomain"]);
+                if (reader["ConferenceCode"] != DBNull.Value)
+                    _conferences.ConferenceCode = Convert.ToString(reader["ConferenceCode"]);
+                if (reader["ConferenceVenueID"] != DBNull.Value)
+                    _conferences.ConferenceVenueID = Convert.ToInt32(reader["ConferenceVenueID"]);
+                if (reader["ConferenceAlias"] != DBNull.Value)
+                    _conferences.ConferenceAlias = Convert.ToString(reader["ConferenceAlias"]);
+                if (reader["IsDefault"] != DBNull.Value)
+                    _conferences.IsDefault = Convert.ToBoolean(reader["IsDefault"]);
+                if (reader["AbstractSubmissionStartDate"] != DBNull.Value)
+                    _conferences.AbstractSubmissionStartDate = Convert.ToDateTime(reader["AbstractSubmissionStartDate"]);
+                if (reader["AbstractSubmissionEndDate"] != DBNull.Value)
+                    _conferences.AbstractSubmissionEndDate = Convert.ToDateTime(reader["AbstractSubmissionEndDate"]);
+                if (reader["AbstractSubmissionEndMessagePageID"] != DBNull.Value)
+                    _conferences.AbstractSubmissionEndMessagePageID = Convert.ToInt32(reader["AbstractSubmissionEndMessagePageID"]);
+                if (reader["AbstractSubmissionNotStartedPageID"] != DBNull.Value)
+                    _conferences.AbstractSubmissionNotStartedPageID = Convert.ToInt32(reader["AbstractSubmissionNotStartedPageID"]);
+
+                _conferences.NewRecord = false;
+               
+            } reader.Close();
+            return _conferences;
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public Conferences GetConferenceBySubDomain(string domain)
+        {
+            ConferencesDAC _conferencesComponent = new ConferencesDAC();
+            IDataReader reader = _conferencesComponent.GetAllConferences("ConferenceDomain = '" + domain + "'").CreateDataReader();
+            Conferences _conferences = null;
+            while (reader.Read())
+            {
+                _conferences = new Conferences();
+                if (reader["ConferenceId"] != DBNull.Value)
+                    _conferences.ConferenceId = Convert.ToInt32(reader["ConferenceId"]);
+                if (reader["SiteId"] != DBNull.Value)
+                    _conferences.SiteId = Convert.ToInt32(reader["SiteId"]);
+                if (reader["ConferenceName"] != DBNull.Value)
+                    _conferences.ConferenceName = Convert.ToString(reader["ConferenceName"]);
+                if (reader["ConferenceLogo"] != DBNull.Value)
+                    _conferences.ConferenceLogo = Convert.ToString(reader["ConferenceLogo"]);
+                if (reader["StartDate"] != DBNull.Value)
+                    _conferences.StartDate = Convert.ToDateTime(reader["StartDate"]);
+                if (reader["EndDate"] != DBNull.Value)
+                    _conferences.EndDate = Convert.ToDateTime(reader["EndDate"]);
+                if (reader["IsActive"] != DBNull.Value)
+                    _conferences.IsActive = Convert.ToBoolean(reader["IsActive"]);
+                if (reader["Location"] != DBNull.Value)
+                    _conferences.Location = Convert.ToString(reader["Location"]);
+                if (reader["LocationName"] != DBNull.Value)
+                    _conferences.LocationName = Convert.ToString(reader["LocationName"]);
+                if (reader["LocationLogo"] != DBNull.Value)
+                    _conferences.LocationLogo = Convert.ToString(reader["LocationLogo"]);
+                if (reader["LocationLongitude"] != DBNull.Value)
+                    _conferences.LocationLongitude = Convert.ToDecimal(reader["LocationLongitude"]);
+                if (reader["LocationLatitude"] != DBNull.Value)
+                    _conferences.LocationLatitude = Convert.ToDecimal(reader["LocationLatitude"]);
+                if (reader["ConferenceDomain"] != DBNull.Value)
+                    _conferences.ConferenceDomain = Convert.ToString(reader["ConferenceDomain"]);
+                if (reader["ConferenceCode"] != DBNull.Value)
+                    _conferences.ConferenceCode = Convert.ToString(reader["ConferenceCode"]);
+                if (reader["ConferenceVenueID"] != DBNull.Value)
+                    _conferences.ConferenceVenueID = Convert.ToInt32(reader["ConferenceVenueID"]);
+                if (reader["ConferenceAlias"] != DBNull.Value)
+                    _conferences.ConferenceAlias = Convert.ToString(reader["ConferenceAlias"]);
+                if (reader["IsDefault"] != DBNull.Value)
+                    _conferences.IsDefault = Convert.ToBoolean(reader["IsDefault"]);
+                if (reader["AbstractSubmissionStartDate"] != DBNull.Value)
+                    _conferences.AbstractSubmissionStartDate = Convert.ToDateTime(reader["AbstractSubmissionStartDate"]);
+                if (reader["AbstractSubmissionEndDate"] != DBNull.Value)
+                    _conferences.AbstractSubmissionEndDate = Convert.ToDateTime(reader["AbstractSubmissionEndDate"]);
+                if (reader["AbstractSubmissionEndMessagePageID"] != DBNull.Value)
+                    _conferences.AbstractSubmissionEndMessagePageID = Convert.ToInt32(reader["AbstractSubmissionEndMessagePageID"]);
+                if (reader["AbstractSubmissionNotStartedPageID"] != DBNull.Value)
+                    _conferences.AbstractSubmissionNotStartedPageID = Convert.ToInt32(reader["AbstractSubmissionNotStartedPageID"]);
+
+                _conferences.NewRecord = false;
+
+            } reader.Close();
+            return _conferences;
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public Conferences GetCurrentConference(string domain)
+        {
+            Conferences result = null;
+            result = GetConferenceBySubDomain(domain);
+            if (result == null)
+                result = GetDefaultConference();
+            if (result == null)
+                result = GetByID(1);
+            return result;
+        }
+
         #region Insert And Update
         public bool Insert(Conferences conferences)
         {

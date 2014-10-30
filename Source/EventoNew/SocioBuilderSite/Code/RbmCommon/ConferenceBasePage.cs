@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -202,7 +202,10 @@ namespace SocioBuilderSite.Code.RbmCommon
             if (page.Session["CurrentApplicationConference"] == null)
             {
                 //TODO: Load Conference Dynamically
-                page.Session["CurrentApplicationConference"] = BusinessLogicLayer.Common.ConferencesLogic.GetByID(1);
+                string domain = page.Request.Url.Host;
+                domain = domain.Replace("http:", "");
+                domain = domain.Replace(@"/", "");
+                page.Session["CurrentApplicationConference"] = BusinessLogicLayer.Common.ConferencesLogic.GetCurrentConference(domain);
                 if (page.Session["CurrentApplicationConference"] != null)
                     page.Session["CurrentApplicationConferenceId"] = ((BusinessLogicLayer.Entities.Conference.Conferences)page.Session["CurrentApplicationConference"]).ConferenceId;
             }
